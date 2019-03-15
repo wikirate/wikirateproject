@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'decko'
+gem 'decko', '0.7.0.pre'
 gem 'mysql2', '< 0.5'
 gem 'dalli'
 
