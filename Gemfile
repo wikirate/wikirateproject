@@ -1,6 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'decko', '0.7.0.pre'
+decko_gem_path = "./vendor/decko"
+
+path decko_gem_path do
+  gem "card", require: false
+  gem "cardname", require: false
+  gem "decko"
+end
+
 gem 'mysql2', '< 0.5'
 gem 'dalli'
 

@@ -1,0 +1,6 @@
+[submodule "vendor/decko"]
+	path = vendor/decko
+	url = https://github.com/decko-commons/decko.git
+[submodule "vendor/wikirate"]
+	path = vendor/wikirate
+	url = https://github.com/wikirate/wikirate.git
