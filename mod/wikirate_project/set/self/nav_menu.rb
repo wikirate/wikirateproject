@@ -1,5 +1,5 @@
 format :html do
   def url_prefix menu
-    menu == "Org" ? "/" : "https://wikirate.org/"
+    menu == "About" ? "/" : "https://wikirate.org/"
   end
 end
