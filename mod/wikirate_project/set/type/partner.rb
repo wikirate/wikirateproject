@@ -13,7 +13,7 @@ format :html do
                     title: render_title_link,
                     text: field_nest(:website, view: :core)
   end
-  
+
   view :bar_right do
     ""
   end

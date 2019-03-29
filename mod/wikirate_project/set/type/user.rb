@@ -15,7 +15,9 @@ format :html do
   end
 
   view :bar_right do
-    field_nest :public_email, view: :core
+    wrap_with :div, class: "w-100 text-center" do
+      field_nest :public_email, view: :core
+    end
   end
 
   view :bar_bottom do
