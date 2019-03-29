@@ -1,5 +1,7 @@
 include_set Abstract::Media
 
+card_accessor :website
+
 format :html do
   bar_cols 12, 0
   before :bar do
@@ -10,8 +12,11 @@ format :html do
   view :bar_left do
     text_with_image image: card.field(:image),
                     size: voo.size,
-                    title: render_title_link,
-                    text: field_nest(:website, view: :core)
+                    title: link_to_website
+  end
+
+  def link_to_website
+    link_to render_title, href: card.website
   end
 
   view :bar_right do

@@ -10,7 +10,7 @@ format :html do
   view :bar_left do
     text_with_image image: card.field(:image),
                     size: voo.size,
-                    title: render_title_link,
+                    title: render_title,
                     text: field_nest(:job_title, view: :core)
   end
 
