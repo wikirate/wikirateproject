@@ -4,4 +4,6 @@ format :html do
   view :nav_bar_middle do
     ""
   end
+
+  view :nav_bar_right, template: :haml
 end
