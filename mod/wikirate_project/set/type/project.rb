@@ -1,3 +1,4 @@
+include_set Abstract::Media
 
 format :html do
   bar_cols 12, 0
