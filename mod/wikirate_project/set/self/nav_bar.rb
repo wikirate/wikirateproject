@@ -8,7 +8,7 @@ format :html do
   end
 
   view :nav_bar_right do
-    link_to render_platform_title, href: shared_url_prefix
+    link_to render_platform_title, href: shared_url_prefix(project=false)
   end
 
   view :platform_title, template: :haml
