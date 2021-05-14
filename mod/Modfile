@@ -1,0 +1,4 @@
+gem_mod "card-mod-defaults"
+mod "layout_components"
+mod "wikirate_assets"
+mod "wikirate_project"

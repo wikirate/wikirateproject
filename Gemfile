@@ -1,14 +1,11 @@
 source 'http://rubygems.org'
 
-decko_gem_path = "./vendor/decko"
+gem "decko", path: "./vendor/decko"
+gem "card-mod-defaults"
+gem "card-mod-platypus"
+gem "card-mod-monkey"
 
-path decko_gem_path do
-  gem "card", require: false
-  gem "cardname", require: false
-  gem "decko"
-end
-
-gem 'mysql2', '< 0.5'
+gem 'mysql2'
 gem 'dalli'
 
 gem "ed25519", "~>1.2"
@@ -26,4 +23,3 @@ end
 Dir.glob( 'mod/**{,/*/**}/Gemfile' ).each do |gemfile|
   instance_eval File.read(gemfile)
 end
-
