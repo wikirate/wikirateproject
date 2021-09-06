@@ -5,6 +5,20 @@ PATH
       card
 
 PATH
+  remote: vendor/decko-cap
+  specs:
+    decko-cap (0.1)
+      airbrussh
+      bcrypt_pbkdf
+      capistrano
+      capistrano-bundler
+      capistrano-git-with-submodules (~> 2.0)
+      capistrano-maintenance
+      capistrano-passenger
+      capistrano-rvm
+      ed25519
+
+PATH
   remote: vendor/decko/mod
   specs:
     card-mod-account (0.13.2)
@@ -293,6 +307,8 @@ GEM
       capistrano (~> 3.1)
     capistrano-git-with-submodules (2.0.4)
       capistrano (~> 3.7)
+    capistrano-maintenance (1.2.1)
+      capistrano (>= 3.0)
     capistrano-passenger (0.2.1)
       capistrano (~> 3.0)
     capistrano-rvm (0.1.2)
@@ -535,6 +551,7 @@ DEPENDENCIES
   cardname!
   dalli
   decko!
+  decko-cap!
   ed25519 (~> 1.2)
   mysql2
 
