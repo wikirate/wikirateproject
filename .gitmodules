@@ -6,4 +6,4 @@
 	url = https://github.com/wikirate/wikirate.git
 [submodule "card-mods"]
 	path = vendor/card-mods
-	url = git@github.com:decko-commons/card-mods.git
+	url = https://github.com/decko-commons/card-mods.git
