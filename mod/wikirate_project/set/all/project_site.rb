@@ -1,6 +1,12 @@
 format do
   def shared_url_prefix project=true
-    project ? "/" : "https://wikirate.org/"
+    if project
+      "/"
+    elsif Env.host&.match?(/staging/)
+      "https://staging.wikirate.org/"
+    else
+      "https://wikirate.org/"
+    end
   end
 
   def nav_menus
