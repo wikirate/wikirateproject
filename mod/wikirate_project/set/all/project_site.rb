@@ -6,6 +6,10 @@ format do
   def nav_menus
     super.slice "About"
   end
+
+  def nav_help?
+    false
+  end
 end
 
 format :html do

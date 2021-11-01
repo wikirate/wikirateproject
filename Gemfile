@@ -13,6 +13,7 @@ end
 
 path "./vendor/card-mods" do
   gem "card-mod-social"
+  gem "card-mod-thumbnail"
 end
 
 gem 'mysql2'
