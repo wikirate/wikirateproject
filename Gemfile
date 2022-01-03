@@ -24,10 +24,10 @@ gem "ed25519", "~>1.2"
 gem "bcrypt_pbkdf", "~>1.0"
 
 group :development do
-  # path "./vendor/decko/mod" do
-  #   gem "card-mod-platypus"
-  #   gem "card-mod-monkey"
-  # end
+  path "./vendor/decko/mod" do
+    gem "card-mod-platypus"
+    gem "card-mod-monkey"
+  end
 
   gem "capistrano"
   gem "capistrano-bundler"
