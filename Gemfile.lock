@@ -1,4 +1,16 @@
 PATH
+  remote: vendor/card-mods
+  specs:
+    card-mod-google_analytics (0.14)
+      card
+      staccato (~> 0.5)
+    card-mod-social (0.1)
+      card
+    card-mod-thumbnail (0.1)
+      card
+      card-mod-bar_and_box
+
+PATH
   remote: vendor/decko-cap
   specs:
     decko-cap (0.1)
@@ -413,6 +425,7 @@ GEM
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     ssrf_filter (1.0.7)
+    staccato (0.5.3)
     temple (0.8.2)
     thor (1.1.0)
     tilt (2.0.10)
@@ -438,6 +451,9 @@ DEPENDENCIES
   card!
   card-mod-defaults!
   card-mod-delayed_job!
+  card-mod-google_analytics!
+  card-mod-social!
+  card-mod-thumbnail!
   cardname!
   dalli
   decko!
