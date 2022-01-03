@@ -8,7 +8,7 @@ end
 
 path "./vendor/decko/mod" do
   gem "card-mod-defaults"
-  # gem "card-mod-delayed_job"
+  gem "card-mod-delayed_job"
 end
 
 path "./vendor/card-mods" do
@@ -18,16 +18,16 @@ path "./vendor/card-mods" do
 end
 
 gem 'mysql2'
-gem 'dalli'
+
 
 gem "ed25519", "~>1.2"
 gem "bcrypt_pbkdf", "~>1.0"
 
 group :development do
-  path "./vendor/decko/mod" do
-    gem "card-mod-platypus"
-    gem "card-mod-monkey"
-  end
+  # path "./vendor/decko/mod" do
+  #   gem "card-mod-platypus"
+  #   gem "card-mod-monkey"
+  # end
 
   gem "capistrano"
   gem "capistrano-bundler"
@@ -39,6 +39,6 @@ group :development do
   gem "decko-cap", path: "./vendor/decko-cap"
 end
 
-Dir.glob("mod/**{,/*/**}/Gemfile").each do |gemfile|
-  instance_eval File.read(gemfile)
+group :production do
+  gem 'dalli'
 end
