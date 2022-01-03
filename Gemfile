@@ -29,12 +29,12 @@ group :development do
     gem "card-mod-monkey"
   end
 
-  gem "capistrano"
-  gem "capistrano-bundler"
-  gem 'capistrano-git-with-submodules', '~> 2.0'
-  #gem "capistrano-maintenance", require: false
-  gem "capistrano-passenger"
-  gem "capistrano-rvm"
+  # gem "capistrano"
+  # gem "capistrano-bundler"
+  # gem 'capistrano-git-with-submodules', '~> 2.0'
+  # #gem "capistrano-maintenance", require: false
+  # gem "capistrano-passenger"
+  # gem "capistrano-rvm"
 
   gem "decko-cap", path: "./vendor/decko-cap"
 end

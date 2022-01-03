@@ -530,11 +530,6 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt_pbkdf (~> 1.0)
-  capistrano
-  capistrano-bundler
-  capistrano-git-with-submodules (~> 2.0)
-  capistrano-passenger
-  capistrano-rvm
   card!
   card-mod-defaults!
   card-mod-delayed_job!
