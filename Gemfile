@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+gem "mysql2"
+
 path "./vendor/decko" do
   gem "card", require: false
   gem "cardname"
@@ -17,11 +19,9 @@ path "./vendor/card-mods" do
   gem "card-mod-google_analytics"
 end
 
-gem 'mysql2'
-gem "ed25519", "~>1.2"
-gem "bcrypt_pbkdf", "~>1.0"
-
 group :development do
+  gem "puma"
+  
   path "./vendor/decko/mod" do
     gem "card-mod-platypus"
     gem "card-mod-monkey"
@@ -31,5 +31,6 @@ group :development do
 end
 
 group :production do
-  gem 'dalli'
+  gem "fog-aws"
+  gem "dalli"
 end
