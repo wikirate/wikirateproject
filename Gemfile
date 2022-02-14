@@ -21,7 +21,7 @@ end
 
 group :development do
   gem "puma"
-  
+
   path "./vendor/decko/mod" do
     gem "card-mod-platypus"
     gem "card-mod-monkey"
