@@ -21,7 +21,6 @@ PATH
       capistrano-git-with-submodules (~> 2.0)
       capistrano-maintenance
       capistrano-passenger
-      capistrano-rvm
       ed25519
 
 PATH
@@ -213,6 +212,7 @@ PATH
       sassc (~> 2.4)
       sprockets (~> 3.7)
       sprockets-rails (~> 3.2)
+      timecop (~> 0.9)
       uglifier (~> 4.2)
       zeitwerk (!= 2.5.0)
     cardname (0.14.2)
@@ -293,6 +293,7 @@ GEM
       sshkit (>= 1.6.1, != 1.7.0)
     ast (2.4.2)
     bcrypt_pbkdf (1.1.0)
+    bcrypt_pbkdf (1.1.0-x64-mingw32)
     better_errors (2.9.1)
       coderay (>= 1.0.0)
       erubi (>= 1.0.0)
@@ -317,9 +318,6 @@ GEM
       capistrano (>= 3.0)
     capistrano-passenger (0.2.1)
       capistrano (~> 3.0)
-    capistrano-rvm (0.1.2)
-      capistrano (~> 3.0)
-      sshkit (~> 1.2)
     carrierwave (2.2.2)
       activemodel (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -439,6 +437,8 @@ GEM
     nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
+    nokogiri (1.13.9-x64-mingw32)
+      racc (~> 1.4)
     parallel (1.22.1)
     parser (3.1.2.1)
       ast (~> 2.4.1)
@@ -545,6 +545,7 @@ GEM
     temple (0.9.1)
     thor (1.2.1)
     tilt (2.0.11)
+    timecop (0.9.5)
     timeout (0.3.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
