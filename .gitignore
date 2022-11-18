@@ -17,6 +17,7 @@
 /tmp
 
 config/application.rb
+config/boot.rb
 config/deploy**
 config/*.yml
 

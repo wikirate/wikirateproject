@@ -1,6 +1,10 @@
 source 'http://rubygems.org'
 
 gem "mysql2"
+gem 'net-smtp', require: false
+gem 'net-imap', require: false
+gem 'net-pop', require: false
+gem "tzinfo-data", require: false
 
 path "./vendor/decko" do
   gem "card", require: false
