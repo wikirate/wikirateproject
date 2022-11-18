@@ -2,10 +2,10 @@ include_set Abstract::Media
 
 format :html do
   bar_cols 8, 4
-  before :expanded_bar do
-    super()
-    voo.hide :bar_expanded_nav
-  end
+  # before :expanded_bar do
+  #   super()
+  #   voo.hide :bar_expanded_nav
+  # end
 
   view :bar_left do
     text_with_image image: card.field(:image),
