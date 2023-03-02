@@ -1,0 +1,20 @@
+.homepage-involved
+  %h2
+    Endorsements
+  .text-end
+    = render_nav_arrows
+
+  .py-1
+    .homepage-involved-cards{ data: {
+       slick: { #infinite: false,
+                 centerMode: true,
+                 slidesToShow: 3,
+                 prevArrow: ".homepage-involved .wr-prev",
+                 nextArrow: ".homepage-involved .wr-next",
+                 responsive: [
+                   { breakpoint: "992", settings: { slidesToShow: 2 } },
+                   { breakpoint: "768",  settings: { slidesToShow: 1 } }
+                 ]}.to_json
+      } }
+      - :endorsements.card.item_cards.each do |endorsement|
+        = nest endorsement, view: :endorsement

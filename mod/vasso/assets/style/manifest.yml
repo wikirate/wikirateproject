@@ -1,0 +1,6 @@
+vasso:
+  items:
+    - style.scss
+    - info_pages.scss
+    - ../../vendor/slick/slick/slick.scss
+    - ../../vendor/slick/slick/slick-theme.scss

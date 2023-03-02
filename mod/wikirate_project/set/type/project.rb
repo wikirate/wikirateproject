@@ -3,7 +3,7 @@ include_set Abstract::Media
 format :html do
   bar_cols 12, 0
   before :bar do
-    super()
+    # super()
     voo.hide :bar_nav
   end
 

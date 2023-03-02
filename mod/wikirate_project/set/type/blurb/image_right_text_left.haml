@@ -1,0 +1,9 @@
+.row
+  .col-md-8.p-4.d-flex.align-items-center
+    .row
+      %h2
+        = field_nest :title, view: :core
+      .py-1
+        = field_nest :body, view: :core
+  .col-md-4.p-4.rounded-picture.text-center
+    = field_nest :image, view: :core, size: :medium

@@ -1,0 +1,20 @@
+%nav.navbar.navbar-expand-lg
+  .container
+    %a.navbar-brand{:href => '/'}
+      = nest :logo, view: :content
+    %button.navbar-toggler.bg-creme.circle{:type=> "button", 'data-bs-toggle' => "collapse", 'data-bs-target' => '#wikirateIntlNav',
+    'aria-expanded' => "false", 'aria-label' => "Toggle navigation"}
+      %span.burger-menu-icon
+        %i.fas.fa-bars
+    %div.collapse.navbar-collapse{:id => 'wikirateIntlNav'}
+      %ul.navbar-nav
+        - nav_menu.each do |item|
+          %li.nav-item
+            %a.nav-link{:href => item[1]}
+              = item[0]
+      %div.ms-auto
+        %ul.navbar-nav
+          %li.nav-item
+            %a.nav-link.donate-link{:href => 'Donate'}
+              Donate
+      = nest :account_links, view: :navbar_links

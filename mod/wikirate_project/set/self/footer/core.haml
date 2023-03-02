@@ -1,0 +1,30 @@
+%footer#wikirate-intl-footer.container-fluid.bg-navy.nodblclick
+  .container.p-5
+    .row.footer-link-lists
+      .col-md-9
+        = nest :gradient_logo, view: :content
+        %p.pt-3
+          WikiRate International e.V. hosts
+          %a{:href => "https://wikirate.org"} WikiRate
+          %br
+          Powered by
+          = link_to "Decko", href: "https://decko.org"
+      .col-md-3.p-3
+        = nest :footer_link_list, view: :content, hide: :menu
+
+    .row.footer-footer
+      .col-md-9
+        .py-3.wikirate-license.me-md-2
+          = nest :wikirate_license, view: :content
+      .col-md-3
+        .py-3.social-links
+          - social_media_links.each do |platform, url|
+            %a{ href: url, target: '_blank' }
+              = fa_icon platform.downcase, brand: true, class: "me-2"
+    -#   - %w[licensing policies legal].each do |section|
+    -#
+    -#     .col-3.p-3
+    -#       = nest :"footer_#{section}_list", view: :titled, title: section, hide: :menu
+    -#
+
+

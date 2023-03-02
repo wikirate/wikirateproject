@@ -1,0 +1,18 @@
+.col-md-12.endorsement-summary.rounded-3
+  .row.d-none.d-sm-block
+    .col-12.p-3.p-4.rounded-picture.text-center.quotee-img
+      = field_nest :image, view: :core, size: :medium
+  .row.p-4
+    %figure.wikirate-quote.mb-md-0
+      %blockquote.blockquote.ps-4
+        %p
+          %i.fas.fa-quote-left.fa-sm.pe-2.text-primary
+          = field_nest :quote, view: :core
+        %br
+        %figcaption.blockquote-footer
+          - if !card.quotee.nil? or card.quotee != ''
+            = card.quotee
+            %br
+          - if !card.job_title.nil? or card.job_title != ''
+            %cite
+              = card.job_title

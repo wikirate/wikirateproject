@@ -1,0 +1,10 @@
+%section#impressum-header.container-fluid.bg-creme.pt-5.pb-5
+  .container.p-5.py-3
+    = render_breadcrumbs
+    = section_header :impressum_heading, url: "/Contact_us", text: "Contact Us"
+%section.p-5
+  .container
+    = nest :organizational_structure
+%section.p-5.bg-creme
+  .container
+    = nest :factsheet

@@ -1,0 +1,25 @@
+- card_id = card.id.to_s
+.slider{id: card_id}
+  %h2
+    = card.name
+  .row
+    .col-9.pe-2
+      = field_nest :description, view: :content
+    .col-3
+      .text-end
+        = render_nav_arrows
+
+  .py-1
+    .homepage-involved-cards{ data: {
+       slick: { #infinite: false,
+                 centerMode: true,
+                 slidesToShow: 3,
+                 prevArrow: "#"+card_id+" .wr-prev",
+                 nextArrow: "#"+card_id+" .wr-next",
+                 responsive: [
+                   { breakpoint: "992", settings: { slidesToShow: 2 } },
+                   { breakpoint: "768",  settings: { slidesToShow: 1 } }
+                 ]}.to_json
+      } }
+      - card.field(:list).item_cards.each do |item|
+        = nest item, view: :action_card

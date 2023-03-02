@@ -1,0 +1,13 @@
+- head_and_lead = nest blurb, view: :head_and_lead
+- if yielded || button.present?
+  .wikirate-section-header.row
+    .col-md-8
+      = head_and_lead
+    .col-md-4.text-center.pt-md-0.pt-3
+      - if yielded
+        = yielded
+      - else
+        %a.btn.btn-primary.ps-4.pe-4.pt-2.pb-2{:role => 'button', href: button[:url] }
+          = button[:text]
+- else
+  = head_and_lead

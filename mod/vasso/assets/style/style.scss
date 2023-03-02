@@ -1,0 +1,371 @@
+body {
+  text-rendering: optimizeLegibility;
+  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+  font-size: 1rem;
+  color: $gray-900;
+}
+
+div[data-card-type-id='4'] img {
+  @extend .rounded-circle
+}
+
+.rounded-picture img {
+  @extend .rounded-circle
+}
+
+.item-profile {
+  @extend .col-md-4
+}
+
+.card-list-profile {
+  @extend .row
+}
+
+.job_description {
+  font-weight: bold;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #2D2374;
+  font-weight: 500;
+}
+
+.bg-creme {
+  background: #F7F7F8;
+}
+
+a[role="button"]:hover {
+  text-decoration: none;
+}
+
+.signout-link {
+  text-decoration: none !important;
+  @extend .btn, .btn-outline-primary, .ps-3, .pe-3, .ms-1;
+}
+
+.signout-link:hover {
+  color: $white !important;
+}
+
+.donate-link {
+  text-decoration: none !important;
+  color: $white !important;
+  @extend .btn, .btn-primary, .ps-3, .pe-3, .me-1;
+}
+
+.burger-menu-icon i {
+  color: $black !important;
+}
+
+.btn {
+  border-radius: 100px;
+}
+
+button.navbar-toggler {
+  height: 43.5px !important;
+  width: 43.5px !important;
+}
+
+.circle {
+  border-radius: 50% !important;
+}
+
+.bg-navy {
+  background-color: $blue !important;
+  color: $white !important;
+}
+
+footer .social-links a {
+  color: lighten($purple, 20%) !important;
+  text-decoration: none;
+}
+
+footer a {
+  color: lighten($purple, 20%) !important;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: lighten($purple, 10%) !important;
+}
+
+.wikirate-license, .social-links {
+  border-top: 1px solid #f7f7f8;
+}
+
+#footer_link_list-content-view a {
+  display: block;
+  padding-top: 2px;
+  color: $white !important;
+  text-decoration: none !important;
+}
+
+#footer_link_list-content-view a:hover {
+  color: lighten($purple, 20%) !important;
+}
+
+/*Vertical Sliding*/
+div.animation {
+  display: inline;
+  text-indent: 8px;
+}
+
+div.animation span {
+  animation: topToBottom 18s linear infinite 0s;
+  -ms-animation: topToBottom 18s linear infinite 0s;
+  -webkit-animation: topToBottom 18s linear infinite 0s;
+  color: $purple;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+div.animation span:nth-child(2) {
+  animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+}
+
+div.animation span:nth-child(3) {
+  animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+}
+
+div.animation span:nth-child(4) {
+  animation-delay: 9s;
+  -ms-animation-delay: 9s;
+  -webkit-animation-delay: 9s;
+}
+
+div.animation span:nth-child(5) {
+  animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  -webkit-animation-delay: 12s;
+}
+
+div.animation span:nth-child(6) {
+  animation-delay: 15s;
+  -ms-animation-delay: 15s;
+  -webkit-animation-delay: 15s;
+}
+
+/*topToBottom Animation*/
+@-moz-keyframes topToBottom {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -moz-transform: translateY(-90px);
+  }
+  10% {
+    opacity: 1;
+    -moz-transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    -moz-transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    -moz-transform: translateY(90px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes topToBottom {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -webkit-transform: translateY(-90px);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translateY(90px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes topToBottom {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -ms-transform: translateY(-90px);
+  }
+  10% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+  25% {
+    opacity: 1;
+    -ms-transform: translateY(0px);
+  }
+  30% {
+    opacity: 0;
+    -ms-transform: translateY(90px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.service-icon {
+  //background: linear-gradient(18.98deg, #6B5CD8 7.04%, #7F73D5 90.87%);
+  background: $gradient-orange;
+  color: white;
+  border-radius: 50%;
+  @extend .p-4;
+  width: 88px;
+  height: 88px;
+}
+
+.boxed {
+  border: 1px solid rgba(52, 52, 59, 0.16)
+}
+
+.event-date-time-location {
+  background: $gradient-purple;
+  color: $white;
+  position: relative;
+}
+
+.event-date-time-location h3 {
+  color: $white !important;
+}
+
+.watermark {
+  position: absolute;
+  bottom: -10px;
+  right: 43px;
+  color: rgba(255, 255, 255, .3);
+  font-size: 60px;
+}
+
+.image-row {
+  @extend .row
+}
+
+.image-row img {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.event-header {
+  height: 250px;
+}
+
+.event-header {
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  //opacity: 0.5;
+}
+
+.event-btn {
+  opacity: 1 !important;
+}
+
+.event-details {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #62718d;
+  font-weight: 400;
+}
+
+.bg-light-primary {
+  background-color: #d2cdf0;
+}
+
+.event-summary {
+  background: #FFFFFF;
+  border: 1px solid rgba(52, 52, 59, 0.16);
+  box-shadow: 0px 5px 10px rgba(23, 24, 50, 0.08);
+  border-radius: 5px;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  transform: scale(0.95);
+}
+
+.event-summary:hover {
+  transform: scale(1);
+}
+
+.endorsement-summary {
+  background: #FFFFFF;
+  border: 1px solid rgba(52, 52, 59, 0.16);
+  box-shadow: 0px 5px 10px rgba(23, 24, 50, 0.08);
+  border-radius: 5px;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  transform: scale(0.85);
+}
+
+.endorsement-summary:hover {
+  transform: scale(0.9);
+}
+
+.endorsement-summary blockquote {
+  font-size: 1.1rem;
+  border-color: $purple;
+  border-style: solid;
+  border-width: 0 0 0 2px;
+}
+
+.wr-arrow {
+  height: 48px;
+  width: 48px;
+  color: $purple;
+  background-color: $white;
+  font-size: x-large;
+}
+
+.wr-arrow:hover {
+  color: $white;
+  background-color: $purple;
+}
+
+.quotee-img img{
+  margin: 0 auto;
+}
+
+.action-card .card {
+  padding: 1rem;
+  background: $light;
+  box-shadow: $box-shadow;
+  border: 0;
+  min-height: 300px;
+  margin: 1.5rem;
+  &:hover {
+    h4, %i {
+      color: $white !important;
+    }
+    color: $white;
+    cursor: pointer;
+    background: $gradient-purple;
+  }
+}

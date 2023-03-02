@@ -1,6 +1,10 @@
+---
+- homepage
+
 - :name: project skin
   :type: :bootswatch_skin
   :codename: project_skin
+  :conflict: default
   :fields:
     :stylesheets: ""
     :colors: |
@@ -125,7 +129,313 @@
     About Us    
     Team and Advisors
     Programs
-    Publications
     News
     Legal
     Contact Us
+
+- :name: About us
+  :codename: about_us
+
+- :name: Impressum
+  :codename: impressum
+
+- :name: Our work
+  :codename: our_work
+
+- :name: Body
+  :codename: body
+  :type: :html
+
+- :name: Blurb
+  :codename: blurb
+  :type: :cardtype
+  :fields:
+    :title:
+      :type: Phrase
+    :image:
+      :type: :image
+    :body:
+      :type: html
+    :type:
+      :fields:
+        :autoname: Blurb 0001
+
+- :type: blurb
+  :codename: intro_blurb
+  :fields:
+    :title: "WikiRate International e.V. is"
+    :body: "<p>the non-profit organization hosting the <a href='https://wikirate.org' target='_blank'>WikiRate platform</a>. 
+    We develop the data system and tools the WikiRate community needs, and supports them in using the technology to help them achieve their goals.</p>"
+
+- :type: blurb
+  :codename: our_purpose
+  :fields:
+    :title: "Our Purpose"
+    :body: "<p>To empower and engage people and organizations from around the world to collect and develop insights on 
+    companies under a free license, and to share this knowledge globally and indiscriminately.</p>"
+
+- :type: blurb
+  :codename: germany_establishment_details
+  :fields:
+    :title: "Germany"
+    :body: '<p>a gemeinnütziger, eingetragener Verein under the name "WikiRate International e.V." 
+    (<a href="https://wikirate.org/Determination%20Letter%20Germany" target="_blank">determination letter</a>)</p>'
+
+- :type: blurb
+  :codename: uk_establishment_details
+  :fields:
+    :title: "UK"
+    :body: '<p>a charitable incorporated organization (CIO) under the name "WikiRate UK"</p>'
+
+- :type: blurb
+  :codename: usa_establishment_details
+  :fields:
+    :title: "USA"
+    :body: '<p>a 501(c)(3) nonprofit organization under the name "WikiRate USA" 
+    (<a href="https://dq06ugkuram52.cloudfront.net/files/1623/12677865.pdf">determination letter</a>)</p>'
+
+- :name: Organizational Structure
+  :codename: impressum
+  :type: :html
+
+- :name: Factsheet
+  :codename: factsheet
+
+- :name: Annual reports
+  :codename: annual_reports
+  :type: :RichText
+  :content: "This is a list of WikiRate International’s annual reports published since 2022. Besides these downloadable 
+  documents, you can also access all of this data on the WikiRate platform from where you can export it in a machine 
+  readable format. If you have any questions or remarks, we’d love to hear from you. Contact us"
+
+- :name: "gradient-logo"
+  :type: :image
+  :codename: gradient_logo
+  :image: wr-logo-gradient.svg
+  :storage_type: :coded
+  :conflict: override
+
+- :name: "homepage-background-image"
+  :type: :image
+  :codename: homepage-background-image
+  :image: backgrounds/homepage-background-image.png
+  :storage_type: :coded
+  :conflict: override
+
+- :name: footer link list
+  :codename: footer_link_list
+  :type: :link_list
+  :content: |
+    [[Funding]]
+    [[Policies]]
+    [[Impressum]]
+
+- :name: "Quotee"
+  :codename: quotee
+  :type: Phrase
+
+- :name: "Detailed Quote"
+  :codename: detailed_quote
+  :type: RichText
+
+
+- :name: Quote
+  :codename: quote
+  :type: :cardtype
+  :fields:
+    :quotee:
+      :type: Phrase
+    :job_title:
+      :type: Phrase
+    :image:
+      :type: :image
+    :detailed_quote:
+      :type: RichText
+
+- :name: Founder's Quote
+  :type: quote
+  :codename: founders_quote
+  :fields:
+    :quote: "Advocating for open data and working with open source technology is not about being revolutionary. It is about walking the transparency talk."
+    :quotee: 'Philipp Hirche'
+    :job_title: 'Founder & Chairman'
+
+- :name: Event Type
+  :type: :cardtype
+  :codename: event_type
+
+- :name: online
+  :type: :event_type
+
+- :name: in-person
+  :type: :event_type
+
+- :name: webinar
+  :type: :event_type
+
+- :name: training
+  type: :event_type
+
+- :name: case clinic
+  type: :event_type
+
+- :name: networking
+  type: :event_type
+
+- :name: quiz
+  type: :event_type
+
+- :name: Time
+  :type: :phrase
+  :codename: time
+
+- :name: Start Time
+  :type: :time
+  :codename: :start_time
+
+- :name: End Time
+  :type: :time
+  :codename: :end_time
+
+- :name: Timezone
+  :type: :phrase
+  :codename: :timezone
+
+- :name: Location
+  :type: :cardtype
+  :codename: location
+
+- :name: Link
+  :type: :URI
+  :codename: link
+
+- :name: Event
+  :codename: event
+  :type: :cardtype
+  :fields:
+    :image:
+      :type: image
+    :title:
+      :type: Phrase
+    :description:
+      :type: :RichText
+    :date:
+      :type: :Date
+    :time:
+      :type: :Time
+    :location:
+      :type: :Location
+    :link:
+      :type: :URI
+    :event_type:
+      :type: :List
+
+- :name: Endorsements
+  :type: :list
+  :codename: :endorsements
+  :content:
+    - [ [ Endorsement_by_Anne_Bienias_CCC ] ]
+    - [ [ Endorsement_by_Fashion_Revolution ] ]
+
+- :type: :blurb
+  :codename: impressum_heading
+  :fields:
+    :title: How we are legally defined
+
+- :type: :blurb
+  :codename: about_heading
+  :fields:
+    :title: Who we are
+
+- :type: :blurb
+  :codename: our_work_heading
+  :fields:
+    :title: What we do
+
+
+- :type: :blurb
+  :codename: service_01
+  :fields:
+    :title: Recruit and train volunteers to get involved in research efforts
+
+- :type: :blurb
+  :codename: service_02
+  :fields:
+    :title: Integrate research projects into academic curricula
+
+- :type: :blurb
+  :codename: service_03
+  :fields:
+    :title: Set up corporate ratings and analyses
+
+- :type: :blurb
+  :codename: service_04
+  :fields:
+    :title: Map supply and investor relations
+
+- :type: :blurb
+  :codename: service_05
+  :fields:
+    :title: Digitize datasets in an open archive
+
+- :type: :blurb
+  :codename: service_06
+  :fields:
+    :title: Develop visual dashboards
+
+- :name: Endorsements
+  :type: :list
+  :codename: :endorsements
+  :content:
+    - [ [ Endorsement_by_Anne_Bienias_CCC ] ]
+    - [ [ Endorsement_by_Fashion_Revolution ] ]
+
+- :name: Description List
+  :codename: :description_list
+  :type: :cardtype
+  :fields:
+    :description:
+      :type: RichText
+    :list:
+      :type: list
+
+- :name: Services
+  :codename: :services
+  :type: :description_list
+  :fields:
+    :description:
+      :content:
+        "WikiRate's data system and tools were developed for free and independent use, with plenty of Guides to help you 
+        get stuck in. However, if time is short or skills are lacking, we are here to help."
+    :list:
+      :content:
+        - :service_01
+        - :service_02
+        - :service_03
+        - :service_04
+        - :service_05
+        - :service_06
+
+- :name: Advocacy
+  :codename: :advocacy
+  :type: :RichText
+  :content:
+    "<p>Transparency is the first step to understanding how companies impact people and the planet.</p>
+     <p>The information that results from it, forms the basis on which informed decisions can be made to change things for the better.</p>
+     <p>But transparency is not only about what information is made available. It is also about how the information is made available.</p>"
+
+- :name: What is open data?
+  :codename: :open_data
+  :type: :description_list
+  :fields:
+    :description:
+      :content:
+        "<p>Simply put, 'data' refers to bits of information. What makes data ‘open’ is the unrestricted potential for (re)use.</p>"
+    :list:
+      :content:
+        - :service_01
+        - :service_02
+        - :service_03
+        - :service_04
+        - :service_05
+        - :service_06
