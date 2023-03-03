@@ -154,6 +154,8 @@
       :type: Phrase
     :image:
       :type: :image
+    :image_attribution:
+      :type: html
     :body:
       :type: html
     :type:
@@ -424,18 +426,59 @@
      <p>The information that results from it, forms the basis on which informed decisions can be made to change things for the better.</p>
      <p>But transparency is not only about what information is made available. It is also about how the information is made available.</p>"
 
+- :type: :blurb
+  :codename: licensing_data
+  :fields:
+    :title: Legal
+    :body: "<p>licensing that allows re-use, modification and sharing (for free or at most, no more than a reasonable reproduction cost) by everyone.</p>
+    <small>Note: WikiRate’s content is licensed under CC BY 4.0 and WikiRate's database infrastructure is licensed under CC BY-SA 4.0</small>"
+
+- :type: :blurb
+  :codename: making_data_available
+  :fields:
+    :title: Technical
+    :body: "<p>making the data available and discoverable as a whole, in bulk, and in a machine-readable format.</p>
+    <small>Note: WikiRate’s content can be extracted for free, in bulk, by export or API</small>"
+
 - :name: What is open data?
   :codename: :open_data
   :type: :description_list
   :fields:
     :description:
       :content:
-        "<p>Simply put, 'data' refers to bits of information. What makes data ‘open’ is the unrestricted potential for (re)use.</p>"
+        "<p>Simply put, 'data' refers to bits of information. What makes data ‘open’ is the unrestricted potential for (re)use.</p>
+        <p>As explained in the Open Knowledge Foundation’s Open Data Handbook, in practice, openness translates into two dimensions:</p>"
     :list:
       :content:
-        - :service_01
-        - :service_02
-        - :service_03
-        - :service_04
-        - :service_05
-        - :service_06
+        - :licensing_data
+        - :making_data_available
+
+- :name: Image Attribution
+  :codename: image_attribution
+  :conflict: override
+  :type: :html
+
+- :codename: :systemic_change
+  :type: :blurb
+  :fields:
+    :title: Systemic change
+    :body:
+      "<p>To address global challenges, we need to mobilize companies at scale and transform industries as a whole. 
+      That means we need to look beyond the top 10, 100 or even 1000 companies.</p>
+       <p>It is estimated that there are more than 300 million companies in the world. </p>
+       <p>Multiply that by the number of measurements that are used to understand the impacts of companies and it is 
+       blatantly obvious that it is impossible for humans to process that amount of information.</p> 
+       <p>To understand company impacts, we need the help of computers to parse all of that information and for that, 
+       open data is the key.</p>"
+
+- :codename: :collective_action
+  :type: :blurb
+  :fields:
+    :title: Collective problems require collective action
+    :body:
+      "<p>Datasets need to be shared and connected for us to have a real shot at tackling these issues.</p>
+       <p>This is where interoperability comes in - the technical ability to connect and integrate different data systems,
+        and agreed data standards that enable sharing.</p>
+       <p>Open data is the foundation that makes interoperability possible. Without it, resources are inefficiently 
+       spent on duplicative efforts, data life cycles are short, impact is capped, and we will continue to run after the facts.</p> 
+       "

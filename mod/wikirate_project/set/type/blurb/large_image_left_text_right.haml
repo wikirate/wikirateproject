@@ -1,0 +1,14 @@
+.row.blurb
+  .col-md-6.p-4.d-flex.align-items-center.justify-content-center
+    .row.justify-content-center
+      %img.img-fluid.rounded.d-block.w-100{'src': '/files/'+card.image}
+      - if !card.image_attribution.nil? and card.image_attribution != ''
+        .row.text-center
+          %small
+            = field_nest :image_attribution, view: :core
+  .col-md-6.p-4
+    .row
+      %h3.pb-2
+        = field_nest :title, view: :core
+      .py-1
+        = field_nest :body, view: :core
