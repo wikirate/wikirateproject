@@ -142,6 +142,9 @@
 - :name: Our work
   :codename: our_work
 
+- :name: Funding
+  :codename: funding
+
 - :name: Body
   :codename: body
   :type: :html
