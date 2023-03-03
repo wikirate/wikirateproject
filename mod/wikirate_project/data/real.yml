@@ -357,6 +357,10 @@
   :fields:
     :title: What we do
 
+- :type: :blurb
+  :codename: funding_heading
+  :fields:
+    :title: How our work is financed
 
 - :type: :blurb
   :codename: service_01
