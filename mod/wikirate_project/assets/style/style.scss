@@ -349,8 +349,9 @@ div.animation span:nth-child(6) {
   background-color: $purple;
 }
 
-.quotee-img img{
-  margin: 0 auto;
+.quotee-img img {
+  width: 80px;
+  height: auto;
 }
 
 .action-card .card {
@@ -360,12 +361,18 @@ div.animation span:nth-child(6) {
   border: 0;
   min-height: 300px;
   margin: 1.5rem;
+
   &:hover {
     h4, %i {
       color: $white !important;
     }
+
     color: $white;
     cursor: pointer;
     background: $gradient-purple;
   }
+}
+
+.font-weight-normal {
+  font-weight: 400 !important;
 }
