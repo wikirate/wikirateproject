@@ -1,12 +1,13 @@
 include_set Abstract::Media
 
 card_accessor :website
+card_accessor :image
 
 format :html do
   bar_cols 12, 0
   before :bar do
     # super()
-    voo.hide :bar_nav
+    # voo.hide :bar_nav
   end
 
   view :bar_left do
@@ -22,4 +23,6 @@ format :html do
   view :bar_right do
     ""
   end
+
+  view :core, template: :haml
 end

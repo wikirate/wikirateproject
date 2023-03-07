@@ -1,0 +1,7 @@
+.col-md-12.p-4.animated-item.position-relative
+  .row.justify-content-center.partner-img-container
+    = field_nest :image, view: :core
+  .row.text-center.pt-3
+    %a.stretched-link{href: card.website, target: '_blank', role: 'button'}
+      %h5
+        = card.name
