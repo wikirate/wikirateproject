@@ -1,5 +1,6 @@
 ---
 - homepage
+- supporters
 
 - :name: project skin
   :type: :bootswatch_skin
@@ -314,6 +315,10 @@
   :type: :URI
   :codename: link
 
+- :name: Policy
+  :codename: policy
+  :type: :cardtype
+
 - :name: Event
   :codename: event
   :type: :cardtype
@@ -358,9 +363,21 @@
     :title: What we do
 
 - :type: :blurb
+  :codename: events_heading
+  :fields:
+    :title: Coming together
+
+- :type: :blurb
   :codename: funding_heading
   :fields:
     :title: How our work is financed
+    :body: "WikiRate International receives grants and project support from a variety of organizations, and also accepts donations. To all funding we apply a set of Board-approved criteria summarized in our <a href=\"/Donations_and_Grand_Policy\">Donation & Grant policy</a>."
+
+- :type: :blurb
+  :codename: policies_heading
+  :fields:
+    :title: How we operate
+    :body: "Our policy and guidelines provide support and safeguard our organization, staff, partners, third parties and the environment. Their purpose is to build a mutual understanding of how WikiRate International and its affiliates operate."
 
 - :type: :blurb
   :codename: service_01
@@ -489,3 +506,8 @@
        <p>Open data is the foundation that makes interoperability possible. Without it, resources are inefficiently 
        spent on duplicative efforts, data life cycles are short, impact is capped, and we will continue to run after the facts.</p> 
        "
+
+- :name: Event Search
+  :codename: :event_search
+  :type: :search_type
+  :content: "{\"type\":\"Event\"}"
