@@ -8,7 +8,7 @@ format :html do
     [
       link_to("Home", href: "/"),
       # link_to_card(type, type.name.vary(:plural)),
-      render_name
+      breadcrumb_title
     ]
   end
 end
