@@ -511,3 +511,12 @@
   :codename: :event_search
   :type: :search_type
   :content: "{\"type\":\"Event\"}"
+
+- :name: Policy Search
+  :codename: :policy_search
+  :type: :search_type
+  :content: "{\"type\":\"Policy\"}"
+
+- :name: Full Text
+  :codename: full_text
+  :type: RichText
