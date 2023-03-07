@@ -1,0 +1,8 @@
+%section#event-header.container-fluid.bg-creme.pt-5.pb-5
+  .container.p-5.py-3
+    = render_breadcrumbs
+    = section_header :events_heading
+
+%section#wikirate-events.p-5
+  .container
+    = nest :event_search, view: :core, items: {view: :core}
