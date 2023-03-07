@@ -150,6 +150,9 @@
   :codename: body
   :type: :html
 
+- :name: Image Attribution
+  :codename: image_attribution
+
 - :name: Blurb
   :codename: blurb
   :type: :cardtype
