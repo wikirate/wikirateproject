@@ -1,6 +1,9 @@
 ---
 - homepage
 - supporters
+- events
+- layouts
+- quotes
 
 - :name: project skin
   :type: :bootswatch_skin
@@ -521,5 +524,5 @@
   :content: "{\"type\":\"Policy\"}"
 
 - :name: Full Text
-  :codename: full_text
+  :codename: fulltext
   :type: RichText
