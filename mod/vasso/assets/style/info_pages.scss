@@ -1,0 +1,43 @@
+.info-page-section-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.info-page-icon {
+  background: #EDEBF9;
+  color: $purple;
+  border-radius: 50%;
+  @extend .p-4;
+  width: 88px;
+  height: 88px;
+}
+
+.bg-light-purple {
+  background: #EDEBF9;
+}
+
+.blurb .img-fluid {
+  max-width: 500px;
+}
+
+.partner-img-container img{
+  @extend .rounded-circle, .img-fluid, .w-100, .d-block, .m-5;
+  max-width: 200px;
+}
+
+.animated-item {
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  transform: scale(0.95);
+}
+
+.animated-item:hover {
+  transform: scale(1);
+}
+
+#wikirate-events .card-list{
+  @extend .row;
+}
+
+#wikirate-events .search-result-item{
+  @extend .col-md-4;
+}

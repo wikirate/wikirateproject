@@ -1,6 +1,0 @@
-wikirate_project:
-  items:
-    - style.scss
-    - info_pages.scss
-    - ../../../vasso/vendor/slick/slick/slick.scss
-    - ../../../vasso/vendor/slick/slick/slick-theme.scss
