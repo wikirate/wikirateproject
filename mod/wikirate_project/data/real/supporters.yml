@@ -1,0 +1,136 @@
+- :name: Laudes Foundation
+  :type: :partner
+  :fields:
+    :website: "https://www.laudesfoundation.org/"
+
+- :name:
+    - Laudes Foundation
+    - :image
+  :image: partner-logos/laudes_logo.jpg
+
+- :name: Minderoo Foundation
+  :type: :partner
+  :fields:
+    :website: "https://www.minderoo.org/"
+
+- :name:
+    - Minderoo Foundation
+    - :image
+  :image: partner-logos/minderoo_logo.png
+
+- :name: NLnet
+  :type: :partner
+  :fields:
+    :website: "https://nlnet.nl/"
+
+- :name:
+    - NLnet
+    - :image
+  :image: partner-logos/nlnet_logo.jpg
+
+- :name: MILA
+  :type: :partner
+  :fields:
+    :website: "https://mila.quebec/en/"
+
+- :name:
+    - MILA
+    - :image
+  :image: partner-logos/mila_logo.jpg
+
+- :name: MANA
+  :type: :partner
+  :fields:
+    :website: "https://twitter.com/MANA_Vox"
+
+- :name:
+    - MANA
+    - :image
+  :image: partner-logos/mana_logo.jpg
+
+- :name: European Commission
+  :type: :partner
+  :fields:
+    :website: "https://commission.europa.eu/index_en"
+
+- :name:
+    - European Commission
+    - :image
+  :image: partner-logos/european_commission_logo.png
+
+- :name: Humanity United
+  :type: :partner
+  :fields:
+    :website: "https://humanityunited.org/"
+
+- :name:
+    - Humanity United
+    - :image
+  :image: partner-logos/humanity_united_logo.png
+
+- :name: The Freedom Fund
+  :type: :partner
+  :fields:
+    :website: "https://freedomfund.org/"
+
+- :name:
+    - The Freedom Fund
+    - :image
+  :image: partner-logos/the_freedom_fund_logo.png
+
+- :name: Open Data Institute
+  :type: :partner
+  :fields:
+    :website: "https://www.theodi.org/"
+
+- :name:
+    - Open Data Institute
+    - :image
+  :image: partner-logos/odi_logo.png
+
+- :name: Organisation for Economic Cooperation & Development
+  :type: :partner
+  :fields:
+    :website: "https://www.oecd.org/"
+
+- :name:
+    - Organisation for Economic Cooperation & Development
+    - :image
+  :image: partner-logos/oecd_logo.jpg
+
+- :name: Zalando SE
+  :type: :partner
+  :fields:
+    :website: "https://corporate.zalando.com/en"
+
+- :name:
+    - Zalando SE
+    - :image
+  :image: partner-logos/zalando_logo.png
+
+- :name: Current supporters
+  :codename: :current_supporters
+  :type: :description_list
+  :fields:
+    :list:
+      :content:
+        - [[Laudes Foundation]]
+        - [[Minderoo Foundation]]
+        - [[NLnet]]
+        - [[Clean Clothes Campaign]]
+        - [[MILA]]
+        - [[MANA]]
+
+- :name: Previous supporters
+  :codename: :previous_supporters
+  :type: :description_list
+  :fields:
+    :list:
+      :content:
+        - [[Business & Human Rights Resource Centre]]
+        - [[European Commission]]
+        - [[Humanity United]]
+        - [[The Freedom Fund]]
+        - [[Open Data Institute]]
+        - [[Organisation for Economic Cooperation & Development]]
+        - [[Zalando SE]]
