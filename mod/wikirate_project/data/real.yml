@@ -526,3 +526,16 @@
 - :name: Full Text
   :codename: fulltext
   :type: RichText
+
+- :name:
+    - :our_advisors
+    - members
+  :type: :pointer
+  :content: |-
+    Hapee de Groot
+    Anuradha Nagaraj
+    Farzana Nawaz
+    Ingo Rollwagen
+    Liz Umlas
+    Margaret G. Wachenfield
+    Derek Young
