@@ -4,6 +4,7 @@
 - events
 - layouts
 - quotes
+- skin
 
 - :name: project skin
   :type: :bootswatch_skin
