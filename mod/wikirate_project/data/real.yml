@@ -5,6 +5,7 @@
 - layouts
 - quotes
 - skin
+- images
 
 - :name: project skin
   :type: :bootswatch_skin
@@ -524,6 +525,11 @@
 - :name: Full Text
   :codename: fulltext
   :type: RichText
+
+- :name: Our advisors
+  :codename: :our_advisors
+  :content: "<p>We are supported by a council of advisors with a wide set of skills,
+    expertise and backgrounds.</p>\r\n<p>{{+members|content;type:Pointer|profile;show:title_link}}</p>"
 
 - :name:
     - :our_advisors
