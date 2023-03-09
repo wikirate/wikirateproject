@@ -493,10 +493,10 @@
   :type: :search_type
   :content: "{\"type\":\"Event\"}"
 
-- :name: Policy Search
-  :codename: :policy_search
-  :type: :search_type
-  :content: "{\"type\":\"Policy\"}"
+#- :name: Policy Search
+#  :codename: :policy_search
+#  :type: :search_type
+#  :content: "{\"type\":\"Policy\"}"
 
 
 - :name: Our Advisors

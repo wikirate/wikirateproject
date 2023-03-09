@@ -1,5 +1,5 @@
 include_set Abstract::Breadcrumbs
-include_set Abstract::InfoPages
+include_set Abstract::SectionHeader
 include_set Abstract::Slider
 
 format :html do
