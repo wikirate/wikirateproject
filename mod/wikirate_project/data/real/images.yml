@@ -53,7 +53,7 @@
     - :systemic_change
     - :image
   :conflict: override
-  :image: other/systemic_change_pic.jpg
+  :image: other/systemic_change.jpg
 
 - :name:
     - :collective_action
