@@ -1,6 +1,5 @@
 include_set Abstract::Breadcrumbs
 include_set Abstract::SectionHeader
-include_set Abstract::Slider
 
 format :html do
   view :core, template: :haml
