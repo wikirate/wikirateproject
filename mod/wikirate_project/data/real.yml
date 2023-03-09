@@ -242,27 +242,6 @@
     [[Policies]]
     [[Impressum]]
 
-- :name: "Quotee"
-  :codename: quotee
-  :type: Phrase
-
-- :name: "Detailed Quote"
-  :codename: detailed_quote
-  :type: RichText
-
-
-- :name: Quote
-  :codename: quote
-  :type: :cardtype
-  :fields:
-    :quotee:
-      :type: Phrase
-    :job_title:
-      :type: Phrase
-    :image:
-      :type: :image
-    :detailed_quote:
-      :type: RichText
 
 - :name: Founder's Quote
   :type: quote
@@ -523,9 +502,9 @@
   :type: :search_type
   :content: "{\"type\":\"Policy\"}"
 
-- :name: Full Text
-  :codename: fulltext
-  :type: RichText
+
+- :name: Our Advisors
+  :codename: our_advisors
 
 - :name:
     - :our_advisors
