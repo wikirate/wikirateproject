@@ -140,7 +140,10 @@
     Contact Us
 
 - :name: About us
+  :conflict: override
   :codename: about_us
+  :type: RichText
+  :content: ""
 
 - :name: Impressum
   :codename: impressum
@@ -348,9 +351,13 @@
 - :name: Endorsements
   :type: :list
   :codename: :endorsements
+  :conflict: override
   :content:
     - [ [ Endorsement_by_Anne_Bienias_CCC ] ]
     - [ [ Endorsement_by_Fashion_Revolution ] ]
+    - [ [ Endorsement by Dr. Stephanie Perkiss University of Wollongong ] ]
+    - [ [ Endorsement by Katharine Bryant Walk Free ] ]
+    - [ [ Endorsement by Student of AMD Berlin ] ]
 
 - :type: :blurb
   :codename: impressum_heading
