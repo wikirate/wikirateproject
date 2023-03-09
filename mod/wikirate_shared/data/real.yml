@@ -11,5 +11,9 @@
 - :name: Detailed Quote
   :codename: detailed_quote
 
+- :name: Policy
+  :codename: policy
+  :type: :cardtype
+
 - :name: Full Text
   :codename: fulltext

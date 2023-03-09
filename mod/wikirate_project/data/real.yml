@@ -300,10 +300,6 @@
   :type: :URI
   :codename: link
 
-- :name: Policy
-  :codename: policy
-  :type: :cardtype
-
 - :name: Event
   :codename: event
   :type: :cardtype
