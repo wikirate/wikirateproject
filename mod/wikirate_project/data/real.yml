@@ -145,6 +145,11 @@
   :type: RichText
   :content: ""
 
+- :name: Our team
+  :conflict: override
+  :codename: :our_team
+  :content: "<p>We come from 8 different countries and speak 7 different languages.</p>\r\n<p>{{+members|content|profile;show:title_link}}</p>"
+
 - :name: Impressum
   :codename: impressum
 
@@ -349,9 +354,9 @@
       :type: :List
 
 - :name: Endorsements
+  :conflict: override
   :type: :list
   :codename: :endorsements
-  :conflict: override
   :content:
     - [ [ Endorsement_by_Anne_Bienias_CCC ] ]
     - [ [ Endorsement_by_Fashion_Revolution ] ]
