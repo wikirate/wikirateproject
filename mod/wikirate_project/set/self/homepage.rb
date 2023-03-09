@@ -6,7 +6,7 @@ format :html do
   end
 
   def latest_events
-    Card.search(type_id: 7913, limit: 3, sort_by: 'update')
+    Card.search(type: "Event", limit: 3, sort_by: 'update')
   end
 
   def endorsements
