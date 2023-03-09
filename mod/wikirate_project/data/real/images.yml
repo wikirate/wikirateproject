@@ -34,11 +34,13 @@
   :image: partner-logos/ph_pic.jpeg
 
 - :name:
-    - Systemic change
+    - "Systemic change"
     - :image
+  :conflict: override
   :image: other/systemic_change_pic.jpg
 
 - :name:
-    - Collective problems require collective action
+    - "Collective problems require collective action"
     - :image
+  :conflict: override
   :image: other/collaborative_action_pic.jpg
