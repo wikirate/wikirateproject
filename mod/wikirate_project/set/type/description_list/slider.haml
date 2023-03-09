@@ -1,0 +1,30 @@
+- card_id = card.id.to_s
+- slides_to_show = voo.size == 5 ? [5, 3, 1] : [3, 2, 1]
+.slider{id: card_id}
+  %h2
+    = card.name
+  .row
+    .col-9.pe-2
+      - if !card.description.nil? and card.description != ''
+        = field_nest :description, view: :content
+    .col-3
+      .text-end
+        = render_nav_arrows
+
+  .py-1
+    .homepage-involved-cards{ data: {
+       slick: { #infinite: false,
+                 centerMode: true,
+                 slidesToShow: slides_to_show[0],
+                 prevArrow: "#"+card_id+" .wr-prev",
+                 nextArrow: "#"+card_id+" .wr-next",
+                 responsive: [
+                   { breakpoint: "992", settings: { slidesToShow: slides_to_show[1] } },
+                   { breakpoint: "768",  settings: { slidesToShow: slides_to_show[2] } }
+                 ]}.to_json
+      } }
+      - card.field(:list).item_cards.each do |item|
+        - if item.type_id == 7842
+          = nest item, view: :action_card
+        - else
+          = nest item, view: :core

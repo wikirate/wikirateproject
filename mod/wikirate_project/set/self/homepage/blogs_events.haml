@@ -1,0 +1,6 @@
+.container
+  %h2
+    Latest blogs and events
+  .row.mt-1
+    - latest_events.each do |event|
+      = nest event, view: :summary

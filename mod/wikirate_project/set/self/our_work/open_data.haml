@@ -1,0 +1,24 @@
+.container
+  %h2
+    = :open_data.card.name
+  .row.open_data.description
+    = :open_data.card.description
+  .row.pt-3
+    .col-md-6
+      .row.text-center.justify-content-center
+        %span.info-page-icon
+          %i.fas.fa-balance-scale-right.fa-2x
+      .row.pt-3
+        %h5.text-center
+          = :licensing_data.card.title
+        .body
+          = :licensing_data.card.body
+    .col-md-6
+      .row.text-center.justify-content-center
+        %span.info-page-icon
+          %i.fas.fa-lock-open.fa-2x
+      .row.pt-3
+        %h5.text-center
+          = :making_data_available.card.title
+        .body
+          = :making_data_available.card.body

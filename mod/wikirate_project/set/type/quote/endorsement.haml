@@ -1,0 +1,20 @@
+.col-md-12.endorsement-summary.rounded-3
+  .row.p-4
+    %figure.wikirate-quote.mb-md-0
+      %blockquote.blockquote.ps-4
+        %p
+          %i.fas.fa-quote-left.fa-sm.pe-2.text-primary
+          = field_nest :quote, view: :core
+        %br
+        .row.d-flex.align-items-center
+          .col-auto.d-none.d-sm-block
+            %span.rounded-picture.quotee-img.pe-2.d-flex.align-items-center
+              %img{src: '/files/'+card.image}
+          .col-md-6.p-sm-2.p-md-0
+            %cite
+              - if !card.quotee.nil? and card.quotee != ''
+                %strong.h5.mb-0.text-capitalize
+                  = card.quotee
+              - if !card.job_title.nil? and card.job_title != ''
+                %strong.d-block.font-weight-normal
+                  = card.job_title

@@ -1,0 +1,10 @@
+- card_link_data = card.link
+%h4.card-title
+  = field_nest :title, view: :core
+.py-3
+  = field_nest :body, view: :core
+  = field_nest :image, view: :core
+  - if !card_link_data.nil? and card_link_data != ''
+    %a.btn.btn-outline-primary{'href': card_link_data}
+      %i.fas.fa-arrow-right.pe-2
+      = More Details

@@ -1,0 +1,23 @@
+%section.p-5.bg-creme
+  = render_animation
+
+%section.founders-quote.p-5
+  .container
+    .row
+      = nest Card.fetch("Founder_s_Quote"), view: :content
+      .row
+        .col-md-12.text-center
+          %a.btn.btn-primary.ps-4.pe-4.pt-2.pb-2{:href => '/Our_Advocacy', :role =>'button'}
+            Our Advocacy
+
+%section.p-5.bg-creme
+  = render_blogs_events
+
+%section.p-5
+  = render_services
+
+%section.p-5.bg-creme
+  = render_endorsements
+
+%section.p-5
+  = render_contact_us
