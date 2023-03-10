@@ -1,1 +1,12 @@
-= field_nest :full_text, view: :core
+.container
+  %section.policy-body.row
+    %aside#policy-sidebar.col-sm-4.nodblclick
+      .pb-4
+        = render_breadcrumbs
+      .sidebar-nav-list.sticky-top
+        = nest policy_list_card, items: { view: :sidebar_nav }
+
+    %article#policy-body.col-sm-8.py-2
+      = field_nest :fulltext, view: :content_with_anchored_headers
+  %section.policy-paging.p-5
+    = render_paging
