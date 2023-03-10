@@ -4,7 +4,7 @@
       .pb-4
         = render_breadcrumbs
       .sidebar-nav-list.sticky-top
-        = nest policy_list_card, items: { view: :sidebar_nav }
+        = nest card, view: :sidebar_nav
 
     %article#policy-body.col-sm-8.py-2
       = field_nest :fulltext, view: :content_with_anchored_headers
