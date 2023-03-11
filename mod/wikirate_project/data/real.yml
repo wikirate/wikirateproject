@@ -241,13 +241,6 @@
   :storage_type: :coded
   :conflict: override
 
-- :name: "homepage-background-image"
-  :type: :image
-  :codename: homepage-background-image
-  :image: backgrounds/homepage-background-image.png
-  :storage_type: :coded
-  :conflict: override
-
 - :name: footer link list
   :codename: footer_link_list
   :type: :link_list
@@ -361,7 +354,6 @@
       :type: :List
 
 - :name: Endorsements
-  :conflict: override
   :type: :list
   :codename: :endorsements
   :content:
@@ -460,7 +452,6 @@
         - :service_06
 
 - :name: Advocacy
-  :conflict: override
   :codename: :advocacy
   :content: "<h5></h5>\r\n<h5><strong><em>Transparency is the first step to understanding
     how companies impact people and the planet.</em></strong></h5>\r\n<p>The information
@@ -526,7 +517,6 @@
 
 - :name: Image Attribution
   :codename: image_attribution
-  :conflict: override
   :type: :html
 
 - :codename: :systemic_change
