@@ -234,6 +234,13 @@
   :storage_type: :coded
   :conflict: override
 
+- :name: "wikirate-icon"
+  :type: :image
+  :codename: wikirate_icon
+  :image: logo/wikirate-icon.png
+  :storage_type: :coded
+  :conflict: override
+
 - :name: "homepage-background-image"
   :type: :image
   :codename: homepage-background-image
