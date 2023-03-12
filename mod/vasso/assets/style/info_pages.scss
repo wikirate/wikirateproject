@@ -97,6 +97,20 @@
   background-position: 50% 70% !important;
 }
 
+#homepage-header {
+  background-image: url([[/mod/vasso/backgrounds/collaborate.png]]);
+  background-position: 50% 50% !important;
+}
+
+.homepage-main-section {
+  min-height: 250px;
+}
+
+.bg-transparent-gray {
+  background-color: rgba(242, 242, 242, 0.7);
+  height: 100%;
+}
+
 #impressum-header {
   background-image: url([[/mod/vasso/backgrounds/impressum-pic.png]]);
   background-position: 50% 80% !important;
