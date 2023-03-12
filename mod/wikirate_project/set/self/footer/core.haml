@@ -1,8 +1,8 @@
-%footer#wikirate-intl-footer.container-fluid.bg-navy.nodblclick
+%footer#wikirate-intl-footer.container-fluid.bg-creme.nodblclick
   .container.p-5
     .row.footer-link-lists
       .col-md-9
-        = nest :gradient_logo, view: :content
+        = nest :wikirate_icon, view: :content
         %p.pt-3
           WikiRate International e.V. hosts
           %a{:href => "https://wikirate.org"} WikiRate
@@ -21,10 +21,3 @@
           - social_media_links.each do |platform, url|
             %a{ href: url, target: '_blank' }
               = fa_icon platform.downcase, brand: true, class: "me-2"
-    -#   - %w[licensing policies legal].each do |section|
-    -#
-    -#     .col-3.p-3
-    -#       = nest :"footer_#{section}_list", view: :titled, title: section, hide: :menu
-    -#
-
-
