@@ -75,7 +75,7 @@ button.navbar-toggler {
 }
 
 .bg-navy {
-  background-color: $blue!important;
+  background-color: $blue !important;
   color: $white !important;
 }
 
@@ -334,17 +334,30 @@ div.animation span:nth-child(6) {
   border-width: 0 0 0 2px;
 }
 
-.wr-arrow {
-  height: 48px;
-  width: 48px;
+.btn.wr-arrow {
   color: $purple;
   background-color: $white;
   font-size: x-large;
+  margin-left: 0.8em;
+  padding: 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $purple;
+    color: $white;
+  }
+
+  box-shadow: $box-shadow
 }
 
-.wr-arrow:hover {
-  color: $white;
-  background-color: $purple;
+.wr-arrow i.material-icons {
+  font-size: x-large;
+}
+
+.justify-content-center .wr-arrow {
+  margin: 0.4em;
 }
 
 .quotee-img img {
@@ -352,22 +365,37 @@ div.animation span:nth-child(6) {
   height: auto;
 }
 
-.action-card .card {
-  padding: 1rem;
-  background: $light;
-  box-shadow: $box-shadow;
-  border: 0;
-  min-height: 300px;
-  margin: 1.5rem;
+.action-card {
+  height: 26em;
 
-  &:hover {
-    h4, %i {
-      color: $white !important;
+  .card {
+    h5, a {
+      color: $gradient_purple;
     }
 
-    color: $white;
-    cursor: pointer;
-    background: $gradient-purple;
+    padding: 1rem;
+    background: $white;
+    border: 0;
+    height: 85%;
+    min-height: 300px;
+    margin: 1em;
+
+    &:hover {
+      h5, %i, a {
+        color: $white !important;
+      }
+
+      color: $white;
+      background-color: $purple;
+    }
+  }
+}
+
+.cta-card, .action-card .card, .endorsement-summary {
+  box-shadow: $box-shadow-sm;
+
+  &:hover {
+    box-shadow: $box-shadow-lg;
   }
 }
 
@@ -375,6 +403,6 @@ div.animation span:nth-child(6) {
   font-weight: 400 !important;
 }
 
-.navbar{
+.navbar {
   min-height: 90px;
 }
