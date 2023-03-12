@@ -1,7 +1,8 @@
-%section#our-work-header.container-fluid.bg-creme.pt-5.pb-5
-  .container.p-5.py-3
-    = render_breadcrumbs
-    = section_header :our_work_heading, url: "https://wikirate.us7.list-manage.com/subscribe?u=be57db47b40c6b1c7e9ef0b36&id=1354650004", text: "Subscribe"
+%section#our-work-header
+  .bg-deep-blue-transparent.p-5
+    .container.p-5
+      = render_breadcrumbs
+      = section_header :our_work_heading, url: "https://wikirate.us7.list-manage.com/subscribe?u=be57db47b40c6b1c7e9ef0b36&id=1354650004", text: "Subscribe"
 %section.p-5
   .container
     = nest :services, view: :slider

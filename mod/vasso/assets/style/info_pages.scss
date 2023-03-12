@@ -20,7 +20,7 @@
   max-width: 500px;
 }
 
-.partner-img-container img{
+.partner-img-container img {
   @extend .rounded-circle, .img-fluid, .w-100, .d-block, .m-5;
   max-width: 200px;
 }
@@ -34,11 +34,11 @@
   transform: scale(1);
 }
 
-#wikirate-events .card-list{
+#wikirate-events .card-list {
   @extend .row;
 }
 
-#wikirate-events .search-result-item{
+#wikirate-events .search-result-item {
   @extend .col-md-4;
 }
 
@@ -48,6 +48,7 @@
     transition: transform 0.35s ease;
     transform-origin: .5em 50%;
   }
+
   .btn[aria-expanded="true"] .fas {
     transform: rotate(90deg)
   }
@@ -71,4 +72,51 @@
   border-radius: 6px;
   border-left: 8px solid $gray-700;
   margin: 1rem 0;
+}
+
+#event-header {
+  background-image: url([[/mod/vasso/backgrounds/events-image-background.png]]);
+  background-position: center !important;
+
+  .wikirate-section-header {
+    padding-top: 10%
+  }
+}
+
+#funding-header {
+  background-image: url([[/mod/vasso/backgrounds/funding-pic.png]]);
+  background-position: center !important;
+
+  .wikirate-section-header {
+    padding-top: 10%
+  }
+}
+
+#policies-header {
+  background-image: url([[/mod/vasso/backgrounds/policies-pic.png]]);
+  background-position: 50% 70% !important;
+}
+
+#impressum-header {
+  background-image: url([[/mod/vasso/backgrounds/impressum-pic.png]]);
+  background-position: 50% 80% !important;
+}
+
+#our-work-header {
+  background-image: url([[/mod/vasso/backgrounds/our-work-pic.png]]);
+  background-position: 80% 85% !important;
+}
+
+#about-us-header{
+  background-image: url([[/mod/vasso/backgrounds/about-us-pic.jpg]]);
+  background-position: center !important;
+}
+
+.bg-deep-blue-transparent {
+  background-color: #000029bf !important;
+  color: #fff;
+}
+
+.bg-deep-blue-transparent h1 {
+  color: $white !important;
 }
