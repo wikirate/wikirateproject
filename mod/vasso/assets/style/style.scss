@@ -312,6 +312,10 @@ div.animation span:nth-child(6) {
 
 .event-summary:hover {
   transform: scale(1);
+
+  .date-tag {
+    top: 0;
+  }
 }
 
 .endorsement-summary {

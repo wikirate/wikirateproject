@@ -107,7 +107,7 @@
   background-position: 80% 85% !important;
 }
 
-#about-us-header{
+#about-us-header {
   background-image: url([[/mod/vasso/backgrounds/about-us-pic.jpg]]);
   background-position: center !important;
 }
@@ -119,4 +119,26 @@
 
 .bg-deep-blue-transparent h1 {
   color: $white !important;
+}
+
+.date-tag {
+  left: 0;
+  top: 21px;
+  z-index: 1;
+  line-height: 1;
+  font-size: 14px;
+  -webkit-transition: top .3s ease;
+  transition: top .3s ease;
+  text-transform: uppercase;
+  color: $blue;
+  font-weight: 600;
+  border-radius: 0px 5px 5px 0px;
+  border-bottom: 1px solid $gray-400;
+  border-top: 1px solid $gray-400;
+  border-right: 1px solid $gray-400;
+}
+
+.day {
+  padding: 8px 7px;
+  background: $gradient_orange !important;
 }
