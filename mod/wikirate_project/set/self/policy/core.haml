@@ -1,6 +1,7 @@
 %section#policies-header.container-fluid.bg-creme.pt-5.pb-5
   .container.p-5.py-3
     = render_breadcrumbs
-    = section_header :policies_heading, url: "/Contact_us", text: "Contact Us"
+    = section_header :policies_heading, header_size: :h1,
+                                        button: { url: "/Contact_us", text: "Contact Us" }
 %section.p-5
   = nest %i[policy type by_name], view: :core, items: { view: :box }
