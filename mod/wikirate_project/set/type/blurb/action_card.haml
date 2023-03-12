@@ -1,10 +1,10 @@
-- card_link_data = wrap_data.merge card_link_url: card.link
 .action-card
-  .card.justify-content-between._card-link.nodblclick{ data: card_link_data }
+  .card.justify-content-between._card-link
     .card-body
-      %h4.card-title
+      %h5.card-title
         = field_nest :title, view: :core
       .py-3
         = field_nest :body, view: :core
     .text-end
-      %i.fas.fa-arrow-right
+      %a{href:card.link, target: '_blank'}
+        %i.fas.fa-arrow-right
