@@ -11,4 +11,5 @@ format :html do
 
   view :core, template: :haml
   view :endorsement, template: :haml
+  view :detailed_endorsement, template: :haml
 end

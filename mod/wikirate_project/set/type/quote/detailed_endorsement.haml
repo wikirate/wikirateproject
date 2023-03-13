@@ -1,0 +1,18 @@
+.row.d-flex.align-items-center
+  .col-auto
+    .rounded-picture
+      = field_nest :image, view: :core, size: :small
+  .col-8.p-sm-2.p-md-0
+    - if !card.quotee.nil? and card.quotee != ''
+      %h4.mb-0.text-capitalize
+        = card.quotee
+    - if !card.job_title.nil? and card.job_title != ''
+      %small.d-block.font-weight-normal
+        = card.job_title
+.row.pt-4.pb-4
+  - if !card.detailed_quote.nil? and card.detailed_quote != ''
+    %div
+      = field_nest :detailed_quote, view: :core
+  - else
+    %div
+      = field_nest :quote, view: :core
