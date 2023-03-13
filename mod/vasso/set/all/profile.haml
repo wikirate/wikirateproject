@@ -4,7 +4,8 @@
       = render :profile_pic
   - if voo.show? :user_name
     %div{ class: classy("user_name pt-3") }
-      = render :user_name
+      = modal_link card.name,
+                   path: { view: :detailed_profile }
   - if voo.show? :job_description
     %div{ class: classy("job_description") }
       = render :job_description
