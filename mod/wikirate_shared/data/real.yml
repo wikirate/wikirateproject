@@ -16,4 +16,4 @@
   :type: :cardtype
 
 - :name: Full Text
-  :codename: fulltext
+  :codename: full_text
