@@ -1,3 +1,4 @@
+---
 - :name: project skin
   :type: :bootswatch_skin
   :codename: project_skin
@@ -159,6 +160,9 @@
   :codename: icon
   :type: Phrase
 
+- :name: Image Attribution
+  :codename: image_attribution
+
 - :name: Blurb
   :codename: blurb
   :type: :cardtype
@@ -252,29 +256,6 @@
     [[Policies | Policies]]
     [[Impressum]]
 
-- :name: "Quotee"
-  :codename: quotee
-  :type: Phrase
-
-- :name: "Detailed Quote"
-  :codename: detailed_quote
-  :type: RichText
-
-- :name: Quote
-  :conflict: override
-  :codename: quote
-  :type: :cardtype
-  :fields:
-    :quotee:
-      :type: Phrase
-    :quote:
-      :type: html
-    :job_title:
-      :type: Phrase
-    :image:
-      :type: :image
-    :detailed_quote:
-      :type: RichText
 
 - :name: Founder's Quote
   :type: quote
@@ -337,26 +318,9 @@
   :type: :URI
   :codename: link
 
-- :name: Policy
-  :codename: policy
-  :type: :cardtype
-
 - :name: Blog
   :codename: blog
   :type: :cardtype
-  :fields:
-    :image:
-      :type: image
-    :title:
-      :type: Phrase
-    :description:
-      :type: :RichText
-    :date:
-      :type: :Date
-    :link:
-      :type: :URI
-    :blog_type:
-      :type: :List
 
 - :name: Event
   :codename: event
@@ -575,14 +539,14 @@
   :type: :search_type
   :content: "{\"type\":\"Event\"}"
 
-- :name: Policy Search
-  :codename: :policy_search
-  :type: :search_type
-  :content: "{\"type\":\"Policy\"}"
+#- :name: Policy Search
+#  :codename: :policy_search
+#  :type: :search_type
+#  :content: "{\"type\":\"Policy\"}"
 
-- :name: Full Text
-  :codename: fulltext
-  :type: RichText
+
+- :name: Our Advisors
+  :codename: our_advisors
 
 - :name: Our advisors
   :codename: :our_advisors
@@ -1045,7 +1009,6 @@
     right;\"><span style=\"font-weight: bolder; font-size: 15.2px;\">Policy last updated:</span><span
     style=\"font-size: 15.2px;\">November 2018</span></p>\r\n<p></p>"
 
----
 - homepage
 - supporters
 - events
