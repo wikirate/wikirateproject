@@ -1,11 +1,4 @@
 ---
-- homepage
-- supporters
-- events
-- layouts
-- quotes
-- skin
-- images
 
 - :name: project skin
   :type: :bootswatch_skin
@@ -533,3 +526,11 @@
     Liz Umlas
     Margaret G. Wachenfield
     Derek Young
+
+- homepage
+- supporters
+- events
+- layouts
+- quotes
+- skin
+- images
