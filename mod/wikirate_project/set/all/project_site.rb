@@ -5,10 +5,12 @@ NAV_MENU = {
 }.freeze
 
 SOCIALS = {
-  'Facebook' => 'https://www.facebook.com/wikirate/',
-  'Twitter' => 'https://twitter.com/WikiRate',
-  'Instagram' => 'https://www.instagram.com/wikirate/',
-  'LinkedIn' => 'https://www.linkedin.com/company/wikirate'
+  "GitHub" => "https://github.com/wikirate/wikirate",
+  "Medium" => "https://wikirate.medium.com/",
+  "LinkedIn" => "https://www.linkedin.com/company/wikirate",
+  "Twitter" => "https://twitter.com/WikiRate",
+  "Facebook" => "https://www.facebook.com/wikirate/",
+  "Instagram" => "https://www.instagram.com/wikirate/"
 }.freeze
 
 format :html do
