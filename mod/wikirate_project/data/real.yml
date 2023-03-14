@@ -242,6 +242,7 @@
   :conflict: override
 
 - :name: footer link list
+  :conflict: override
   :codename: footer_link_list
   :type: :link_list
   :content: |
