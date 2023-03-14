@@ -1,5 +1,5 @@
 vasso:
   items:
     - wikirateproject_common.js.coffee
-    - playground.js
+    - wikirateproject.js
     - ../../vendor/slick/slick/slick.min.js
