@@ -1,12 +1,3 @@
----
-- homepage
-- supporters
-- events
-- layouts
-- quotes
-- skin
-- images
-
 - :name: project skin
   :type: :bootswatch_skin
   :codename: project_skin
@@ -297,6 +288,10 @@
   :type: :cardtype
   :codename: event_type
 
+- :name: Blog Type
+  :type: :cardtype
+  :codename: blog_type
+
 - :name: online
   :type: :event_type
 
@@ -345,6 +340,23 @@
 - :name: Policy
   :codename: policy
   :type: :cardtype
+
+- :name: Blog
+  :codename: blog
+  :type: :cardtype
+  :fields:
+    :image:
+      :type: image
+    :title:
+      :type: Phrase
+    :description:
+      :type: :RichText
+    :date:
+      :type: :Date
+    :link:
+      :type: :URI
+    :blog_type:
+      :type: :List
 
 - :name: Event
   :codename: event
@@ -1032,3 +1044,12 @@
     policy will be reviewed annually and updated as necessary.</p>\r\n<p style=\"text-align:
     right;\"><span style=\"font-weight: bolder; font-size: 15.2px;\">Policy last updated:</span><span
     style=\"font-size: 15.2px;\">November 2018</span></p>\r\n<p></p>"
+
+---
+- homepage
+- supporters
+- events
+- layouts
+- quotes
+- skin
+- images
