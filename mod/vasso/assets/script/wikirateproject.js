@@ -1,4 +1,7 @@
-// trigger endorsement modal when clicking on endorsement
-function trigger_endorsement_modal(id) {
-    document.querySelector('[endorsement-card-id="' + id + '"]').getElementsByTagName("a")[0].click()
+/**
+ * Trigger modal_link under elementRef
+ * @param elementRef element that contains modal
+ */
+function trigger_modal(elementRef) {
+    elementRef.getElementsByTagName("a")[0].click()
 }
