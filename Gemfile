@@ -35,6 +35,6 @@ group :development do
 end
 
 group :production do
-  gem "fog-aws"
+  # gem "fog-aws"
   gem "dalli"
 end
