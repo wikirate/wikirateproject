@@ -163,6 +163,11 @@
   :codename: body
   :type: :html
 
+- :name: icon
+  :conflict: override
+  :codename: icon
+  :type: Phrase
+
 - :name: Blurb
   :codename: blurb
   :type: :cardtype
@@ -171,6 +176,8 @@
       :type: Phrase
     :image:
       :type: :image
+    :icon:
+      :type: Phrase
     :image_attribution:
       :type: html
     :body:
@@ -181,17 +188,21 @@
 
 - :type: blurb
   :codename: intro_blurb
+  :conflict: :override
   :fields:
     :title: "WikiRate International e.V. is"
     :body: "<p>the non-profit organization hosting the <a href='https://wikirate.org' target='_blank'>WikiRate platform</a>. 
     We develop the data system and tools the WikiRate community needs, and supports them in using the technology to help them achieve their goals.</p>"
+    :icon: "visibility"
 
 - :type: blurb
   :codename: our_purpose
+  :conflict: :override
   :fields:
     :title: "Our Purpose"
     :body: "<p>To empower and engage people and organizations from around the world to collect and develop insights on 
     companies under a free license, and to share this knowledge globally and indiscriminately.</p>"
+    :icon: "adjust"
 
 - :type: blurb
   :codename: germany_establishment_details
