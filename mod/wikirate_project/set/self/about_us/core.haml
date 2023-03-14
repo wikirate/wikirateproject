@@ -2,7 +2,9 @@
   .bg-transparent-gray.p-5
     .container.p-5
       = render_breadcrumbs
-      = section_header :about_heading, url: "/Contact_us", text: "Contact Us"
+      = section_header :about_heading, header_size: :h1,
+                                       button: { url: "/Contact_us", text: "Contact Us" }
+
 %section.p-5
   .container
     = nest :intro_blurb, view: :image_left_text_right
