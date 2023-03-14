@@ -4,11 +4,19 @@ format :html do
   end
 
   def breadcrumb_items
-    # type = card.type_card
-    [
-      link_to("Home", href: "/"),
-      # link_to_card(type, type.name.vary(:plural)),
-      breadcrumb_title
-    ]
+    if defined? breadcrumb_title
+      [
+        link_to("Home", href: "/"),
+        # link_to_card(type, type.name.vary(:plural)),
+        breadcrumb_title
+      ]
+    else
+      type = card.type_card
+      [
+        link_to("Home", href: "/"),
+        link_to_card(type, type.name.vary(:plural)),
+        card.name
+      ]
+    end
   end
 end

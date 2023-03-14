@@ -1,4 +1,5 @@
 card_accessor :image, type: :image
+card_accessor :icon, type: :phrase
 card_accessor :image_attribution, type: :html
 card_accessor :title, type: :phrase
 card_accessor :body, type: :html
@@ -6,7 +7,7 @@ card_accessor :link, type: :uri
 
 format :html do
   def edit_fields
-    %i[image image_attribution title body link]
+    %i[icon image image_attribution title body link]
   end
 
   view :core do

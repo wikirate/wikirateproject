@@ -1,5 +1,9 @@
 include_set Abstract::Media
 
+card_accessor :public_email, type: :phrase
+card_accessor :bio, type: :RichText
+card_accessor :profile_pic, type: :image
+
 format :html do
   bar_cols 8, 4
   before :expanded_bar do
@@ -23,4 +27,6 @@ format :html do
   view :bar_bottom do
     field_nest :bio, view: :content
   end
+
+  view :detailed_profile, template: :haml
 end

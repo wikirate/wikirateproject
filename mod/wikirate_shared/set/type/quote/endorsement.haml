@@ -1,4 +1,4 @@
-.col-md-12.endorsement-summary.rounded-3
+.col-md-12.endorsement-summary.rounded-3{onclick: 'trigger_modal(this)'}
   .row.p-4
     %figure.wikirate-quote.mb-md-0
       %blockquote.blockquote.ps-4
@@ -18,3 +18,4 @@
               - if !card.job_title.nil? and card.job_title != ''
                 %strong.d-block.font-weight-normal
                   = card.job_title
+  = modal_link "", path: { view: :detailed_endorsement }
