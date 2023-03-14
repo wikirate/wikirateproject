@@ -163,6 +163,9 @@
   :codename: body
   :type: :html
 
+- :name: Image Attribution
+  :codename: image_attribution
+
 - :name: Blurb
   :codename: blurb
   :type: :cardtype
@@ -249,27 +252,6 @@
     [[Policies]]
     [[Impressum]]
 
-- :name: "Quotee"
-  :codename: quotee
-  :type: Phrase
-
-- :name: "Detailed Quote"
-  :codename: detailed_quote
-  :type: RichText
-
-
-- :name: Quote
-  :codename: quote
-  :type: :cardtype
-  :fields:
-    :quotee:
-      :type: Phrase
-    :job_title:
-      :type: Phrase
-    :image:
-      :type: :image
-    :detailed_quote:
-      :type: RichText
 
 - :name: Founder's Quote
   :type: quote
@@ -327,10 +309,6 @@
 - :name: Link
   :type: :URI
   :codename: link
-
-- :name: Policy
-  :codename: policy
-  :type: :cardtype
 
 - :name: Event
   :codename: event
@@ -529,14 +507,14 @@
   :type: :search_type
   :content: "{\"type\":\"Event\"}"
 
-- :name: Policy Search
-  :codename: :policy_search
-  :type: :search_type
-  :content: "{\"type\":\"Policy\"}"
+#- :name: Policy Search
+#  :codename: :policy_search
+#  :type: :search_type
+#  :content: "{\"type\":\"Policy\"}"
 
-- :name: Full Text
-  :codename: fulltext
-  :type: RichText
+
+- :name: Our Advisors
+  :codename: our_advisors
 
 - :name: Our advisors
   :codename: :our_advisors

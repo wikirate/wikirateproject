@@ -1,0 +1,19 @@
+- :name: Quote
+  :codename: quote
+  :type: :cardtype
+
+- :name: job title
+  :codename: job_title
+
+- :name: Quotee
+  :codename: quotee
+
+- :name: Detailed Quote
+  :codename: detailed_quote
+
+- :name: Policy
+  :codename: policy
+  :type: :cardtype
+
+- :name: Full Text
+  :codename: full_text

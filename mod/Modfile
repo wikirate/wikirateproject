@@ -1,2 +1,3 @@
+mod "wikirate_shared"
 mod "wikirate_project"
 mod "vasso"
