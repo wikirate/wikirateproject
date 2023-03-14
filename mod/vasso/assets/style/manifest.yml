@@ -1,5 +1,6 @@
 vasso:
   items:
+    - typography.scss
     - style.scss
     - info_pages.scss
     - footer.scss
