@@ -1,0 +1,17 @@
+.row.d-flex.align-items-center
+  .col-auto
+    .profile_pic.rounded-picture
+      = field_nest :image, view: :core, size: :small
+  .col-8.p-sm-2.p-md-0
+    %h4
+      = card.name
+    .job_title
+      = render :job_description
+    -if !card.public_email.nil?
+      %small
+        %a.email-link{href: "mailto:"+card.public_email}
+          = card.public_email
+.row.pt-4.pb-4
+  - if !card.bio.nil?
+    %div.bio
+      = field_nest :bio, view: :core

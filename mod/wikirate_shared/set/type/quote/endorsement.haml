@@ -1,4 +1,4 @@
-.col-md-12.endorsement-summary.rounded-3
+.col-md-12.endorsement-summary.rounded-3{onclick: 'trigger_modal(this)'}
   .row.p-4
     %figure.wikirate-quote.mb-md-0
       %blockquote.blockquote.ps-4
@@ -9,7 +9,7 @@
         .row.d-flex.align-items-center
           .col-auto.d-none.d-sm-block
             %span.rounded-picture.quotee-img.pe-2.d-flex.align-items-center
-              %img{src: '/files/'+card.image}
+              = field_nest :image, view: :core
           .col-md-6.p-sm-2.p-md-0
             %cite
               - if !card.quotee.nil? and card.quotee != ''
@@ -18,3 +18,4 @@
               - if !card.job_title.nil? and card.job_title != ''
                 %strong.d-block.font-weight-normal
                   = card.job_title
+  = modal_link "", path: { view: :detailed_endorsement }

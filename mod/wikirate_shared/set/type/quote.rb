@@ -2,7 +2,7 @@ card_accessor :image, type: :image
 card_accessor :job_title, type: :phrase
 card_accessor :quotee, type: :phrase
 card_accessor :quote, type: :html
-card_accessor :detailed_quote, type: :RichText
+card_accessor :detailed_quote, type: :basic
 
 format :html do
   def edit_fields
@@ -11,4 +11,5 @@ format :html do
 
   view :core, template: :haml
   view :endorsement, template: :haml
+  view :detailed_endorsement, template: :haml
 end

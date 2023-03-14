@@ -1,5 +1,4 @@
 ---
-
 - :name: project skin
   :type: :bootswatch_skin
   :codename: project_skin
@@ -95,11 +94,11 @@
       // NOTE: scroll-behavior: smooth breaks cypress tests
       $enable-smooth-scroll: false;
 
-- :name:
-    - :all
-    - :style
-  :type: :pointer
-  :content: project skin
+#- :name:
+#    - :all
+#    - :style
+#  :type: :pointer
+#  :content: project skin
 
 # these were breaking data migrations. may be able to remove soon?
 - :name: "style: classic cards"
@@ -156,6 +155,11 @@
   :codename: body
   :type: :html
 
+- :name: icon
+  :conflict: override
+  :codename: icon
+  :type: Phrase
+
 - :name: Image Attribution
   :codename: image_attribution
 
@@ -167,6 +171,8 @@
       :type: Phrase
     :image:
       :type: :image
+    :icon:
+      :type: Phrase
     :image_attribution:
       :type: html
     :body:
@@ -177,17 +183,21 @@
 
 - :type: blurb
   :codename: intro_blurb
+  :conflict: :override
   :fields:
     :title: "WikiRate International e.V. is"
     :body: "<p>the non-profit organization hosting the <a href='https://wikirate.org' target='_blank'>WikiRate platform</a>. 
     We develop the data system and tools the WikiRate community needs, and supports them in using the technology to help them achieve their goals.</p>"
+    :icon: "visibility"
 
 - :type: blurb
   :codename: our_purpose
+  :conflict: :override
   :fields:
     :title: "Our Purpose"
     :body: "<p>To empower and engage people and organizations from around the world to collect and develop insights on 
     companies under a free license, and to share this knowledge globally and indiscriminately.</p>"
+    :icon: "adjust"
 
 - :type: blurb
   :codename: germany_establishment_details
@@ -230,19 +240,20 @@
   :storage_type: :coded
   :conflict: override
 
-- :name: "homepage-background-image"
+- :name: "wikirate-icon"
   :type: :image
-  :codename: homepage-background-image
-  :image: backgrounds/homepage-background-image.png
+  :codename: wikirate_icon
+  :image: logo/wikirate-icon.png
   :storage_type: :coded
   :conflict: override
 
 - :name: footer link list
+  :conflict: override
   :codename: footer_link_list
   :type: :link_list
   :content: |
     [[Funding]]
-    [[Policies]]
+    [[Policies | Policies]]
     [[Impressum]]
 
 
@@ -257,6 +268,10 @@
 - :name: Event Type
   :type: :cardtype
   :codename: event_type
+
+- :name: Blog Type
+  :type: :cardtype
+  :codename: blog_type
 
 - :name: online
   :type: :event_type
@@ -303,6 +318,10 @@
   :type: :URI
   :codename: link
 
+- :name: Blog
+  :codename: blog
+  :type: :cardtype
+
 - :name: Event
   :codename: event
   :type: :cardtype
@@ -325,7 +344,6 @@
       :type: :List
 
 - :name: Endorsements
-  :conflict: override
   :type: :list
   :codename: :endorsements
   :content:
@@ -397,13 +415,6 @@
   :fields:
     :title: Develop visual dashboards
 
-- :name: Endorsements
-  :type: :list
-  :codename: :endorsements
-  :content:
-    - [ [ Endorsement_by_Anne_Bienias_CCC ] ]
-    - [ [ Endorsement_by_Fashion_Revolution ] ]
-
 - :name: Description List
   :codename: :description_list
   :type: :cardtype
@@ -432,11 +443,40 @@
 
 - :name: Advocacy
   :codename: :advocacy
-  :type: :RichText
-  :content:
-    "<p>Transparency is the first step to understanding how companies impact people and the planet.</p>
-     <p>The information that results from it, forms the basis on which informed decisions can be made to change things for the better.</p>
-     <p>But transparency is not only about what information is made available. It is also about how the information is made available.</p>"
+  :content: "<h5></h5>\r\n<h5><strong><em>Transparency is the first step to understanding
+    how companies impact people and the planet.</em></strong></h5>\r\n<p>The information
+    that results from it, forms the basis on which informed decisions can be made
+    to change things for the better. But transparency is not only about <em><strong>what</strong></em>
+    information is made available. It is also about <em><strong>how</strong></em>
+    the information is made available.</p>"
+
+- :name: Organizational Structure
+  :type: :html
+  :codename: :organizational_structure
+  :content: "<div class=\"col-md-12 pt-3\">\r\n  <div class=\"row\">\r\n    <p>WikiRate
+    is established in 3 countries: </p>\r\n  </div>\r\n  <div class=\"row text-center
+    pt-3 pb-3\">\r\n    <div class=\"col-md-4 p-4\">{{Blurb_0003|stack}}</div>\r\n
+    \   <div class=\"col-md-4 p-4\">{{Blurb_0004|stack}}</div>\r\n    <div class=\"col-md-4
+    p-4\">{{Blurb_0005|stack}}</div>\r\n  </div>\r\n  For our UK determination information,
+    go to the <a href=\"https://register-of-charities.charitycommission.gov.uk/\"
+    target=\"_blank\">Charity Commission</a> and enter our registered charity number
+    1155894. The WikiRate Project UK is registered as a charity with HM Revenue and
+    Customs with the reference number ZD01634.\r\n\r\n  WikiRate International e.V.
+    is our primary entity and our headquarters are located in Berlin, Germany.\r\n\r\n</div>"
+
+- :name: Factsheet
+  :type: :html
+  :codename: :factsheet
+  :content: "<div class=\"row pt-3\">\r\n  <div class=\"col-sm-2 fw-bold pb-md-0 pb-2\">Address:</div>\r\n
+    \ <div class=\"col-sm-10\">\r\n    WikiRate International e.V.<br>\r\n    Schliemannstra├ƒe
+    29<br>\r\n    10437 Berlin, Germany<br>\r\n  </div>\r\n</div>\r\n<div class=\"row
+    pt-3 fst-italic\">\r\n  <div class=\"col-sm-12\">\r\n    Authorized representatives
+    of the board of directors: Philipp Hirche (1.Vorstand), Florian Hirche (2.Vorstand)\r\n
+    \ </div>\r\n</div>\r\n<div class=\"row pt-3\">\r\n  <div class=\"col-sm-2 fw-bold
+    pb-md-0 pb-2\">Register court:</div>\r\n  <div class=\"col-sm-10\">Local Court
+    of Charlottenburg, Berlin</div>\r\n</div>\r\n<div class=\"row pt-3\">\r\n  <div
+    class=\"col-sm-2 fw-bold pb-md-0 pb-2\">Register number:</div>\r\n  <div class=\"col-sm-10\">\r\n
+    \   VR 32012B\r\n  </div>\r\n</div>"
 
 - :type: :blurb
   :codename: licensing_data
@@ -467,7 +507,6 @@
 
 - :name: Image Attribution
   :codename: image_attribution
-  :conflict: override
   :type: :html
 
 - :codename: :systemic_change
@@ -526,6 +565,449 @@
     Liz Umlas
     Margaret G. Wachenfield
     Derek Young
+
+- :name: Code of Conduct
+  :type: :policy
+  :fields:
+    :description: '<h2><span style="font-size: 11pt; font-family: Arial; color: #000000;
+      background-color: transparent; font-weight: 400; font-style: normal; font-variant:
+      normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The
+      values and principles that govern our organization</span></h2>'
+    :full_text: "<h1><span style=\"font-size: 13.999999999999998pt; font-family: Arial;
+      color: #000000; background-color: transparent; font-weight: 400; font-style:
+      normal; font-variant: normal; text-decoration: none; vertical-align: baseline;
+      white-space: pre-wrap;\">CODE OF CONDUCT FOR CONTRACTORS AND VENDORS</span></h1>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><em><span
+      style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-variant: normal; text-decoration: none;
+      vertical-align: baseline; white-space: pre-wrap;\">Revision Date: March 2021</span></em></p>\r\n<h2
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      13.999999999999998pt; font-family: Arial; color: #666666; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre-wrap;\">1. Purpose of this
+      Code</span><span style=\"font-size: 15pt; font-family: Arial; color: #666666;
+      background-color: transparent; font-weight: 400; font-style: normal; font-variant:
+      normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;\"></span></h2>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">The WikiRate Project e.V. (together with
+      its sister organizations ΓÇ£The WikiRate ProjectΓÇ¥ in the United States and ΓÇ£The
+      Wikirate Project UKΓÇ¥ in the United Kingdom, hereinafter ΓÇ£WikiRateΓÇ¥ or ΓÇ£OrganizationΓÇ¥)
+      is committed to ethical behavior. WikiRate has adopted the following Code of
+      Conduct (this ΓÇ£CodeΓÇ¥) for contractors and vendors who provide services to the
+      Organization. This Code is intended to: promote ethical conduct and compliance
+      with laws and regulations, provide guidance with respect to the handling of
+      such issues, provide ways to report unethical conduct, foster a culture of integrity
+      and accountability, and deter wrongdoing.</span></p>\r\n<p style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">No code or policy can anticipate every situation
+      that may arise. Accordingly, this Code is intended to serve as a source of guiding
+      principles. The Organization requires contractors and vendors to use good judgment
+      while providing services to the Organization, and to follow the highest ethical
+      standards to which the Organization is committed. If you need additional guidance
+      on the appropriate course of conduct, please contact the WikiRate team for support
+      at </span><a href=\"mailto:info@wikirater.org\" style=\"text-decoration: none;\"><span
+      style=\"font-size: 11pt; font-family: Arial; color: #1155cc; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      underline; -webkit-text-decoration-skip: none; text-decoration-skip-ink: none;
+      vertical-align: baseline; white-space: pre-wrap;\">info@wikirate.org</span></a><span
+      style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre-wrap;\"></span></p>\r\n<h2
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      15pt; font-family: Arial; color: #666666; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">2. Introduction</span></h2>\r\n<p style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Each contractor and vendor is required to
+      adhere to a high standard of ethical conduct. Unethical actions are not acceptable.
+      In addition to each of the directives set forth below, each contractor and vendor
+      shall be guided by the following principles in carrying out their duties and
+      responsibilities on behalf of the Organization:</span></p>\r\n<ul style=\"margin-top:
+      0; margin-bottom: 0; padding-inline-start: 48px;\">\r\n<li style=\"list-style-type:
+      disc; font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre;\">\r\n<pre style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Honesty and Integrity. </span><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Contractors and vendors must not be subject
+      to influences, interests, or relationships that conflict with the best interests
+      of the Organization.</span></pre>\r\n</li>\r\n<li style=\"list-style-type:
+      disc; font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre;\">\r\n<pre style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Accountability</span><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">. Contractors and vendors are responsible
+      for their own adherence and the adherence of any of their employees or agents
+      who may provide services to the Organization; such individuals should familiarize
+      themselves with the provisions of this Code.</span></pre>\r\n</li>\r\n<li style=\"list-style-type:
+      disc; font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre;\">\r\n<pre style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Adherence to the Law.</span><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\"> When providing services to the Organization,
+      contractors and vendors must comply with all national and international applicable
+      laws.</span></pre>\r\n</li>\r\n</ul>\r\n<h2 style=\"line-height: 1.38; margin-top:
+      0pt; margin-bottom: 10pt;\"><span style=\"font-size: 15pt; font-family: Arial;
+      color: #666666; background-color: transparent; font-weight: 400; font-style:
+      normal; font-variant: normal; text-decoration: none; vertical-align: baseline;
+      white-space: pre-wrap;\">3. Conflicts of Interest</span></h2>\r\n<p style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">A conflict of interest occurs when an individual's
+      private interest interferes or appears to interfere with the interests of the
+      Organization. Conflicts of interest are prohibited as a matter of Organization
+      policy, unless they have been approved by the Organization. In particular, a
+      contractor or vendor must never use or attempt to use the contractor's or vendor's
+      relationship with the Organization to obtain any improper personal benefit for
+      the contractor or vendor, or for any other person. Additionally, a conflict
+      of interest may arise when a contractor or vendor takes actions or has interests
+      that may make it difficult to provide services to the Organization objectively
+      and effectively. Some of the more common conflicts from which contractors and
+      vendors must refrain are set forth below:</span></p>\r\n<ul style=\"margin-top:
+      0; margin-bottom: 0; padding-inline-start: 48px;\">\r\n<li style=\"list-style-type:
+      disc; font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre;\">\r\n<pre style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Improper conduct and activities.</span><span
+      style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre-wrap;\"> Contractors and vendors
+      may not engage in conduct or activities that are inconsistent with the Organization's
+      best interests or that disrupt or impair the Organization's relationship with
+      any person or entity with which the Organization has or proposes to enter into
+      a business or contractual relationship.</span></pre>\r\n</li>\r\n<li style=\"list-style-type:
+      disc; font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre;\">\r\n<p style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Gifts.</span><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\"> Contractors and vendors and members of their
+      immediate family may not accept gifts from persons or entities if such gifts
+      are being made in order to influence them in their capacity as contractors or
+      vendors of the Organization, or if acceptance of such gifts could create the
+      appearance of a conflict of interest.</span></p>\r\n</li>\r\n<li style=\"list-style-type:
+      disc; font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre;\">\r\n<p style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Personal use of Organization assets.</span><span
+      style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre-wrap;\"> Contractors and vendors
+      may not use Organization assets, labor, or information for personal use or for
+      any purpose other than the provision of services to the Organization or an affiliate.
+      Any contractor or vendor who is aware of a conflict of interest or is concerned
+      that a conflict might develop is required to notify the Organization.</span></p>\r\n</li>\r\n</ul>\r\n<h2
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      15pt; font-family: Arial; color: #666666; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">4. Business Opportunities</span></h2>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Contractors and vendors are prohibited from
+      taking (or directing to a third party) a business opportunity that is discovered
+      through the use of the Organization's property or information, unless the Organization
+      has already been offered the opportunity and turned it down.</span></p>\r\n<h2
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      15pt; font-family: Arial; color: #666666; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">5. Confidentiality</span></h2>\r\n<p style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">The Organization's confidential and proprietary
+      information is a valuable Organization asset. In providing services to the Organization,
+      contractors and vendors often learn confidential or proprietary information
+      about the Organization, its employees, clients, or suppliers. Contractors and
+      vendors must maintain the confidentiality of all information so entrusted to
+      them, except when disclosure is authorized or legally mandated. Confidential
+      or proprietary information includes all non-public information relating to the
+      Organization, its business, employees, clients or suppliers. Any inquiries from
+      the news media or other outside organizations regarding the Organization or
+      its client relationships or assignments must be referred to the Organization
+      for appropriate disposition. Confidential and proprietary information may include,
+      among other things:</span></p>\r\n<ul style=\"margin-top: 0; margin-bottom:
+      0; padding-inline-start: 48px;\">\r\n<li style=\"list-style-type: disc; font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre;\">\r\n<pre style=\"line-height: 1.38; margin-top:
+      0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt; font-family: Arial;
+      color: #000000; background-color: transparent; font-weight: 400; font-style:
+      normal; font-variant: normal; text-decoration: none; vertical-align: baseline;
+      white-space: pre-wrap;\">fee structures</span></pre>\r\n</li>\r\n<li style=\"list-style-type:
+      disc; font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre;\">\r\n<pre style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">specific engagements and information about
+      strategic business partnerships</span></pre>\r\n</li>\r\n<li style=\"list-style-type:
+      disc; font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre;\">\r\n<pre style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">client and candidate data</span></pre>\r\n</li>\r\n<li
+      style=\"list-style-type: disc; font-size: 11pt; font-family: Arial; color: #000000;
+      background-color: transparent; font-weight: 400; font-style: normal; font-variant:
+      normal; text-decoration: none; vertical-align: baseline; white-space: pre;\">\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">business strategies and practices</span></p>\r\n</li>\r\n<li
+      style=\"list-style-type: disc; font-size: 11pt; font-family: Arial; color: #000000;
+      background-color: transparent; font-weight: 400; font-style: normal; font-variant:
+      normal; text-decoration: none; vertical-align: baseline; white-space: pre;\">\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">confidential information provided to WikiRate
+      by clients</span></p>\r\n</li>\r\n<li style=\"list-style-type: disc; font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre;\">\r\n<p style=\"line-height: 1.38; margin-top:
+      0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt; font-family: Arial;
+      color: #000000; background-color: transparent; font-weight: 400; font-style:
+      normal; font-variant: normal; text-decoration: none; vertical-align: baseline;
+      white-space: pre-wrap;\">intellectual property</span></p>\r\n</li>\r\n</ul>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Unauthorized use or distribution could result
+      in negative consequences for both the Organization and the individuals involved,
+      including potential legal actions.</span></p>\r\n<p style=\"line-height: 1.38;
+      margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt; font-family:
+      Arial; color: #000000; background-color: transparent; font-weight: 400; font-style:
+      normal; font-variant: normal; text-decoration: none; vertical-align: baseline;
+      white-space: pre-wrap;\">All contractors and vendors should protect the Organization's
+      proprietary and confidential information even after the contractor and vendor
+      stops providing services to the Organization. In addition, contractors and vendors
+      are prohibited from disclosing confidential and proprietary information concerning
+      the Organization and its clients to a new employer or to others after ceasing
+      to be associated with the Organization.</span></p>\r\n<p style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 15pt;
+      font-family: Arial; color: #666666; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">6. Fair Dealing</span></p>\r\n<p style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">The Organization has a history of succeeding
+      through honest competition. The Organization does not seek competitive advantages
+      through illegal or unethical practices. Each contractor and vendor should deal
+      fairly with the Organization's employees, clients, suppliers, competitors, and
+      other service providers. No contractor or vendor should take unfair advantage
+      of anyone through manipulation, concealment, misuse of information, misrepresentation
+      of material fact, or any other unfair dealing practice.</span></p>\r\n<p style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 13.999999999999998pt;
+      font-family: Arial; color: #666666; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">7. Protection and Use of Organization Assets</span><span
+      style=\"font-size: 15pt; font-family: Arial; color: #666666; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre-wrap;\"></span></p>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">All contractors and vendors should protect
+      the Organization's assets and ensure their efficient use. All Organization assets
+      should be used for legitimate business purposes only.</span></p>\r\n<p style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 15pt;
+      font-family: Arial; color: #666666; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">8. Respectful Workplace</span></p>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">The Organization is committed to maintaining
+      a work environment in which all individuals are treated with respect and dignity.
+      Equal opportunity in employment is provided to employees and all applicants
+      for employment, based on individual merit and personal qualifications. The Organization
+      requires its contractors and vendors to do the same.</span></p>\r\n<p style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt;
+      font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">The Organization is furthermore deeply committed
+      to maintaining a work environment that upholds and promotes human rights as
+      enshrined in the Universal Declaration of Human Rights, including the elimination
+      of forced or compulsory labor, child labor, and all forms of workplace discrimination.
+      Every individual has the right to work in a professional and safe atmosphere
+      that promotes equal opportunities and where discriminatory practices, including
+      harassment, are prohibited.</span></p>\r\n<p style=\"line-height: 1.38; margin-top:
+      0pt; margin-bottom: 10pt;\"><span style=\"font-size: 11pt; font-family: Arial;
+      color: #000000; background-color: transparent; font-weight: 400; font-style:
+      normal; font-variant: normal; text-decoration: none; vertical-align: baseline;
+      white-space: pre-wrap;\">The Organization requires each contractor and vendor
+      to treat all Organization employees as well as their own staff in a respectful
+      manner and in a way that is uniformly free of bias, prejudice, and harassment.
+      More specifically, WikiRate prohibits discrimination or harassment of any Organization
+      employee or contractor employees on the basis of gender, gender identity or
+      expression, race, religious creed, color, national origin, age, sexual orientation,
+      medical condition, ancestry, physical or mental disability, marital status,
+      familial status, genetic characteristic, and any other characteristic protected
+      by law.</span></p>\r\n<p style=\"line-height: 1.38; margin-top: 0pt; margin-bottom:
+      10pt;\"><span style=\"font-size: 11pt; font-family: Arial; color: #000000; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre-wrap;\">Furthermore, WikiRate
+      requires all employees and contracting staff to have freedom of association
+      and collective bargaining rights, earn at least the statutory minimum wage,
+      the prevailing industry wage or the wage negotiated in a collective agreement,
+      whichever is higher, and prohibits practices such as recruitment fees and excessive
+      overtime.</span></p>\r\n<p style=\"line-height: 1.38; margin-top: 0pt; margin-bottom:
+      10pt;\"><span style=\"font-size: 15pt; font-family: Arial; color: #666666; background-color:
+      transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
+      none; vertical-align: baseline; white-space: pre-wrap;\">9. Environmental Sustainability</span></p>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">The Organization stresses the importance
+      of protecting the natural environment and recognizes our shared responsibility
+      in addressing critical environmental issues facing the planet. WikiRate reserves
+      the right to request information from its contractors and vendors regarding
+      their own environmental practices. The Organization furthermore strongly encourages
+      its contractors and vendors to keep it informed about available products or
+      services that might help the Organization to reduce its environmental impacts.</span></p>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      15pt; font-family: Arial; color: #666666; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">10. Compliance with Laws, Rules and Regulations</span></p>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">It is the Organization's policy to comply
+      with all national and international applicable laws, rules, and regulations.
+      It is the responsibility of each contractor and vendor to adhere to the standards
+      and restrictions imposed by all applicable laws, rules, and regulations.</span></p>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      15pt; font-family: Arial; color: #666666; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">11. Reporting Concerns</span></p>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Contractors and vendors, their staff, or
+      any other third party are encouraged to report any concerns, incidents or practices
+      which they believe are inappropriate or unethical to any officer of WikiRate
+      at any time, and will be protected from any form of retaliation. All concerns
+      will be taken seriously and will be investigated and addressed with care.</span></p>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Reports can be submitted via:</span></p>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">Email: </span><a href=\"mailto:info@wikirate.org\"
+      style=\"text-decoration: none;\"><span style=\"font-size: 11pt; font-family:
+      Arial; color: #1155cc; background-color: transparent; font-weight: 400; font-style:
+      normal; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip:
+      none; text-decoration-skip-ink: none; vertical-align: baseline; white-space:
+      pre-wrap;\">info@wikirate.org</span></a><span style=\"font-size: 11pt; font-family:
+      Arial; color: #000000; background-color: transparent; font-weight: 400; font-style:
+      normal; font-variant: normal; text-decoration: none; vertical-align: baseline;
+      white-space: pre-wrap;\"></span></p>\r\n<p style=\"line-height: 1.38; margin-top:
+      0pt; margin-bottom: 0pt;\"><span style=\"font-size: 11pt; font-family: Arial;
+      color: #000000; background-color: transparent; font-weight: 400; font-style:
+      normal; font-variant: normal; text-decoration: none; vertical-align: baseline;
+      white-space: pre-wrap;\">Contact Form: </span><a href=\"https://wikirateproject.org/Contact_Us\"
+      style=\"text-decoration: none;\"><span style=\"font-size: 11pt; font-family:
+      Arial; color: #1155cc; background-color: transparent; font-weight: 400; font-style:
+      normal; font-variant: normal; text-decoration: underline; -webkit-text-decoration-skip:
+      none; text-decoration-skip-ink: none; vertical-align: baseline; white-space:
+      pre-wrap;\">https://wikirateproject.org/Contact_Us</span></a><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\"></span></p>\r\n<h2 style=\"line-height:
+      1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size: 13.999999999999998pt;
+      font-family: Arial; color: #666666; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">ACKNOWLEDGEMENT AND AGREEMENT</span></h2>\r\n<p
+      style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
+      11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
+      400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
+      baseline; white-space: pre-wrap;\">I have read and understand the WikiRate Code
+      of Conduct for Contractors and Vendors, and I agree to abide by it during the
+      term of my contractual relationship with the Organization. </span></p>\r\n<p></p>"
+
+- :name: Donations and Grand Policy
+  :content: "<h4>Introduction</h4>\r\n<p>Donations and grants enable WikiRate to undertake
+    its vital work as a non-profit organization. WikiRate aims to secure a diverse
+    funding mix to maintain its independence and operate effectively.</p>\r\n<h4>Background</h4>\r\n<p>WikiRate
+    makes funding decisions according to the needs of its charitable programs and
+    purposes, and consults the WikiRate core principles when deciding whether or not
+    to accept funding:</p>\r\n<ol>\r\n<li>Availability and usability of information.
+    Information on corporations' social and environmental impacts should be abundant
+    and usable;</li>\r\n<li>Diverse points of view on a neutral platform. Users, not
+    WikiRate, judge companies; Users, not WikiRate, judge data quality; Editorial
+    bias should be minimised;</li>\r\n<li>Open discussion and collaboration. Deliberation
+    and discussion is visible; Collaborative projects are encouraged; and</li>\r\n<li>Openness
+    and respect. All are welcome. Anyone can join WikiRate: individuals, advocacy
+    groups, academics and researchers, company representatives, etc. Be honest and
+    transparent, disclose conflicts of interest and address misrepresentations.</li>\r\n</ol>\r\n<p>Any
+    funding that compromises these principles will not be accepted.</p>\r\n<h4>Policy</h4>\r\n<p>WikiRate
+    accepts funding, whether monetary or in-kind, provided that acceptance does not
+    compromise WikiRate's independence to pursue its mission or endanger WikiRate's
+    integrity. Contributions are used for the furtherance of WikiRate's charitable
+    programs and purposes.</p>\r\n<h4>Scope</h4>\r\n<p>This Policy applies to all
+    funding for WikiRate, regardless of types of donor or amounts involved, unless
+    otherwise stated in this document. It is to be applied to all new funding from
+    existing donors and to all new donors in the future. Appropriate care to protect
+    the reputation of WikiRate should always be taken.</p>\r\n<h4>Guidelines</h4>\r\n<p>Funding
+    to enable WikiRate to carry out its work should be sought from a wide range of
+    sources, and for specific projects as well as general operations. Subject to maintaining
+    WikiRate's independence and reputation, WikiRate will publicly disclose all corporate
+    donations and grants with a value of more than Γé¼1,000. We commit to protecting
+    the privacy of individual donors and will only disclose identifying details about
+    these donors if we have their consent.</p>\r\n<p>Any donation to a WikiRate body
+    must be able to stand up to public scrutiny. WikiRate will always publish company
+    data in a free and impartial manner regardless of whether an entity has donated
+    funds to the WikiRate Project.</p>\r\n<p>If there is a risk that receiving funds
+    from a particular source would impair WikiRate's independence, if there is a risk
+    to WikiRate's reputation from public association with the donor, or for any other
+    reasons, WikiRate reserves the right to not accept the contribution. WikiRate
+    also reserves the right to return funding if the integrity and/or intentions of
+    the funding source are called into question after a donation has been received.
+    The views of the WikiRate community will also be taken into consideration when
+    deciding whether to accept or return a donation.</p>\r\n<p>WikiRate can receive
+    funding from corporations and donors from the private sector. This does not imply
+    any endorsement of a donating company's policies or record. WikiRate may request
+    that donors sign a memorandum of understanding before any donation is accepted.</p>\r\n<p>This
+    policy will be reviewed annually and updated as necessary.</p>\r\n<p style=\"text-align:
+    right;\"><span style=\"font-weight: bolder; font-size: 15.2px;\">Policy last updated:</span><span
+    style=\"font-size: 15.2px;\">November 2018</span></p>\r\n<p></p>"
 
 - homepage
 - supporters

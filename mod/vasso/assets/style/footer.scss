@@ -1,0 +1,38 @@
+$social-colors: (
+        "github": #24292F,
+        "medium": #000000,
+        "linkedin": #0a66c2,
+        "twitter": #1D9BF0,
+        "facebook": #1877F2,
+        "instagram": #FF0069
+) !default;
+
+footer .social-links a {
+  color: $blue !important;
+  text-decoration: none;
+}
+
+footer a {
+  text-decoration: underline;
+}
+
+.wikirate-license, .social-links {
+  border-top: 1px solid $body-color;
+}
+
+#footer_link_list-content-view a {
+  display: block;
+  padding-top: 2px;
+  color: $body-color !important;
+  text-decoration: none !important;
+}
+
+#footer_link_list-content-view a:hover {
+  color: lighten($body-color, 20%) !important;
+}
+
+@each $platform, $color in $social-colors {
+  a:hover .fa-#{$platform} {
+    color: $color;
+  }
+}

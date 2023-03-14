@@ -1,6 +1,8 @@
 .container
-  %h2
-    Latest blogs and events
+  .row.mb-3
+    %h2
+      Latest blogs and events
   .row.mt-1
     - latest_events.each do |event|
-      = nest event, view: :summary
+      .col-md-4
+        = nest event, view: :core

@@ -52,11 +52,9 @@
 - :name:
     - :systemic_change
     - :image
-  :conflict: override
   :image: other/systemic_change.jpg
 
 - :name:
     - :collective_action
     - :image
-  :conflict: override
   :image: other/collaborative_action_pic.jpg

@@ -1,4 +1,5 @@
 - :name: Quote
+  :conflict: override
   :codename: quote
   :type: :cardtype
 
