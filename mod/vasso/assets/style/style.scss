@@ -79,30 +79,6 @@ button.navbar-toggler {
   color: $white !important;
 }
 
-footer .social-links a {
-  color: $blue !important;
-  text-decoration: none;
-}
-
-footer a {
-  text-decoration: underline;
-}
-
-.wikirate-license, .social-links {
-  border-top: 1px solid $body-color;
-}
-
-#footer_link_list-content-view a {
-  display: block;
-  padding-top: 2px;
-  color: $body-color !important;
-  text-decoration: none !important;
-}
-
-#footer_link_list-content-view a:hover {
-  color: lighten($body-color, 20%) !important;
-}
-
 /*Vertical Sliding*/
 div.animation {
   display: inline;
@@ -415,4 +391,19 @@ div.animation span:nth-child(6) {
 .wr-intl-logo img {
   width: 9.5em;
   max-height: 2.25em;
+}
+
+.banner {
+  background-color: $blue;
+  height: 40px;
+}
+
+.banner-content {
+  color: $white;
+  font-size: 14px;
+  text-align: center;
+
+  a {
+    color: $white;
+  }
 }
