@@ -247,7 +247,7 @@
   :type: :link_list
   :content: |
     [[Funding]]
-    [[Policies]]
+    [[Policies | Policies]]
     [[Impressum]]
 
 - :name: "Quotee"
@@ -258,13 +258,15 @@
   :codename: detailed_quote
   :type: RichText
 
-
 - :name: Quote
+  :conflict: override
   :codename: quote
   :type: :cardtype
   :fields:
     :quotee:
       :type: Phrase
+    :quote:
+      :type: html
     :job_title:
       :type: Phrase
     :image:
@@ -576,7 +578,7 @@
     Liz Umlas
     Margaret G. Wachenfield
     Derek Young
-    
+
 - :name: Code of Conduct
   :type: :policy
   :fields:
