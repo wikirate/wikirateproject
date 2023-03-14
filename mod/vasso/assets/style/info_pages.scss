@@ -157,6 +157,18 @@
   background: $gradient_orange !important;
 }
 
-.job_title{
+.job_title {
   font-weight: 600;
+}
+
+.blurb-icon {
+  background: #EDEBF9;
+  color: $blue;
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+
+  i {
+    font-size: 2em;
+  }
 }
