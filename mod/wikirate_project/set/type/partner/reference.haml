@@ -1,0 +1,4 @@
+.row.d-flex.align-items-center.justify-content-end
+  - if !card.image.nil? and !card.image != ''
+    .col-auto
+      = field_nest :image, view: :core, size: :small
