@@ -573,7 +573,7 @@
       background-color: transparent; font-weight: 400; font-style: normal; font-variant:
       normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The
       values and principles that govern our organization</span></h2>'
-    :fulltext: "<h1><span style=\"font-size: 13.999999999999998pt; font-family: Arial;
+    :full_text: "<h1><span style=\"font-size: 13.999999999999998pt; font-family: Arial;
       color: #000000; background-color: transparent; font-weight: 400; font-style:
       normal; font-variant: normal; text-decoration: none; vertical-align: baseline;
       white-space: pre-wrap;\">CODE OF CONDUCT FOR CONTRACTORS AND VENDORS</span></h1>\r\n<p
