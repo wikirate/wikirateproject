@@ -1,22 +1,23 @@
-.homepage-involved.container-fluid
-  .row
-    .col-md-8
-      %h2
-        Endorsements
-      .lead.pt-2
-    .col-md-4.text-center.pt-md-0.pt-3.d-flex.align-items-center.justify-content-center
-      = render_nav_arrows
+.container
+  .homepage-involved.container-fluid
+    .row
+      .col-md-8
+        %h2
+          Endorsements
+        .lead.pt-2
+      .col-md-4.text-center.pt-md-0.pt-3.d-flex.align-items-center.justify-content-center
+        = render_nav_arrows
 
-  .py-1
-    .homepage-involved-cards{ data: {
-       slick: { #infinite: false,
-                 centerMode: true,
-                 slidesToShow: 2,
-                 prevArrow: ".homepage-involved .wr-prev",
-                 nextArrow: ".homepage-involved .wr-next",
-                 responsive: [
-                   { breakpoint: "992", settings: { slidesToShow: 1 } }
-                 ]}.to_json
-      } }
-      - :endorsements.card.item_cards.each do |endorsement|
-        = nest endorsement, view: :endorsement
+    .py-1
+      .homepage-involved-cards{ data: {
+         slick: { #infinite: false,
+                   centerMode: true,
+                   slidesToShow: 2,
+                   prevArrow: ".homepage-involved .wr-prev",
+                   nextArrow: ".homepage-involved .wr-next",
+                   responsive: [
+                     { breakpoint: "992", settings: { slidesToShow: 1 } }
+                   ]}.to_json
+        } }
+        - :endorsements.card.item_cards.each do |endorsement|
+          = nest endorsement, view: :endorsement
