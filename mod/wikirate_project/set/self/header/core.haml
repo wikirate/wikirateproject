@@ -14,7 +14,7 @@
     %div.collapse.navbar-collapse{:id => 'wikirateIntlNav'}
       %ul.navbar-nav
         - nav_menu.each do |item|
-          %li.nav-item
+          %li.nav-item.pe-md-3
             %a.nav-link{:href => item[1]}
               = item[0]
       %div.ms-auto
@@ -22,4 +22,3 @@
           %li.nav-item
             %a.nav-link.donate-link{:href => 'Donate'}
               Donate
-      = nest :account_links, view: :navbar_links

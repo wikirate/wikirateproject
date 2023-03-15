@@ -253,6 +253,7 @@
   :type: :link_list
   :content: |
     [[Funding]]
+    [[https://spiffy-delivery-3cb.notion.site/WikiRate-Media-Kit-9c87f1f29a0347288a3b6ea6ee38f45c | Media]]
     [[Policies | Policies]]
     [[Impressum]]
 
@@ -374,16 +375,37 @@
     :title: Coming together
 
 - :type: :blurb
+  :conflict: override
   :codename: funding_heading
   :fields:
     :title: How our work is financed
-    :body: "WikiRate International receives grants and project support from a variety of organizations, and also accepts donations. To all funding we apply a set of Board-approved criteria summarized in our <a href=\"/Donations_and_Grand_Policy\">Donation & Grant policy</a>."
+    :body: ""
+
+- :name: "Funding Introduction"
+  :type: :RichText
+  :codename: funding_introduction
+  :content: "WikiRate International receives grants and project support from a variety of organizations, and also accepts donations. To all funding we apply a set of Board-approved criteria summarized in our <a href=\"/Donations_and_Grand_Policy\">Donation & Grant policy</a>."
+
+- name: "Funding History"
+  :type: :RichText
+  :codename: funding_history
+  :content: "For a more detailed overview and timeline of funding Wikirate has received over the years, check out our <a href='/Donation_and_Grant_History'>Donation and Grant History</a>"
+
+- :name: "Funding Introduction"
+  :type: :RichText
+  :codename: funding_introduction
 
 - :type: :blurb
   :codename: policies_heading
+  :conflict: override
   :fields:
     :title: How we operate
-    :body: "Our policy and guidelines provide support and safeguard our organization, staff, partners, third parties and the environment. Their purpose is to build a mutual understanding of how WikiRate International and its affiliates operate."
+    :body: ''
+
+- :name: "Policies Introduction"
+  :type: :RichText
+  :codename: policies_introduction
+  :content: "Our policy and guidelines provide support and safeguard our organization, staff, partners, third parties and the environment. Their purpose is to build a mutual understanding of how WikiRate International and its affiliates operate."
 
 - :type: :blurb
   :codename: service_01
@@ -535,14 +557,16 @@
        "
 
 - :name: Event Search
+  :conflict: :override
   :codename: :event_search
   :type: :search_type
   :content: "{\"type\":\"Event\"}, \"sort\": \"name\", \"dir\": \"desc\""
 
-#- :name: Policy Search
-#  :codename: :policy_search
-#  :type: :search_type
-#  :content: "{\"type\":\"Policy\"}"
+- :name: Policy Search
+  :conflict: :override
+  :codename: :policy_search
+  :type: :search_type
+  :content: "{\"type\":\"Policy\"}"
 
 
 - :name: Our Advisors
