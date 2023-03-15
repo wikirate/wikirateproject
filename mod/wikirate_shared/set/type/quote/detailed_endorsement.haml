@@ -1,6 +1,6 @@
 .row.d-flex.align-items-center
-  .col-auto
-    - if !card.image.nil?
+  - if !card.image.nil? and !card.image != ''
+    .col-auto
       .rounded-picture
         = field_nest :image, view: :core, size: :small
   .col-8.p-sm-2.p-md-0
