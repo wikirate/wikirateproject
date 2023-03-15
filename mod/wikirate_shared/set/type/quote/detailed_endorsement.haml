@@ -1,7 +1,8 @@
 .row.d-flex.align-items-center
   .col-auto
-    .rounded-picture
-      = field_nest :image, view: :core, size: :small
+    - if !card.image.nil?
+      .rounded-picture
+        = field_nest :image, view: :core, size: :small
   .col-8.p-sm-2.p-md-0
     - if !card.quotee.nil? and card.quotee != ''
       %h4.mb-0.text-capitalize

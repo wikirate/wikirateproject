@@ -8,8 +8,9 @@
         %br
         .row.d-flex.align-items-center
           .col-auto.d-none.d-sm-block
-            %span.rounded-picture.quotee-img.pe-2.d-flex.align-items-center
-              = field_nest :image, view: :core
+            - if !card.image.nil?
+              %span.rounded-picture.quotee-img.pe-2.d-flex.align-items-center
+                = field_nest :image, view: :core
           .col-md-6.p-sm-2.p-md-0
             %cite
               - if !card.quotee.nil? and card.quotee != ''
