@@ -6,11 +6,11 @@
 
 %section.p-5
   .container
-    = nest :current_supporters, view: :slider, size: 5
+    = nest :current_supporters, view: :grid
 
 %section.p-5.bg-creme
   .container
-    = nest :previous_supporters, view: :slider, size: 5
+    = nest :previous_supporters, view: :grid
 
 %section.p-5
   = render_donate
