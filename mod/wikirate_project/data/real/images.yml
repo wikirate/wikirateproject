@@ -17,6 +17,7 @@
 - :name:
     - Hapee de Groot
     - :image
+  :conflict: override
   :image: partner-logos/hapee_de_groot_profile_pic.jpg
 
 - :name:

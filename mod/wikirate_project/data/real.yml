@@ -537,7 +537,7 @@
 - :name: Event Search
   :codename: :event_search
   :type: :search_type
-  :content: "{\"type\":\"Event\"}"
+  :content: "{\"type\":\"Event\"}, \"sort\": \"name\", \"dir\": \"desc\""
 
 #- :name: Policy Search
 #  :codename: :policy_search
@@ -573,7 +573,7 @@
       background-color: transparent; font-weight: 400; font-style: normal; font-variant:
       normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">The
       values and principles that govern our organization</span></h2>'
-    :full_text: "<h1><span style=\"font-size: 13.999999999999998pt; font-family: Arial;
+    :fulltext: "<h1><span style=\"font-size: 13.999999999999998pt; font-family: Arial;
       color: #000000; background-color: transparent; font-weight: 400; font-style:
       normal; font-variant: normal; text-decoration: none; vertical-align: baseline;
       white-space: pre-wrap;\">CODE OF CONDUCT FOR CONTRACTORS AND VENDORS</span></h1>\r\n<p

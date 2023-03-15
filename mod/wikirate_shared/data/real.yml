@@ -17,4 +17,5 @@
   :type: :cardtype
 
 - :name: Full Text
-  :codename: full_text
+  :conflict: override
+  :codename: fulltext

@@ -7,11 +7,12 @@
             %i.fas.fa-quote-left.fa-sm.pe-2.text-primary
             = field_nest :quote, view: :core
         %figcaption.blockquote-footer
-          - if !card.quotee.nil? or card.quotee != ''
+          - if !card.quotee.nil? and card.quotee != ''
             = card.quotee
             %br
-          - if !card.job_title.nil? or card.job_title != ''
+          - if !card.job_title.nil? and card.job_title != ''
             %cite
               = card.job_title
   .col-md-3.p-3.p-4.rounded-picture.text-center
-    = field_nest :image, view: :core, size: :medium
+    - if !card.image.nil? and !card.image != ''
+      = field_nest :image, view: :core, size: :medium
