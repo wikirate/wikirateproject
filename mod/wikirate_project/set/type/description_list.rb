@@ -10,4 +10,5 @@ format :html do
 
   view :core, template: :haml
   view :slider, template: :haml
+  view :grid, template: :haml
 end

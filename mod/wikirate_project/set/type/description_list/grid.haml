@@ -1,0 +1,13 @@
+- card_id = card.id.to_s
+.grid.container-fluid{id: card_id}
+  .row
+    .col-md-8
+      %h2
+        = card.name
+      - if !card.description.nil? and card.description != ''
+        .lead.pt-2
+          = field_nest :description, view: :content
+    .row
+      - card.field(:list).item_cards.each do |item|
+        .col-lg-2.col-md-3.col-sm-4.col-6
+          = nest item, view: :core
