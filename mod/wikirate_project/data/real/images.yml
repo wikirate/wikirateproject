@@ -1,25 +1,3 @@
-- :name: Hapee de Groot
-  :conflict: override
-  :type: :user
-  :fields:
-    :job_title: Advisory Council Member
-    :bio: "<p>Hapee is an international development expert and worked 15 years at
-        [[https://hivos.org/|Hivos]] as part of the ICT&amp;Media team. He always worked
-        with OpenSource Software in the field of ICT for development, ranging from projects
-        around open data, accountability&amp;transparency, citizen engagement, websecurity
-        and osint. He currently works as Rapid Response Manager for [[https://greenhost.net/|Greenhost]]
-        where he facilitates the digital emergency response community to resolve threats.
-        Through his work he has thorough understanding of which OpenSource tools are
-        out there and which problem requires which solution and he is also able to implement
-        such a project securely. His experience connects him to a world-wide network
-        of developers and security trainers.</p>"
-
-- :name:
-    - Hapee de Groot
-    - :image
-  :conflict: override
-  :image: partner-logos/hapee_de_groot_profile_pic.jpg
-
 - :name:
     - Endorsement by Anne Bienias, CCC
     - :image
@@ -53,9 +31,11 @@
 - :name:
     - :systemic_change
     - :image
+  :conflict: :override
   :image: other/systemic_change.jpg
 
 - :name:
     - :collective_action
     - :image
+  :conflict: :override
   :image: other/collaborative_action_pic.jpg

@@ -557,14 +557,16 @@
        "
 
 - :name: Event Search
+  :conflict: :override
   :codename: :event_search
   :type: :search_type
   :content: "{\"type\":\"Event\"}, \"sort\": \"name\", \"dir\": \"desc\""
 
-#- :name: Policy Search
-#  :codename: :policy_search
-#  :type: :search_type
-#  :content: "{\"type\":\"Policy\"}"
+- :name: Policy Search
+  :conflict: :override
+  :codename: :policy_search
+  :type: :search_type
+  :content: "{\"type\":\"Policy\"}"
 
 
 - :name: Our Advisors
