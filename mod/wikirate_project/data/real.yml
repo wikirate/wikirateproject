@@ -185,9 +185,9 @@
   :codename: intro_blurb
   :conflict: :override
   :fields:
-    :title: "WikiRate International e.V. is"
+    :title: "Wikirate International e.V. is"
     :body: "<p>the non-profit organization hosting the <a href='https://wikirate.org' target='_blank'>WikiRate platform</a>. 
-    We develop the data system and tools the WikiRate community needs, and supports them in using the technology to help them achieve their goals.</p>"
+    We develop the data system and tools the Wikirate community needs, and supports them in using the technology to help them achieve their goals.</p>"
     :icon: "visibility"
 
 - :type: blurb
@@ -203,7 +203,7 @@
   :codename: germany_establishment_details
   :fields:
     :title: "Germany"
-    :body: '<p>a gemeinnütziger, eingetragener Verein under the name "WikiRate International e.V." 
+    :body: '<p>a gemeinnütziger, eingetragener Verein under the name "Wikirate International e.V." 
     (<a href="https://wikirate.org/Determination%20Letter%20Germany" target="_blank">determination letter</a>)</p>'
 
 - :type: blurb
@@ -229,8 +229,8 @@
 - :name: Annual reports
   :codename: annual_reports
   :type: :RichText
-  :content: "This is a list of WikiRate International’s annual reports published since 2022. Besides these downloadable 
-  documents, you can also access all of this data on the WikiRate platform from where you can export it in a machine 
+  :content: "This is a list of Wikirate International’s annual reports published since 2022. Besides these downloadable 
+  documents, you can also access all of this data on the Wikirate platform from where you can export it in a machine 
   readable format. If you have any questions or remarks, we’d love to hear from you. Contact us"
 
 - :name: "gradient-logo"
@@ -377,13 +377,13 @@
   :codename: funding_heading
   :fields:
     :title: How our work is financed
-    :body: "WikiRate International receives grants and project support from a variety of organizations, and also accepts donations. To all funding we apply a set of Board-approved criteria summarized in our <a href=\"/Donations_and_Grand_Policy\">Donation & Grant policy</a>."
+    :body: "Wikirate International receives grants and project support from a variety of organizations, and also accepts donations. To all funding we apply a set of Board-approved criteria summarized in our <a href=\"/Donations_and_Grand_Policy\">Donation & Grant policy</a>."
 
 - :type: :blurb
   :codename: policies_heading
   :fields:
     :title: How we operate
-    :body: "Our policy and guidelines provide support and safeguard our organization, staff, partners, third parties and the environment. Their purpose is to build a mutual understanding of how WikiRate International and its affiliates operate."
+    :body: "Our policy and guidelines provide support and safeguard our organization, staff, partners, third parties and the environment. Their purpose is to build a mutual understanding of how Wikirate International and its affiliates operate."
 
 - :type: :blurb
   :codename: service_01
@@ -461,14 +461,14 @@
     go to the <a href=\"https://register-of-charities.charitycommission.gov.uk/\"
     target=\"_blank\">Charity Commission</a> and enter our registered charity number
     1155894. The WikiRate Project UK is registered as a charity with HM Revenue and
-    Customs with the reference number ZD01634.\r\n\r\n  WikiRate International e.V.
+    Customs with the reference number ZD01634.\r\n\r\n  Wikirate International e.V.
     is our primary entity and our headquarters are located in Berlin, Germany.\r\n\r\n</div>"
 
 - :name: Factsheet
   :type: :html
   :codename: :factsheet
   :content: "<div class=\"row pt-3\">\r\n  <div class=\"col-sm-2 fw-bold pb-md-0 pb-2\">Address:</div>\r\n
-    \ <div class=\"col-sm-10\">\r\n    WikiRate International e.V.<br>\r\n    Schliemannstra├ƒe
+    \ <div class=\"col-sm-10\">\r\n    Wikirate International e.V.<br>\r\n    Schliemannstra├ƒe
     29<br>\r\n    10437 Berlin, Germany<br>\r\n  </div>\r\n</div>\r\n<div class=\"row
     pt-3 fst-italic\">\r\n  <div class=\"col-sm-12\">\r\n    Authorized representatives
     of the board of directors: Philipp Hirche (1.Vorstand), Florian Hirche (2.Vorstand)\r\n
@@ -608,7 +608,7 @@
       principles. The Organization requires contractors and vendors to use good judgment
       while providing services to the Organization, and to follow the highest ethical
       standards to which the Organization is committed. If you need additional guidance
-      on the appropriate course of conduct, please contact the WikiRate team for support
+      on the appropriate course of conduct, please contact the Wikirate team for support
       at </span><a href=\"mailto:info@wikirater.org\" style=\"text-decoration: none;\"><span
       style=\"font-size: 11pt; font-family: Arial; color: #1155cc; background-color:
       transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration:
@@ -958,7 +958,7 @@
       style=\"line-height: 1.38; margin-top: 0pt; margin-bottom: 10pt;\"><span style=\"font-size:
       11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight:
       400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align:
-      baseline; white-space: pre-wrap;\">I have read and understand the WikiRate Code
+      baseline; white-space: pre-wrap;\">I have read and understand the Wikirate Code
       of Conduct for Contractors and Vendors, and I agree to abide by it during the
       term of my contractual relationship with the Organization. </span></p>\r\n<p></p>"
 
@@ -967,7 +967,7 @@
     its vital work as a non-profit organization. WikiRate aims to secure a diverse
     funding mix to maintain its independence and operate effectively.</p>\r\n<h4>Background</h4>\r\n<p>WikiRate
     makes funding decisions according to the needs of its charitable programs and
-    purposes, and consults the WikiRate core principles when deciding whether or not
+    purposes, and consults the Wikirate core principles when deciding whether or not
     to accept funding:</p>\r\n<ol>\r\n<li>Availability and usability of information.
     Information on corporations' social and environmental impacts should be abundant
     and usable;</li>\r\n<li>Diverse points of view on a neutral platform. Users, not
@@ -994,13 +994,13 @@
     these donors if we have their consent.</p>\r\n<p>Any donation to a WikiRate body
     must be able to stand up to public scrutiny. WikiRate will always publish company
     data in a free and impartial manner regardless of whether an entity has donated
-    funds to the WikiRate Project.</p>\r\n<p>If there is a risk that receiving funds
+    funds to the Wikirate Project.</p>\r\n<p>If there is a risk that receiving funds
     from a particular source would impair WikiRate's independence, if there is a risk
     to WikiRate's reputation from public association with the donor, or for any other
     reasons, WikiRate reserves the right to not accept the contribution. WikiRate
     also reserves the right to return funding if the integrity and/or intentions of
     the funding source are called into question after a donation has been received.
-    The views of the WikiRate community will also be taken into consideration when
+    The views of the Wikirate community will also be taken into consideration when
     deciding whether to accept or return a donation.</p>\r\n<p>WikiRate can receive
     funding from corporations and donors from the private sector. This does not imply
     any endorsement of a donating company's policies or record. WikiRate may request
