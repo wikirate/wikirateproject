@@ -2,7 +2,7 @@
   .col-md-12.event-summary.rounded-3
     .row
       - if not card.image.nil? or card.image != ''
-        %a.event-image{'href': card.link, 'target':'_blank', 'role':'button'}
+        %a.fluid-image{'href': card.link, 'target':'_blank', 'role':'button'}
           = field_nest :image, view: :core, size: :large
     .row.ps-3.pe-3.mb-2.mt-1
       .col-12
