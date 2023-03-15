@@ -375,10 +375,25 @@
     :title: Coming together
 
 - :type: :blurb
+  :conflict: override
   :codename: funding_heading
   :fields:
     :title: How our work is financed
-    :body: "WikiRate International receives grants and project support from a variety of organizations, and also accepts donations. To all funding we apply a set of Board-approved criteria summarized in our <a href=\"/Donations_and_Grand_Policy\">Donation & Grant policy</a>."
+    :body: ""
+
+- :name: "Funding Introduction"
+  :type: :RichText
+  :codename: funding_introduction
+  :content: "WikiRate International receives grants and project support from a variety of organizations, and also accepts donations. To all funding we apply a set of Board-approved criteria summarized in our <a href=\"/Donations_and_Grand_Policy\">Donation & Grant policy</a>."
+
+- name: "Funding History"
+  :type: :RichText
+  :codename: funding_history
+  :content: "For a more detailed overview and timeline of funding Wikirate has received over the years, check out our <a href='/Donation_and_Grant_History'>Donation and Grant History</a>"
+
+- :name: "Funding Introduction"
+  :type: :RichText
+  :codename: funding_introduction
 
 - :type: :blurb
   :codename: policies_heading

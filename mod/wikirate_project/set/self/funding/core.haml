@@ -6,9 +6,19 @@
 
 %section.p-5
   .container
+    .lead
+      = nest :funding_introduction, view: :content
+
+%section.p-5.pt-0
+  .container
     = nest :current_supporters, view: :grid
 
 %section.p-5.bg-creme
+  .container
+    .lead
+      = nest :funding_history, view: :content
+
+%section.p-5
   .container
     = nest :previous_supporters, view: :grid
 

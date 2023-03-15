@@ -87,7 +87,7 @@
 
 #funding-header {
   background-image: url([[/mod/vasso/backgrounds/funding-back-pic.jpg]]);
-  background-position: 40% 30% !important;
+  background-position: center !important;
 
   .wikirate-section-header {
     padding-top: 10%
@@ -177,4 +177,8 @@
 
 .profile_pic{
   cursor: pointer;
+}
+
+#donate{
+  background: #e4f6f3;
 }
