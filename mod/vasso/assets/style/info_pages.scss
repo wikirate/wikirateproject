@@ -182,3 +182,7 @@
 #donate{
   background: #e4f6f3;
 }
+
+.event-image img{
+  @extend .img-fluid, .d-block, .w-100;
+}
