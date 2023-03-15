@@ -382,9 +382,15 @@
 
 - :type: :blurb
   :codename: policies_heading
+  :conflict: override
   :fields:
     :title: How we operate
-    :body: "Our policy and guidelines provide support and safeguard our organization, staff, partners, third parties and the environment. Their purpose is to build a mutual understanding of how WikiRate International and its affiliates operate."
+    :body: ''
+
+- :name: "Policies Introduction"
+  :type: :RichText
+  :codename: policies_introduction
+  :content: "Our policy and guidelines provide support and safeguard our organization, staff, partners, third parties and the environment. Their purpose is to build a mutual understanding of how WikiRate International and its affiliates operate."
 
 - :type: :blurb
   :codename: service_01
