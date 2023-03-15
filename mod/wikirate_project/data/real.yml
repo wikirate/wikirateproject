@@ -396,6 +396,11 @@
   :codename: policies_introduction
   :content: "Our policy and guidelines provide support and safeguard our organization, staff, partners, third parties and the environment. Their purpose is to build a mutual understanding of how Wikirate International and its affiliates operate."
 
+- :name: "participants"
+  :conflict: override
+  :type: :list
+  :codename: :participants
+
 - :name: "Case Study"
   :type: :cardtype
   :codename: case_study
@@ -411,6 +416,8 @@
     WikiRate provided the perfect platform and opportunity to make this a reality - making our data available on the platform 
     has not only made our methodology more transparent and understandable, but also made it possible for external campaigns 
     such as Clean Clothes Campaign's Fashion Checker to use the data in their work."
+    :participants:
+      [ [ Fashion Revolution ] ]
 
 - :type: :blurb
   :codename: service_01
