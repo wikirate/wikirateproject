@@ -1,8 +1,8 @@
 - date = Date.parse(card.date)
 .col-md-12.event-summary.rounded-3
   - if not card.image.nil? or card.image != ''
-    %a{'href': card.link, 'target':'_blank', 'role':'button'}
-      %img.img-fluid.d-block.w-100{'src': '/files/'+card.image}
+    %a.fluid-image{'href': card.link, 'target':'_blank', 'role':'button'}
+      = field_nest :image, view: :core, size: :large
   %time.date-tag.position-absolute.text-center.d-flex.bg-white.text-uppercase{'date-time':card.date}
     %span.d-block.text-white.day.flex-shrink-0.font-weight-bold
       = date.day <= 9 ? '0'+date.day.to_s : date.day.to_s

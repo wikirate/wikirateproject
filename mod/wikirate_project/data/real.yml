@@ -556,7 +556,7 @@
   :conflict: :override
   :codename: :event_search
   :type: :search_type
-  :content: "{\"type\":\"Event\"}, \"sort\": \"name\", \"dir\": \"desc\""
+  :content: "{\"type\":\"Event\", \"sort\": \"name\", \"dir\": \"desc\"}"
 
 - :name: Policy Search
   :conflict: :override
