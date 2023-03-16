@@ -132,13 +132,11 @@
     Contact Us
 
 - :name: About us
-  :conflict: override
   :codename: about_us
   :type: RichText
   :content: ""
 
 - :name: Our team
-  :conflict: override
   :codename: :our_team
   :content: "<p>We come from 8 different countries and speak 7 different languages.</p>\r\n<p>{{+members|content|profile;show:title_link}}</p>"
 
@@ -183,7 +181,6 @@
 
 - :type: blurb
   :codename: intro_blurb
-  :conflict: :override
   :fields:
     :title: "Wikirate International e.V. is"
     :body: "<p>the non-profit organization hosting the <a href='https://wikirate.org' target='_blank'>WikiRate platform</a>. 
@@ -192,7 +189,6 @@
 
 - :type: blurb
   :codename: our_purpose
-  :conflict: :override
   :fields:
     :title: "Our Purpose"
     :body: "<p>To empower and engage people and organizations from around the world to collect and develop insights on 
@@ -248,11 +244,11 @@
   :conflict: override
 
 - :name: footer link list
-  :conflict: override
   :codename: footer_link_list
   :type: :link_list
   :content: |
     [[Funding]]
+    [[https://spiffy-delivery-3cb.notion.site/WikiRate-Media-Kit-9c87f1f29a0347288a3b6ea6ee38f45c | Media]]
     [[Policies | Policies]]
     [[Impressum]]
 
@@ -377,13 +373,51 @@
   :codename: funding_heading
   :fields:
     :title: How our work is financed
-    :body: "Wikirate International receives grants and project support from a variety of organizations, and also accepts donations. To all funding we apply a set of Board-approved criteria summarized in our <a href=\"/Donations_and_Grand_Policy\">Donation & Grant policy</a>."
+    :body: ""
+
+- :name: "Funding Introduction"
+  :type: :RichText
+  :codename: funding_introduction
+  :content: "Wikirate International receives grants and project support from a variety of organizations, and also accepts donations. To all funding we apply a set of Board-approved criteria summarized in our <a href=\"/Donations_and_Grand_Policy\">Donation & Grant policy</a>."
+
+- name: "Funding History"
+  :type: :RichText
+  :codename: funding_history
+  :content: "For a more detailed overview and timeline of funding Wikirate has received over the years, check out our <a href='/Donation_and_Grant_History'>Donation and Grant History</a>"
 
 - :type: :blurb
   :codename: policies_heading
   :fields:
     :title: How we operate
-    :body: "Our policy and guidelines provide support and safeguard our organization, staff, partners, third parties and the environment. Their purpose is to build a mutual understanding of how Wikirate International and its affiliates operate."
+    :body: ''
+
+- :name: "Policies Introduction"
+  :type: :RichText
+  :codename: policies_introduction
+  :content: "Our policy and guidelines provide support and safeguard our organization, staff, partners, third parties and the environment. Their purpose is to build a mutual understanding of how Wikirate International and its affiliates operate."
+
+- :name: "participants"
+  :conflict: override
+  :type: :list
+  :codename: :participants
+
+- :name: "Case Study"
+  :type: :cardtype
+  :codename: case_study
+
+- :name: Hosting the Fashion Transparency Index
+  :conflict: override
+  :type: :case_study
+  :fields:
+    :link: https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2022
+    :description: "Each year Fashion Revolution embarks on an intensive research project, bringing in volunteers to 
+    help rank 250 of the world’s largest fashion brands on how transparent they are. For some time, we had been looking 
+    for a way to make the thousands of data points and scores collected through the FTI more accessible and reusable by others. 
+    WikiRate provided the perfect platform and opportunity to make this a reality - making our data available on the platform 
+    has not only made our methodology more transparent and understandable, but also made it possible for external campaigns 
+    such as Clean Clothes Campaign's Fashion Checker to use the data in their work."
+    :participants:
+      [ [ Fashion Revolution ] ]
 
 - :type: :blurb
   :codename: service_01
@@ -537,12 +571,12 @@
 - :name: Event Search
   :codename: :event_search
   :type: :search_type
-  :content: "{\"type\":\"Event\"}, \"sort\": \"name\", \"dir\": \"desc\""
+  :content: "{\"type\":\"Event\", \"sort\": \"create\", \"dir\": \"desc\"}"
 
-#- :name: Policy Search
-#  :codename: :policy_search
-#  :type: :search_type
-#  :content: "{\"type\":\"Policy\"}"
+- :name: Policy Search
+  :codename: :policy_search
+  :type: :search_type
+  :content: "{\"type\":\"Policy\"}"
 
 
 - :name: Our Advisors

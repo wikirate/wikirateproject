@@ -5,4 +5,14 @@
       = section_header :policies_heading, header_size: :h1,
                                           button: { url: "/Contact_us", text: "Contact Us" }
 %section.p-5
-  = nest %i[policy type by_name], view: :core, items: { view: :box }
+  .container
+    .lead.pb-3
+      = nest :policies_introduction, view: :content
+    = nest %i[policy type by_name], view: :core, items: { view: :box }
+
+%section.p-5
+  .container
+    .small
+      For policies and guidelines regarding the Wikirate platform and community, check out this
+      %a{href:"https://wikirate.org/Wikirate_Policies", target: '_blank'}
+        page.

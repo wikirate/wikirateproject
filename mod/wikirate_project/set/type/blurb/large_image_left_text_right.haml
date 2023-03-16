@@ -1,7 +1,8 @@
 .row.blurb
   .col-md-6.p-4.d-flex.align-items-center.justify-content-center
     .row.justify-content-center
-      %img.img-fluid.rounded.d-block.w-100{'src': '/files/'+card.image}
+      .fluid-image
+        = field_nest :image, view: :core, size: :large
       - if !card.image_attribution.nil? and card.image_attribution != ''
         .row.text-center
           %small

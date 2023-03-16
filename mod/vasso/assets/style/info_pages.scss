@@ -21,8 +21,10 @@
 }
 
 .partner-img-container img {
-  @extend .rounded-circle, .img-fluid, .w-100, .d-block, .m-5;
-  max-width: 200px;
+  max-width: 150px;
+  max-height: 100%;
+  height: auto;
+  display: inline !important;
 }
 
 .animated-item {
@@ -84,7 +86,7 @@
 }
 
 #funding-header {
-  background-image: url([[/mod/vasso/backgrounds/funding-pic.png]]);
+  background-image: url([[/mod/vasso/backgrounds/funding-back-pic.jpg]]);
   background-position: center !important;
 
   .wikirate-section-header {
@@ -112,13 +114,13 @@
 }
 
 #impressum-header {
-  background-image: url([[/mod/vasso/backgrounds/impressum-pic.png]]);
+  background-image: url([[/mod/vasso/backgrounds/impressum-back-pic.jpg]]);
   background-position: 50% 80% !important;
 }
 
 #our-work-header {
-  background-image: url([[/mod/vasso/backgrounds/our-work-pic.png]]);
-  background-position: 80% 85% !important;
+  background-image: url([[/mod/vasso/backgrounds/our-work-back-pic.jpg]]);
+  background-position: 50% 50% !important;
 }
 
 #about-us-header {
@@ -174,5 +176,18 @@
 }
 
 .profile_pic{
+  cursor: pointer;
+}
+
+#donate{
+  background: #e4f6f3;
+}
+
+.fluid-image img{
+  @extend .img-fluid, .d-block, .w-100;
+}
+
+
+.open-modal-button{
   cursor: pointer;
 }
