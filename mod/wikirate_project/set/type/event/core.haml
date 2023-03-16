@@ -12,6 +12,8 @@
       = date.year
   .row.ps-3.pe-3.mb-2.mt-1
     .col-12
+      %span.badge.bg-primary
+        = 'event'
       - event_types.each do |type|
         %span.badge.bg-primary
           = type

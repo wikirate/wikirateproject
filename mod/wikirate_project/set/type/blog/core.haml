@@ -1,5 +1,5 @@
 - date =  card.created_at
-.col-md-12.event-summary.rounded-3
+.col-md-12.blog-summary.rounded-3
   - if not card.image.nil? or card.image != ''
     %a.fluid-image{'href': card.link, 'target':'_blank', 'role':'button'}
       = field_nest :image, view: :core, size: :large
@@ -11,6 +11,8 @@
       = date.year
   .row.ps-3.pe-3.mb-2.mt-1
     .col-12
+      %span.badge.bg-primary
+        = 'blog'
       - blog_types.each do |type|
         %span.badge.bg-primary
           = type
