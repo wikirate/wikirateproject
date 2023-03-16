@@ -12,11 +12,32 @@
   transform: scale(0.9);
 }
 
-.endorsement-summary blockquote {
+.endorsement-summary .blockquote {
   font-size: 1.1rem;
   border-color: $purple;
   border-style: solid;
   border-width: 0 0 0 2px;
+  height: 100%;
+}
+
+.endorsement-summary > .row {
+  height: inherit !important;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+}
+
+.slick-slide > div {
+  height: 100%;
+
+  .endorsement-summary {
+    height: 100%
+  }
 }
 
 .quotee-img img {
