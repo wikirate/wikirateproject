@@ -1,0 +1,26 @@
+- date =  card.created_at
+.col-md-12.event-summary.rounded-3
+  - if not card.image.nil? or card.image != ''
+    %a.fluid-image{'href': card.link, 'target':'_blank', 'role':'button'}
+      = field_nest :image, view: :core, size: :large
+  %time.date-tag.position-absolute.text-center.d-flex.bg-white.text-uppercase
+    %span.d-block.text-white.day.flex-shrink-0.font-weight-bold
+      = date.day <= 9 ? '0'+date.day.to_s : date.day.to_s
+    %span.d-block.py-2.px-3
+      = Date::ABBR_MONTHNAMES[date.month]
+      = date.year
+  .row.ps-3.pe-3.mb-2.mt-1
+    .col-12
+      - blog_types.each do |type|
+        %span.badge.bg-primary
+          = type
+  .row.ps-3.pe-3
+    %a{'href': card.link, 'target':'_blank', 'role':'button'}
+      %h5
+        = card.name
+  .row.ps-3.pe-3
+    = field_nest :description, view: :content
+  .row.ps-3.pe-3.pb-3.pt-3
+    .col-12.text-center
+      %a.btn.btn-outline-primary{'href': card.link, 'target':'_blank', 'role':'button'}
+        More Details
