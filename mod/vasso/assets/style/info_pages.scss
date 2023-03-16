@@ -186,3 +186,8 @@
 .fluid-image img{
   @extend .img-fluid, .d-block, .w-100;
 }
+
+
+.open-modal-button{
+  cursor: pointer;
+}
