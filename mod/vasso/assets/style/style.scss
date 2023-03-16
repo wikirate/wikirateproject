@@ -324,7 +324,7 @@ div.animation span:nth-child(6) {
   height: 26em;
 
   .card {
-    h5, a {
+    h5, a, span {
       color: #f7733d;
     }
 
@@ -336,7 +336,7 @@ div.animation span:nth-child(6) {
     margin: 1em;
 
     &:hover {
-      h5, %i, a {
+      h5, %i, a, span {
         color: $white !important;
       }
 
