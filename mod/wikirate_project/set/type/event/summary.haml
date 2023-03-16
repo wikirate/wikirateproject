@@ -1,31 +1,17 @@
-.col-md-4.mb-1
-  .col-md-12.event-summary.rounded-3
-    .row
-      - if not card.image.nil? or card.image != ''
-        %a.fluid-image{'href': card.link, 'target':'_blank', 'role':'button'}
-          = field_nest :image, view: :core, size: :large
-    .row.ps-3.pe-3.mb-2.mt-1
-      .col-12
-        - event_types.each do |type|
-          %span.badge.bg-primary
-            = type
-    .row.ps-3.pe-3
-      %a{'href': card.link, 'target':'_blank', 'role':'button'}
-        %h3
-          = card.name
-    .row.ps-3.pe-3
-      %address
-        %ul.list-unstyled.event-details
-          %li
-            %i.fas.fa-clock.pe-2
-            = field_nest :start_time, view: :core
-            = " - "
-            = field_nest :end_time, view: :core
-            = field_nest :timezone, view: :core
-          %li.pt-2.pb-2
-            %i.fas.fa-map-marker-alt.pe-2
-            = field_nest :location, view: :core
-    .row.ps-3.pe-3.pb-3
-      .col-12.text-center
-        %a.btn.btn-outline-primary{'href': card.link, 'target':'_blank', 'role':'button'}
-          More Details
+- date = Date.parse(card.date)
+.col-md-12
+  .row.ps-1.pe-3
+    %a{'href': card.link, 'target':'_blank', 'role':'button'}
+      %h5
+        = card.name
+  .row.ps-1.pe-3.pb-2
+    %small
+      = Date::ABBR_MONTHNAMES[date.month]
+      = date.day <= 9 ? '0'+date.day.to_s : date.day.to_s
+      = ", "
+      = date.year
+      = " @ "
+      = field_nest :start_time, view: :core
+      = " - "
+      = field_nest :end_time, view: :core
+      = field_nest :timezone, view: :core

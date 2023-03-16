@@ -14,6 +14,7 @@ SOCIALS = {
 }.freeze
 
 format :html do
+
   def shared_url_prefix project = true
     project ? '/' : "https://#{wr_subdomain}wikirate.org/"
   end
@@ -38,6 +39,10 @@ end
 format :html do
   view :count_badge_label do
     simple_count_badge_label
+  end
+
+  view :favicon_tag, unknown: true, perms: :none do
+    %(<link rel="shortcut icon" href="/mod/vasso/favicon_original.svg" />)
   end
 end
 
