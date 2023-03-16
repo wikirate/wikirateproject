@@ -4,8 +4,11 @@
       Latest blogs and events
   .row.mt-1
     - latest_blogs.each do |blog|
-      .col-lg-3.col-md-4.col-sm-6
+      .col-lg-4.col-md-4.col-sm-6
         = nest blog, view: :core
-    - latest_events.each do |event|
-      .col-lg-3.col-md-4.col-sm-6
-        = nest event, view: :core
+    .col-md-4.col-sm-2.event-summary.ps-4.pe-4.pt-4.pb-4
+      %h4.highlighted
+        Upcoming Events
+      - latest_events.each do |event|
+        .row
+          = nest event, view: :summary
