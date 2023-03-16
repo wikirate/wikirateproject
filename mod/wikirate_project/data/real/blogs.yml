@@ -15,7 +15,6 @@
     :link: "https://wikirate.medium.com/wikirate-changing-the-face-of-esg-data-69f9d967a6e3"
 
 - :name: "Elianne Cornfield: My Data Values"
-  :conflict: :override
   :type: blog
   :time: 1675933296
   :fields:
@@ -25,7 +24,6 @@
       - interview
 
 - :name: "Paul Roeland: My Data Values"
-  :conflict: :override
   :type: blog
   :time: 1675242096
   :fields:
