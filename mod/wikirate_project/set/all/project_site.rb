@@ -1,8 +1,7 @@
 NAV_MENU = {
   'About us' => 'About_us',
   'Our work' => 'Our_work',
-  'Events' => 'Events',
-  'Blog' => 'https://wikirate.medium.com'
+  'Events' => 'Events'
 }.freeze
 
 SOCIALS = {

@@ -13,14 +13,14 @@
   .container
     = nest :current_supporters, view: :grid
 
+%section.p-5
+  .container
+    = nest :previous_supporters, view: :grid
+
 %section.p-5.bg-creme
   .container
     .lead
       = nest :funding_history, view: :content
-
-%section.p-5
-  .container
-    = nest :previous_supporters, view: :grid
 
 %section.p-5
   = render_donate
