@@ -10,8 +10,9 @@
         %a{href:card.link, target: '_blank'}
           %i.fas.fa-arrow-right
       - if !card.link.start_with?('http') and card.link != ''
-        %span.open-modal-button{'onclick':'trigger_modal(this)'}
-          %i.fas.fa-arrow-right
+        %a.open-modal-button{'onclick':'trigger_modal(this)', role:'button'}
+          = 'Case study'
+          %i.ms-2.fas.fa-arrow-right
           = modal_link "",
                      path: {mark: card.link,  view: :core },
                      class: '.fas.fa-arrow-right'

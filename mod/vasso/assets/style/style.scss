@@ -322,9 +322,10 @@ div.animation span:nth-child(6) {
 
 .action-card {
   height: 26em;
+
   .card {
     h5, a {
-      color: $gradient_purple;
+      color: #f7733d;
     }
 
     padding: 1rem;
@@ -340,9 +341,26 @@ div.animation span:nth-child(6) {
       }
 
       color: $white;
-      background-color: $purple;
+      background-color: #f7733d;
     }
   }
+}
+
+#services-slider .btn.wr-arrow {
+  color: #f7733d;
+}
+
+#services-slider .btn.wr-arrow:hover {
+  background-color: #f7733d;
+  color: $white;
+}
+
+card .card, .endorsement-summary {
+  box-shadow: 0 5px 10px 0 rgba(45, 35, 116, 0.08);
+}
+
+.action-card .card a {
+  color: #f7733d;
 }
 
 .cta-card, .action-card .card, .endorsement-summary {
