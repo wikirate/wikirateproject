@@ -187,7 +187,11 @@
   @extend .img-fluid, .d-block, .w-100;
 }
 
-
 .open-modal-button{
   cursor: pointer;
+}
+
+.past-event{
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
 }

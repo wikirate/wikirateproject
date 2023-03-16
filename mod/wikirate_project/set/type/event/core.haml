@@ -1,5 +1,6 @@
 - date = Date.parse(card.date)
-.col-md-12.event-summary.rounded-3
+- filter = date < Time.now ? 'past-event' : ''
+.col-md-12.event-summary.rounded-3{class: filter}
   - if not card.image.nil? or card.image != ''
     %a.fluid-image{'href': card.link, 'target':'_blank', 'role':'button'}
       = field_nest :image, view: :core, size: :large
