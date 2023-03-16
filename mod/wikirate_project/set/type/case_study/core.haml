@@ -1,0 +1,16 @@
+.container
+  .row
+    %h4
+      = card.name
+  .row.text-center.pt-3.pb-3
+    .fluid-image
+      = field_nest :image, view: :core, size: :large
+  .row
+    = field_nest :description, view: :content
+  .row.justify-content-center.pt-3
+    .col-md-4.text-center
+      %a.btn.btn-outline-primary{href: card.link, target:'_blank', role:'button'}
+        Learn more
+  .row.pt-1.pb-2
+    - card.field(:participants).card.item_cards.each do |participant|
+      = nest participant, view: :reference

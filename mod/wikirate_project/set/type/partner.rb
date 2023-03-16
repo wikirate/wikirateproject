@@ -25,4 +25,5 @@ format :html do
   end
 
   view :core, template: :haml
+  view :reference, template: :haml
 end

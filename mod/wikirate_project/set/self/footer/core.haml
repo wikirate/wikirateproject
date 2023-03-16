@@ -5,7 +5,7 @@
         = nest :wikirate_icon, view: :content
         %p.pt-3
           Wikirate International e.V. hosts
-          %a{:href => "https://wikirate.org"} WikiRate
+          %a{ href: "https://wikirate.org"} Wikirate
           %br
           Powered by
           = link_to "Decko", href: "https://decko.org"
@@ -21,9 +21,3 @@
           - social_media_links.each do |platform, url|
             %a{ href: url, target: '_blank' }
               = font_awesome_icon_tag platform.downcase, brand: true, class: "me-2"
-
-    -#   - %w[licensing policies legal].each do |section|
-    -#
-    -#     .col-3.p-3
-    -#       = nest :"footer_#{section}_list", view: :titled, title: section, hide: :menu
-    -#
