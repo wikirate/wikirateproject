@@ -1,6 +1,9 @@
 .container
+  .row
+    %h4
+      = card.name
   .row.text-center.pt-3.pb-3
-    .image-fluid
+    .fluid-image
       = field_nest :image, view: :core, size: :large
   .row
     = field_nest :description, view: :content
