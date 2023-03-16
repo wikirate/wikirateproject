@@ -6,5 +6,12 @@
       .py-3
         = field_nest :body, view: :core
     .text-end
-      %a{href:card.link, target: '_blank'}
-        %i.fas.fa-arrow-right
+      - if card.link.start_with?('http')
+        %a{href:card.link, target: '_blank'}
+          %i.fas.fa-arrow-right
+      - if !card.link.start_with?('http') and card.link != ''
+        %span.open-modal-button{'onclick':'trigger_modal(this)'}
+          %i.fas.fa-arrow-right
+          = modal_link "",
+                     path: {mark: card.link,  view: :core },
+                     class: '.fas.fa-arrow-right'
