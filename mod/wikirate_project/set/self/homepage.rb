@@ -5,8 +5,12 @@ format :html do
     view view, template: :haml
   end
 
+  def latest_blogs
+    Card.search(type: "Blog", limit: 2, sort_by: 'create', dir: 'desc')
+  end
+
   def latest_events
-    Card.search(type: "Event", limit: 3, sort_by: 'create', dir: 'desc')
+    Card.search(type: "Event", limit: 2, sort_by: 'create', dir: 'desc')
   end
 
   def endorsements

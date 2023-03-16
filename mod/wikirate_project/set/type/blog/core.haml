@@ -1,10 +1,9 @@
-- date = Date.parse(card.date)
-- filter = date < Time.now ? 'past-event' : ''
-.col-md-12.event-summary.rounded-3{class: filter}
+- date =  card.created_at
+.col-md-12.blog-summary.rounded-3
   - if not card.image.nil? or card.image != ''
     %a.fluid-image{'href': card.link, 'target':'_blank', 'role':'button'}
       = field_nest :image, view: :core, size: :large
-  %time.date-tag.position-absolute.text-center.d-flex.bg-white.text-uppercase{'date-time':card.date}
+  %time.date-tag.position-absolute.text-center.d-flex.bg-white.text-uppercase
     %span.d-block.text-white.day.flex-shrink-0.font-weight-bold
       = date.day <= 9 ? '0'+date.day.to_s : date.day.to_s
     %span.d-block.py-2.px-3
@@ -13,8 +12,8 @@
   .row.ps-3.pe-3.mb-2.mt-1
     .col-12
       %span.badge.bg-primary
-        = 'event'
-      - event_types.each do |type|
+        = 'blog'
+      - blog_types.each do |type|
         %span.badge.bg-primary
           = type
   .row.ps-3.pe-3
@@ -22,20 +21,8 @@
       %h5
         = card.name
   .row.ps-3.pe-3
-    %address
-      %ul.list-unstyled.event-details
-        %li
-          %i.fas.fa-clock.pe-2
-          %small
-            = field_nest :start_time, view: :core
-            = " - "
-            = field_nest :end_time, view: :core
-            = field_nest :timezone, view: :core
-        %li.pt-2.pb-2
-          %i.fas.fa-map-marker-alt.pe-2
-          %small
-            = field_nest :location, view: :core
-  .row.ps-3.pe-3.pb-3
+    = field_nest :description, view: :content
+  .row.ps-3.pe-3.pb-3.pt-3
     .col-12.text-center
       %a.btn.btn-outline-primary{'href': card.link, 'target':'_blank', 'role':'button'}
         More Details

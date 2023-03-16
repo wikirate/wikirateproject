@@ -13,7 +13,8 @@ format :html do
   end
 
   def event_types
-    card.fetch(:event_type).item_names
+    event_types = card.fetch(:event_type)
+    event_types.nil? ? [] : event_types.item_names
   end
 
   view :summary, template: :haml

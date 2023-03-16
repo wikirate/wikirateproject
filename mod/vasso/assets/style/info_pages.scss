@@ -154,9 +154,22 @@
   border-right: 1px solid $gray-400;
 }
 
-.day {
+.blog-summary .day {
+  padding: 8px 7px;
+  background: $gradient_purple !important;
+}
+
+.blog-summary .badge {
+  background: $gradient_purple
+}
+
+.event-summary .day {
   padding: 8px 7px;
   background: $gradient_orange !important;
+}
+
+.event-summary .badge {
+  background: $gradient_orange
 }
 
 .job_title {
@@ -187,7 +200,11 @@
   @extend .img-fluid, .d-block, .w-100;
 }
 
-
 .open-modal-button{
   cursor: pointer;
+}
+
+.past-event{
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
 }

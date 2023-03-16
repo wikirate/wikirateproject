@@ -1,0 +1,35 @@
+- :name: "New wrappers released for WikiRate's REST API in Java and Ruby"
+  :type: blog
+  :time: 1676365296
+  :fields:
+    :description: "New API wrappers are now available in Java and Ruby thanks to NLnet's support and an updated version of the Python wrapper released in 2021.
+                   WikiRate's REST API allows users to interact with its data by offering easy access to endpoints such as companies, sources, datasets, metrics questions, and answers."
+    :link: "https://wikirate.medium.com/new-wrappers-released-for-wikirates-rest-api-in-java-and-ruby-a0e59c95e038"
+
+- :name: "WikiRate: Changing the face of ESG data"
+  :type: blog
+  :time: 1678352496
+  :fields:
+    :description: "Companies' financial performance is a matter of public record and often headline news. But how do we learn about their environmental performance or human rights record?
+    Over ten years ago, WikiRate's founder Philipp Hirche set out to change this and transform how ESG data was shared and used to increase sustainability and equity worldwide."
+    :link: "https://wikirate.medium.com/wikirate-changing-the-face-of-esg-data-69f9d967a6e3"
+
+- :name: "Elianne Cornfield: My Data Values"
+  :conflict: :override
+  :type: blog
+  :time: 1675933296
+  :fields:
+    :description: "Elianne Cornfield, Data Coordinator at Clean Clothes Campaign, talks to WikiRate about her views on and relationship with data."
+    :link: "https://wikirate.medium.com/elianne-cornfield-my-data-values-a1cd42541ec4"
+    :blog_type:
+      - interview
+
+- :name: "Paul Roeland: My Data Values"
+  :conflict: :override
+  :type: blog
+  :time: 1675242096
+  :fields:
+    :description: "Paul Roeland, Transparency Coordinator at Clean Clothes Campaign, talks to WikiRate about his views on and relationship with data."
+    :link: "https://wikirate.medium.com/paul-roeland-my-data-values-8549fb14076"
+    :blog_type:
+      - interview
