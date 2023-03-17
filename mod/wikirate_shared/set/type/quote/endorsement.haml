@@ -1,17 +1,17 @@
 .col-md-12.endorsement-summary.rounded-3{onclick: 'trigger_modal(this)'}
-  .row.p-4
+  .row.endorsement-padding.p-4
     %figure.wikirate-quote.mb-md-0
-      %blockquote.blockquote.ps-4
+      .row.blockquote.h-100.ps-2
         %p
           %i.fas.fa-quote-left.fa-sm.pe-2.text-primary
           = field_nest :quote, view: :core
         %br
-        .row.d-flex.align-items-center
+        .row.attribution.d-flex.align-items-center
           - if !card.image.nil? and !card.image != ''
             .col-auto.d-none.d-sm-block
               %span.rounded-picture.quotee-img.pe-2.d-flex.align-items-center
                 = field_nest :image, view: :core
-          .col-md-6.p-sm-2.p-md-0
+          .col-md-8.p-sm-2.p-md-0
             %cite
               - if !card.quotee.nil? and card.quotee != ''
                 %strong.h5.mb-0.text-capitalize

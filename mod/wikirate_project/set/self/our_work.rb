@@ -9,6 +9,6 @@ format :html do
   end
 
   def breadcrumb_title
-    "Our work"
+    'Our work'
   end
 end

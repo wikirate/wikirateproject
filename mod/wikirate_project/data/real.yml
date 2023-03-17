@@ -236,6 +236,12 @@
   :storage_type: :coded
   :conflict: override
 
+- :name: "*title"
+  :conflict: override
+  :type: :Phrase
+  :codename: :title
+  :content: "Wikirate International e.V."
+
 - :name: "wikirate-icon"
   :type: :image
   :codename: wikirate_icon
@@ -1042,6 +1048,11 @@
     policy will be reviewed annually and updated as necessary.</p>\r\n<p style=\"text-align:
     right;\"><span style=\"font-weight: bolder; font-size: 15.2px;\">Policy last updated:</span><span
     style=\"font-size: 15.2px;\">November 2018</span></p>\r\n<p></p>"
+
+- name: "Social Description"
+  type: :basic
+  codename: :social_description
+  content: "Wikirate International is the non-profit that hosts the Wikirate platform. We empower people and organizations to collect data and develop insights on companies under a free license."
 
 - homepage
 - supporters
