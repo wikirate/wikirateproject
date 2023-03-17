@@ -34,6 +34,18 @@ format :html do
   def nav_help?
     false
   end
+
+  def social_image
+    @social_image = 'https://dq06ugkuram52.cloudfront.net/files/79/40132733-large.png'
+  end
+
+  def social_description
+    Card.fetch(:social_description).content
+  end
+
+  def og_title
+    "#{card.name} - Wikirate International e.V."
+  end
 end
 
 format :html do
