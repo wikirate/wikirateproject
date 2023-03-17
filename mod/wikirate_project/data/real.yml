@@ -230,17 +230,16 @@
   readable format. If you have any questions or remarks, we’d love to hear from you. Contact us"
 
 - :name: "gradient-logo"
-  :type: :Phrase
+  :type: :image
   :codename: gradient_logo
-  :content: "Wikirate International e.V."
-  :conflict: override
-
-- :name: "*title"
-  :type: :title
-  :codename: :title
   :image: wr-logo-gradient.svg
   :storage_type: :coded
   :conflict: override
+
+- :name: "*title"
+  :type: :Phrase
+  :codename: :title
+  :content: "Wikirate International e.V."
 
 - :name: "wikirate-icon"
   :type: :image
