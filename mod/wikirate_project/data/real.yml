@@ -237,6 +237,7 @@
   :conflict: override
 
 - :name: "*title"
+  :conflict: override
   :type: :Phrase
   :codename: :title
   :content: "Wikirate International e.V."
