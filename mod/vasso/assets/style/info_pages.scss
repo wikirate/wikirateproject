@@ -212,3 +212,12 @@
 .highlighted {
   color: #f7733d;
 }
+
+.publication-body img{
+  @extend .float-start, .p-3;
+}
+
+.partner-img img {
+  width: 60px;
+  height: auto;
+}
