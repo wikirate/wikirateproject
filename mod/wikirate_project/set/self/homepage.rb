@@ -16,4 +16,12 @@ format :html do
   def endorsements
     Card.fetch('Endorsements')
   end
+
+  def social_image
+    Card[:image_on_socials]&.format(:text)&.render_source
+  end
+
+  def social_description
+    Card.fetch(:social_description)&.format(:text)&.text_description
+  end
 end

@@ -11,4 +11,12 @@ format :html do
   def breadcrumb_title
     'Our work'
   end
+
+  def social_image
+    @social_image = Card[:image_on_socials]&.format(:text)&.render_source
+  end
+
+  def social_description
+    Card.fetch(:advocacy)&.format(:text)&.text_description
+  end
 end
