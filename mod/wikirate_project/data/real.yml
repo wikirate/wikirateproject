@@ -1059,6 +1059,18 @@
   codename: :social_description
   content: "Wikirate International is the non-profit that hosts the Wikirate platform. We empower people and organizations to collect data and develop insights on companies under a free license."
 
+- name: "Events Description"
+  type: :basic
+  codename: :events_description
+  content: "Here you can find all upcoming and past events."
+
+- :name: "Image on Socials"
+  :type: :image
+  :codename: :image_on_socials
+  :image: image_on_socials.png
+  :storage_type: :coded
+  :conflict: override
+
 - homepage
 - supporters
 - events
