@@ -455,6 +455,11 @@
   :fields:
     :title: Develop visual dashboards
 
+- :name: Year
+  :conflict: override
+  :codename: :year
+  :type: :cardtype
+
 - :name: Description List
   :codename: :description_list
   :type: :cardtype
