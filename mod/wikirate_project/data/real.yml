@@ -1068,7 +1068,6 @@
   :type: :image
   :codename: :image_on_socials
   :image: image_on_socials.png
-  :storage_type: :coded
   :conflict: override
 
 - homepage
