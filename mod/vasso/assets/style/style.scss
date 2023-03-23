@@ -9,10 +9,6 @@ body {
   color: $gray-900;
 }
 
-div[data-card-type-id='4'] img {
-  @extend .rounded-circle
-}
-
 .rounded-picture img {
   @extend .rounded-circle
 }

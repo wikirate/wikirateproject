@@ -1,6 +1,6 @@
 %div{ class: classy("profile text-center p-3") }
   - if voo.show? :profile_pic
-    %div{ class: classy("profile_pic"), onclick: "trigger_modal($(this).parent()[0])" }
+    %div{ class: classy("profile_pic rounded-picture"), onclick: "trigger_modal($(this).parent()[0])" }
       = render :profile_pic
   - if voo.show? :user_name
     %div{ class: classy("user_name pt-3") }
