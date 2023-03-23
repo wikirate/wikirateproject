@@ -1059,16 +1059,12 @@
   codename: :social_description
   content: "Wikirate International is the non-profit that hosts the Wikirate platform. We empower people and organizations to collect data and develop insights on companies under a free license."
 
-- name: "Events Description"
-  type: :basic
-  codename: :events_description
-  content: "Here you can find all upcoming and past events."
-
 - :name: "Image on Socials"
   :type: :image
   :codename: :image_on_socials
   :image: image_on_socials.png
   :conflict: override
+
 
 - homepage
 - supporters
@@ -1078,3 +1074,44 @@
 - skin
 - images
 - blogs
+
+- :name:
+    - :policy
+    - :description
+  :content: "Our policies and guidelines provide support and safeguard our organization, 
+  staff, partners, third parties and the environment. Their purpose is to build a mutual 
+  understanding of how WikiRate International and its affiliates operate."
+
+- :name:
+    - :event
+    - :description
+  :content: "Here you can find all upcoming and past events."
+
+- :name:
+    - :homepage
+    - :description
+  :content: "Wikirate International is the non-profit that hosts the Wikirate platform. We empower people and organizations 
+  to collect data and develop insights on companies under a free license."
+
+- :name:
+    - :funding
+    - :description
+  :content: "Wikirate International receives grants and project support from a variety of organizations, and also accepts 
+  donations. To all funding we apply a set of Board-approved criteria summarized in our Donation & Grant policy."
+
+- :name:
+    - :impressum
+    - :description
+  :content: "How we are legally defined."
+
+- :name:
+    - :about_us
+    - :description
+  :content: "Wikirate International the non-profit organization hosting the WikiRate platform. We develop the data system 
+  and tools the Wikirate community needs, and supports them in using the technology to help them achieve their goals."
+
+- :name:
+    - :our_work
+    - :description
+  :content: "WikiRate's data system and tools were developed for free and independent use, with plenty of Guides to help 
+  you get stuck in. However, if time is short or skills are lacking, we are here to help."

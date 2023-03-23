@@ -1,4 +1,5 @@
 include_set Abstract::Slider
+include_set Abstract::SocialImage
 
 format :html do
   %i[core animation blogs_events services endorsements contact_us].each do |view|
@@ -17,11 +18,4 @@ format :html do
     Card.fetch('Endorsements')
   end
 
-  def social_image
-    Card[:image_on_socials]&.format(:text)&.render_source
-  end
-
-  def social_description
-    Card.fetch(:social_description)&.format(:text)&.text_description
-  end
 end
