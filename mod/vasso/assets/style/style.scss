@@ -394,3 +394,41 @@ card .card, .endorsement-summary {
     color: $white;
   }
 }
+
+.filter-chip {
+  font-weight: normal;
+  font-size: 1em;
+  padding: 1px 0.8em !important;
+
+  .remove-filter-link {
+    color: inherit !important;
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.badge {
+  display: inline-block;
+  //align-items: center;
+  padding: 0.1rem 0.4rem;
+  line-height: inherit;
+  vertical-align: text-top !important;
+}
+
+.bg-metric-outline {
+  color: #7164D0 !important;
+  background-color: #fff !important;
+  border: 1px solid #7164D0;
+}
+
+.bg-metric-light {
+  color: #7164D0 !important;
+  background-color: #EDEBF9;
+}
+
+.badge-purple {
+  color: #7164D0;
+  background-color: #EDEBF9;
+}
