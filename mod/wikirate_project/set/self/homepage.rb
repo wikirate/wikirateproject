@@ -1,4 +1,5 @@
 include_set Abstract::Slider
+include_set Abstract::SocialImage
 
 format :html do
   %i[core animation blogs_events services endorsements contact_us].each do |view|
@@ -16,4 +17,5 @@ format :html do
   def endorsements
     Card.fetch('Endorsements')
   end
+
 end

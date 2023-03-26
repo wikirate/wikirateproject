@@ -1,6 +1,7 @@
 include_set Abstract::Breadcrumbs
 include_set Abstract::SectionHeader
 include_set Abstract::Slider
+include_set Abstract::SocialImage
 
 format :html do
 
@@ -11,4 +12,5 @@ format :html do
   def breadcrumb_title
     'Our work'
   end
+
 end

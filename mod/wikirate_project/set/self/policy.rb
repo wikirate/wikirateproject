@@ -1,5 +1,6 @@
 include_set Abstract::Breadcrumbs
 include_set Abstract::SectionHeader
+include_set Abstract::SocialImage
 
 format :html do
   view :core, template: :haml
@@ -7,4 +8,5 @@ format :html do
   def breadcrumb_title
     "Policies"
   end
+
 end

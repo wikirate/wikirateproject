@@ -29,4 +29,5 @@ format :html do
   end
 
   view :detailed_profile, template: :haml
+  view :core, template: :haml
 end
