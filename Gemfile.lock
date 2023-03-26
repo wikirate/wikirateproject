@@ -1,6 +1,10 @@
 PATH
   remote: vendor/card-mods
   specs:
+    card-mod-filter (0.1)
+      card
+      card-mod-bootstrap
+      card-mod-search
     card-mod-google_analytics (0.14)
       card
       staccato (~> 0.5)
@@ -575,6 +579,7 @@ DEPENDENCIES
   card!
   card-mod-defaults!
   card-mod-delayed_job!
+  card-mod-filter!
   card-mod-google_analytics!
   card-mod-monkey!
   card-mod-platypus!
