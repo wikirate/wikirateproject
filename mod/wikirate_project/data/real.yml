@@ -179,6 +179,17 @@
       :fields:
         :autoname: Blurb 0001
 
+- :name: Output
+  :codename: output
+  :type: :cardtype
+  :fields:
+    :description:
+      :content:
+        "Explore Wikirate International's advocacy activities."
+
+- :name: output type
+  :codename: output_type
+
 - :type: blurb
   :codename: intro_blurb
   :fields:
@@ -1064,7 +1075,6 @@
   :codename: :image_on_socials
   :image: image_on_socials.png
   :conflict: override
-
 
 - homepage
 - supporters

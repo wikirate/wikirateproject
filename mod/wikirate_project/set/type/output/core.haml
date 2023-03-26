@@ -1,0 +1,12 @@
+.row
+  .col-3
+    = field_nest :image, view: :content, size: :large
+  .col-9
+    = field_nest :output_type, view: :labeled, title: "type", items: { view: :name }
+    = field_nest :uri, view: :labeled, title: "URI"
+    = field_nest :file, view: :labeled, title: "file"
+    = field_nest :date, view: :labeled, title: "date" # , items: { view: :name }
+    - if !card.partner.nil? && card.partner!= ''
+      = field_nest :partner, view: :core, title: "organization", items: {view: :reference}
+.my-5
+  = field_nest :description, title: "Description"
