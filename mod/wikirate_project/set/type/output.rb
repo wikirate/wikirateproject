@@ -5,7 +5,7 @@ card_accessor :file, type: :file
 card_accessor :output_type, type: :pointer
 
 card_accessor :date, type: :date
-card_accessor :partner, type: :partner
+card_accessor :partner, type: :pointer
 
 format :html do
   def edit_fields
