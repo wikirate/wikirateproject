@@ -1,12 +1,28 @@
-.row
-  .col-3
-    = field_nest :image, view: :content, size: :large
-  .col-9
-    = field_nest :output_type, view: :labeled, title: "type", items: { view: :name }
-    = field_nest :uri, view: :labeled, title: "URI"
-    = field_nest :file, view: :labeled, title: "file"
-    = field_nest :date, view: :labeled, title: "date" # , items: { view: :name }
-    - if !card.partner.nil? && card.partner!= ''
-      = field_nest :partner, view: :core, title: "organization", items: {view: :reference}
-.my-5
-  = field_nest :description, title: "Description"
+.col-md-12
+  .row
+    .col-12
+      %span.badge.bg-primary
+        = card.output_type
+  .row.publication-body.pt-3
+    .col-12
+      - if !card.image.nil? && card.image != ''
+        = field_nest :image, view: :core, size: :medium
+      = card.description
+  .row
+    .col-12.mt-1.text-end
+      %time.small.text-info
+        = date_to_str
+  .row
+    .col-12.text-end
+      - if !card.uri.nil? and card.uri != ''
+        %a{href: card.uri, target: '_blank', role:'button'}
+          %i.material-icons
+            = "link"
+      - if !card.file.nil? and card.file != ''
+        %a{href: card.fetch(:file).attachment, target: '_blank', role:'button', 'alt':'download'}
+          %i.material-icons
+            = "download"
+  .row.pt-2.pb-2
+    - card.field(:partner).card.item_cards.each do |partner|
+      .col-sm-6.col-md-4.pt-md-0.pt-sm-0.pt-3.ps-3.ps-md-0.ps-sm-0
+        = nest partner, view: :reference
