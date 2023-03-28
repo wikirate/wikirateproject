@@ -6,7 +6,7 @@
   .row.publication-body.pt-3
     .col-12
       - if !card.image.nil? && card.image != ''
-        = field_nest :image, view: :core, size: :medium
+        = field_nest :image, view: :core, size: :large
       = card.description
   .row
     .col-12.mt-1.text-end
