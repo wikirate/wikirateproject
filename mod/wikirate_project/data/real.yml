@@ -190,6 +190,12 @@
 - :name: output type
   :codename: output_type
 
+- :name: Guide
+  :codename: guide
+
+- :name: Policy Advice
+  :codename: policy_advice
+
 - :type: blurb
   :codename: intro_blurb
   :fields:
