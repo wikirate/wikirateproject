@@ -1,8 +1,8 @@
 include_set Abstract::Media
 include_set Abstract::Breadcrumbs
 
-card_accessor :description, type: :RichText
-card_accessor :fulltext, type: :RichText
+card_accessor :description, type: :basic
+card_accessor :fulltext, type: :basic
 
 format :html do
   def edit_fields

@@ -8,12 +8,18 @@ $(document).ready ->
   $("body").on "click", "._output-filter-option", (e) ->
     e.preventDefault()
     option = $(this).data "option"
-    restrictTo [option].concat(currentOptions())
+    restrictTo this, [option].concat(currentOptions())
 
   # remove output type filter
   $("body").on "click", "._remove-output-filter", (e) ->
     e.preventDefault()
-    restrictTo currentOptions($(this).parent()[0])
+    restrictTo this, currentOptions($(this).parent()[0])
+
+  # remove output type filter
+  $("body").on "click", "._output-filter-clear", (e) ->
+    e.preventDefault()
+    restrictTo this, []
+
 
 currentOptions = (except)->
   curr = []
@@ -21,6 +27,7 @@ currentOptions = (except)->
     curr.push $(this).data("option") unless this == except
   curr
 
-restrictTo = (types) ->
-  url = window.location.href + "?" + $.param(filter: { output_type: types })
-  window.location = url
+restrictTo = (el, types) ->
+  s = $(el).slot()
+  s.slotReload(s.slotUrl() + $.param(filter: { output_type: types }))
+

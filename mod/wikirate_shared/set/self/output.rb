@@ -1,4 +1,5 @@
 include_set Abstract::Search
+include_set Abstract::SearchViews
 
 OUTPUT_TYPE_OPTIONS = %w[publication dashboard].freeze
 
@@ -31,6 +32,13 @@ end
 
 format :html do
   view :filter_chips, template: :haml, cache: :never
+
+  view :filtered_content do
+    wrap true, class: "_filtered-content nodblclick" do
+      [render_filter_chips,
+       render_content(home_view: :content, hide: :menu, items: { view: :box })]
+    end
+  end
 
   def filter_output_type_options
     OUTPUT_TYPE_OPTIONS
