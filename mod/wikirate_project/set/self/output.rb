@@ -1,6 +1,6 @@
 include_set Abstract::Search
 
-OUTPUT_TYPE_OPTIONS = %w[report policy_advice guide].freeze
+OUTPUT_TYPE_OPTIONS = %w[publication policy_advice guide].freeze
 
 def item_type_id
   OutputID
