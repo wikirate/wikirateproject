@@ -1,1 +1,1 @@
-OUTPUT_TYPE_OPTIONS = %w[publication policy_advice guide].freeze
+OUTPUT_TYPE_OPTIONS = %i[publication policy_advice guide].freeze
