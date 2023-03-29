@@ -19,6 +19,7 @@ end
 
 path "./vendor/card-mods" do
   gem "card-mod-social"
+  gem "card-mod-filter"
   gem "card-mod-thumbnail"
   gem "card-mod-google_analytics"
 end

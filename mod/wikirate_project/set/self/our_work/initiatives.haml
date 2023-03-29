@@ -1,0 +1,9 @@
+.container
+  %h2
+    Initiatives
+  %p
+    = Card.fetch(:output, :description).content
+  .py-3
+    = nest :output, view: :filtered_content
+  -# = nest :output, view: :content,
+  -# // = nest %i[output type by_name], view: :core, hide: :menu, items: { view: :box }

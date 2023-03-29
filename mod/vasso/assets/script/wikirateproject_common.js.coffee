@@ -9,3 +9,4 @@ $(document).ready ->
     selector = el.data "slick-selector"
     slickEl = selector && el.find(selector) || el
     slickEl.slick config
+
