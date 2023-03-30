@@ -131,6 +131,10 @@
     Legal
     Contact Us
 
+- :name: footer
+  :type: :html
+  :codename: footer
+
 - :name: About us
   :codename: about_us
   :type: RichText

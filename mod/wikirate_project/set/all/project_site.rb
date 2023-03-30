@@ -46,7 +46,7 @@ format :html do
   end
 
   view :favicon_tag, unknown: true, perms: :none do
-    %(<link rel="shortcut icon" href="/mod/vasso/favicon_original.svg" />)
+    %(<link rel="shortcut icon" href="/mod/wikirate_project/favicon_original.svg" />)
   end
 end
 

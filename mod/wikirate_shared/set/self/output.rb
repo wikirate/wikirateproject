@@ -45,11 +45,11 @@ format :html do
   end
 
   def selected_output_types
-    filter_hash[:output_type]
+    Array.wrap(filter_hash[:output_type]).map &:to_name
   end
 
   def option_selected? option
-    Array.wrap(selected_output_types).include? option
+    selected_output_types.include? option.to_name
   end
 
   # following not used yet...

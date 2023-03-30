@@ -1,8 +1,9 @@
 .col-md-12
-  .row
-    .col-12
-      %span.badge.bg-primary
-        = card.output_type
+  - if !card.output_type.nil?
+    .row
+      .col-12
+        %span.badge.bg-primary
+          = card.output_type.card.name
   .row.publication-body.pt-3
     .col-12
       - if !card.image.nil? && card.image != ''
