@@ -6,11 +6,7 @@
         = card.name
   .row.ps-1.pe-3.pb-2
     %small
-      = Date::ABBR_MONTHNAMES[date.month]
-      = date.day <= 9 ? '0'+date.day.to_s : date.day.to_s
-      = ", "
-      = date.year
-      = " @ "
+      = date.strftime('%b %d, %Y @ ')
       = field_nest :start_time, view: :core
       = " - "
       = field_nest :end_time, view: :core

@@ -6,10 +6,9 @@
       = field_nest :image, view: :core, size: :large
   %time.date-tag.position-absolute.text-center.d-flex.bg-white.text-uppercase{'date-time':card.date}
     %span.d-block.text-white.day.flex-shrink-0.font-weight-bold
-      = date.day <= 9 ? '0'+date.day.to_s : date.day.to_s
+      = date.strftime('%d')
     %span.d-block.py-2.px-3
-      = Date::ABBR_MONTHNAMES[date.month]
-      = date.year
+      = date.strftime('%b %Y')
   .row.ps-3.pe-3.mb-2.mt-1
     .col-12
       %span.badge.bg-primary
