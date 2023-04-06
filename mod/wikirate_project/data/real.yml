@@ -181,6 +181,9 @@
 - :name: Guide
   :codename: guide
 
+- :name: Publication
+  :codename: publication
+
 - :name: Policy Advice
   :codename: policy_advice
 
