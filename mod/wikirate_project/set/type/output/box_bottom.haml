@@ -1,5 +1,5 @@
 .d-flex.justify-content-between.w-100
   .d-flex
     - if !card.partner.nil? && card.partner!= ''
-      = field_nest :partner, view: :core, items: {view: :reference}
+      = nest card.field(:partner).card.item_cards[0], view: :reference
   = render_bar_menu

@@ -115,21 +115,9 @@
   :conflict: override
   :content: :default_layout
 
-- :codename: :main_menu
-  :conflict: override
+- :name: footer
   :type: :html
-  :content: "[[About Menu]]"
-
-- :name: About Menu
-  :conflict: override
-  :type: :list
-  :content: |-
-    About Us    
-    Team and Advisors
-    Programs
-    News
-    Legal
-    Contact Us
+  :codename: footer
 
 - :name: About us
   :codename: about_us
@@ -192,6 +180,9 @@
 
 - :name: Guide
   :codename: guide
+
+- :name: Publication
+  :codename: publication
 
 - :name: Policy Advice
   :codename: policy_advice

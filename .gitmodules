@@ -7,6 +7,6 @@
 [submodule "vendor/decko-cap"]
 	path = vendor/decko-cap
 	url = https://github.com/decko-commons/decko-cap
-[submodule "mod/vasso/vendor/slick"]
-	path = mod/vasso/vendor/slick
+[submodule "mod/wikirate_project/vendor/slick"]
+	path = mod/wikirate_project/vendor/slick
 	url = https://github.com/kenwheeler/slick.git

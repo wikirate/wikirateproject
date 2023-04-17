@@ -38,6 +38,12 @@ format :html do
   def og_title
     "#{card.name} - Wikirate International e.V."
   end
+
+  def date_to_str
+    if !card.date.nil? && card.date != ''
+      ::Date.parse(card.date).strftime('%d %b %Y')
+    end
+  end
 end
 
 format :html do
@@ -46,7 +52,7 @@ format :html do
   end
 
   view :favicon_tag, unknown: true, perms: :none do
-    %(<link rel="shortcut icon" href="/mod/vasso/favicon_original.svg" />)
+    %(<link rel="shortcut icon" href="/mod/wikirate_project/favicon_original.svg" />)
   end
 end
 

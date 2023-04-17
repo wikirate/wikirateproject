@@ -1,0 +1,222 @@
+- :name: Program
+  :type: :cardtype
+  :codename: program
+
+- :name: Legislative Frameworks
+  :type: :program
+  :fields:
+    :description: "<h1>Our Role</h1>\r\n<p>We facilitate research projects that aim
+      to understand how corporations meet the challenges and requirements posed by
+      existing legal frameworks. Within this program the WikiRate team assists partner
+      organizations with:</p>\r\n<ul>\r\n<li>Developing and testing research metrics
+      to systematically extract specific information from the corporate statements.</li>\r\n<li>Refining
+      methodologies to ensure the data collected is consistent and reliable.</li>\r\n<li>Recruiting
+      volunteer researchers through our network of academic institutions and volunteer
+      communities.</li>\r\n<li>Assisting researchers throughout the research process,
+      and providing support materials such as video tutorials and step-by-step guides.</li>\r\n<li>Providing
+      tech support to deal with any complications.</li>\r\n<li>Reviewing the data
+      to test and improve data quality.</li>\r\n</ul>\r\n<p>Once the data is gathered,
+      our team reviews the data and executes random spots checks to test and improve
+      data quality. The dataset can then be exported to conduct analyses.</p>\r\n<h1>Program
+      Scope</h1>\r\n<p>Currently we support research on two pieces of legislation:</p>\r\n<ul>\r\n<li>The
+      UK Modern Slavery Act which as of 2015 mandates commercial organisations that
+      have an annual turnover of over £36 million and operations in the UK, to publish
+      a slavery and human trafficking statement each financial year, setting out steps
+      to ensure no such cases occur in their supply chains and direct business operations.   
+         </li>\r\n<li>Section 1502 of the <a href=\"https://www.sec.gov/opa/Article/2012-2012-163htm---related-materials.html\">Dodd-Frank
+      Act</a>, which in 2010 introduced a legal requirement for companies that file
+      with the U.S. Securities and Exchange Commission (SEC) to report on their due
+      diligence to ensure that their sourcing of certain minerals does not fund armed
+      groups in the Democratic Republic of the Congo (DRC).</li>\r\n</ul>\r\n<h1>Program
+      Scaling</h1>\r\n<p>As an increasing number of laws seeking to enhance the accountability
+      of business in the human rights area come into existence, the projects in this
+      program will continue to assess their impact on corporate disclosures and their
+      effectiveness in raising the bar for industry standards.</p>\r\n<p>In 2019,
+      making use of platform features, we piloted the development of bespoke analysis
+      metrics for the legislative frameworks program.</p>\r\n<p>By bringing the analysis
+      of the Modern Slavery Act data onto the WikiRate.org platform, it is now easier
+      and faster for our partners to use the data in publications and advocacy, simply
+      because the analysis is dynamically updated when new data is added to the platform
+      through the ongoing research engagements.</p>\r\n<p>Expansion opportunities
+      for this program are diverse. Whether it is about deepening or broadening projects
+      and engagements, we are always keen to hear from our community and find out
+      what is of most interest to you.</p>\r\n<p>Would you like to learn more or get
+      involved? Write to us at info@wikirate.org or use our <a href=\"http://wikirate.org/Contact_Form\">contact
+      form</a> to get in touch.</p>"
+    :overview: 'New government policies and legislation mandate companies to report
+      more transparently about the effects of their operations on human rights, and
+      how they aim to prevent and eradicate negative impacts. This program assesses
+      Business and Human Rights issues through the lens of such legislation to provide
+      insight and improvements. '
+    :project: "UK Modern Slavery Act Research\r\nConflict Minerals Research"
+    :partner: "Walk Free\r\nBusiness & Human Rights Resource Centre\r\nAmnesty International"
+    Testimonials: "<p style=\"text-align: justify; padding-left: 40px;\"><span style=\"font-size:
+      12pt;\">“<em>The Walk Free Foundation has been working with Wikirate since September
+      2016 to draft baseline metrics to assess the statements released under the UK
+      Modern Slavery Act. By providing the platform for this analysis, Wikirate is
+      providing an essential tool to track and measure corporation action against
+      modern slavery, freeing this data from static reports and policy papers. This
+      project brings together researchers and advocates from the US, Kenya, Australia
+      and the UK to hold these corporations to account. The Walk Free Foundation looks
+      forward to future collaboration with WikiRate</em>.”</span></p>\r\n<p style=\"text-align:
+      right;\"><strong>– Katharine Bryant, Research Manager, Walk Free Foundation</strong></p>\r\n<p
+      style=\"text-align: right; padding-left: 40px;\"> </p>\r\n<p style=\"padding-left:
+      40px; text-align: justify;\"><span style=\"font-size: 12pt;\"><span style=\"text-align:
+      left;\">“</span><em>The WikiRate Modern Slavery Act metrics were relevant and
+      quite specific. The methodology was clear and incredibly helpful. As a researcher,
+      I always understood what was expected of my analysis and the evidence I needed
+      to find.</em></span><span style=\"font-size: 16px; text-align: left;\">”</span></p>\r\n<p
+      style=\"text-align: right;\"><span style=\"font-weight: bolder;\">– Anonymous
+      student, Columbia University</span><span style=\"font-size: 12pt; font-weight:
+      bolder; text-align: left;\"> </span></p>\r\n<p style=\"text-align: left; padding-left:
+      40px;\"> </p>\r\n<p style=\"text-align: justify; padding-left: 40px;\"><span
+      style=\"font-size: 12pt;\">“<em>Together with WikiRate, we created a set of
+      metrics that help us understand what companies do to ensure they source minerals
+      responsibly — and we are engaging students from the UK, US and other parts of
+      the world in populating these new metrics with actual data. This is very powerful
+      not only because we generate valuable data for research and campaigning, but
+      mostly because we engage people in a meaningful way, beyond sharing information
+      or providing financial support. This new generation of tech-savvy activists
+      will disrupt fundamentally the traditional engagement models.</em>”</span></p>\r\n<p
+      style=\"text-align: right;\"><span style=\"font-weight: bolder;\">– Milena Marin,
+      Senior Innovations Campaigner, Amnesty International</span></p>"
+    :image: "(my_bucket)/7010/22181.png"
+- :name: Transparent Value Chains
+  :type: :program
+  :fields:
+    :description: "<h1>Our Role</h1>\r\n<p>Within this program, the support provided
+      by the WikiRate team is varied. Depending on project and partner needs, we assist
+      with:</p>\r\n<ul>\r\n<li>Extracting big datasets from public sources through
+      scraping</li>\r\n<li>Setting up data structures on the WikiRate platform that
+      can capture (new) datasets in an open format so that they can be connect to
+      other relating datasets</li>\r\n<li>Bringing existing datasets on to the WikiRate
+      platform through imports</li>\r\n<li>Developing API integrations between WikiRate.org
+      and other data platforms, as well as API integrations with dynamic data visualizations
+      and widgets</li>\r\n</ul>\r\n<h1>Program Scope</h1>\r\n<p>Currently the work
+      that is part of this program is four-fold: 1) mapping business relations, 2)
+      gathering performance disclosures of mapped entities, 3) soliciting new disclosures
+      to fill the gaps of these mappings, 4) network performance analyses. While most
+      ongoing projects focus on mapping relations and performance, a few more recent
+      projects are beginning to drive new disclosures and are exploring the analysis
+      possibilities that draw from multiple datasets hosted on the WikiRate platform,
+      which were previously disparate but are now connected.</p>\r\n<p>To provide
+      a clear sense of direction in a program that spans such a broad range of activities
+      and topics, the projects and engagements that are part of this program currently
+      focus on the apparel sector.</p>\r\n<h1 style=\"font-family: Roboto, 'Helvetica
+      Neue', Helvetica, Arial, sans-serif;\">Tools</h1>\r\n<p><strong>Off-platform
+      widgets using the WikiRate API</strong>: <span style=\"font-size: 1rem;\">These
+      are tools built by WikiRate for partners </span><span style=\"font-size: 15.2px;\">to
+      showcase particular information to their stakeholders, and engage new audiences
+      and volunteers in crowd-research that feeds into the WikiRate platform. Read
+      about the tools linked below in this <a href=\"https://medium.com/@WikiRate/powered-by-wikirate-eb9c5448156c\"
+      target=\"_blank\">blogpost</a>.</span></p>\r\n<ul>\r\n<li><span style=\"font-size:
+      1rem;\"><a href=\"https://ccc.wikirate.org/\" target=\"_blank\">Proof-of-concept
+      factory-brand search</a>, which is going into further develop this year</span></li>\r\n<li><span
+      style=\"font-size: 1rem;\"><a href=\"https://www.publiceye.ch/en/topics/fashion/crowd-research\"
+      target=\"_blank\">Crowd research tool</a> and project designed to engage a volunteer
+      base gathering fashion brand's supply chain transparency data. </span></li>\r\n</ul>\r\n<h1
+      style=\"font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #495057;\">Program Scaling</h1>\r\n<p style=\"font-size: 15.2px;\">As
+      corporate value chains are constantly changing and evolving, mapping these is
+      and will continue to be an immense effort. Nevertheless, once critical mass
+      has been reached within the apparel sector, and the potential impact of an open
+      and integrative data ecosystem has been demonstrated, this program will expand
+      into a variety of other sectors including electronics and extractives.</p>\r\n<h1
+      style=\"font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: #495057;\">Testimonials</h1>\r\n<p style=\"text-align: justify; padding-left:
+      40px;\"><span style=\"font-size: 12pt;\"><span style=\"font-size: 12pt;\">“</span><span
+      style=\"font-size: 16px;\"><em>We decided to use WikiRate to ensure our research
+      extends to a broad audience and can be used by others. Working with WikiRate
+      was an outstanding experience. The team was supportive and available. The crowd-research
+      campaign enabled volunteers to generate valuable data for research and campaigning,
+      thus advancing our commitment to ensure better working conditions in the fashion
+      industry</em></span><span style=\"font-size: 12pt;\">”</span></span></p>\r\n<p
+      style=\"text-align: right;\"><span style=\"font-size: 15.2px; font-weight: bolder;\">– </span><span
+      style=\"text-align: left;\"><strong>Public Eye</strong></span></p>"
+    :overview: Since 2016, WikiRate has been mapping relationships and performance
+      of companies across their corporate networks, from factories in supply chains
+      to ownership structures and investors. By connecting these entities we are aiming
+      to make corporate networks transparent, understandable, and responsive – so
+      that companies and their stakeholders can see, react to, and ultimately transform
+      corporate network impacts. To achieve this we work with international partners
+      on a number of projects that begin to tie disparate datasets together.
+    :project: "Corporate Network Mapping: ChainReact\r\nThe Top 100 Apparel Companies:
+      A Case Study\r\nTransparency Tool for Supply Chain Workers"
+    :partner: "Clean Clothes Campaign\r\nFashion Revolution\r\nOpenCorporates\r\nCentre
+      for Research & Technology Hellas (CERTH)\r\nThe Whistle"
+    :image: "(my_bucket)/7011/22182.png"
+- :name: SDGs Research
+  :type: :program
+  :fields:
+    :description: "<h1>Our Role</h1>\r\n<p>WikiRate has developed collective research
+      projects with universities to create more information in the public domain on
+      how companies impact achievement of the SDGs. Professors around the world are
+      embedding WikiRate into classroom projects to facilitate experiential learning
+      in real-world, practical research, inputting and analyzing organizational data.
+      To date more than 3,000 students and 14 universities have taken part in this
+      program and collected nearly 50,000 data points. </p>\r\n<h1>Program Scope</h1>\r\n<p>We
+      support academic institutions to research company performance on the SDGs. Because
+      of the wide span of the SDGs, we set-up crowd-research projects that collect
+      data on diverse topics from greenhouse gas emissions to gender equality to working
+      conditions.  </p>\r\n<ul>\r\n<li>We have more than 70 metrics on WikiRate that
+      are linked to indicators mapped to the SDGs. These include standards providers
+      such as <a href=\"https://www.globalreporting.org/Pages/default.aspx\">Global
+      Reporting Initiative</a> and <a href=\"https://www.unglobalcompact.org/library/3131\">Poverty
+      Footprint</a></li>\r\n<li>Research groups are able to choose what kind of data
+      they want to collect. Our project structure allows them to focus in on specific
+      SDG topics, industries and/or geographic areas</li>\r\n<li>Participating universities
+      embed these projects into their curriculum to give students a chance to learn
+      about SDG reporting practices and open data whilst taking part in a global data
+      collection drive</li>\r\n</ul>\r\n<h1>Program Scaling</h1>\r\n<p>The scope of
+      the SDGs, as well as the high number of companies that now report on ESG issues,
+      means that this program is highly scalable. We have already collected nearly
+      50,000 data points on more than 750 companies from across the world and anticipate
+      doubling this number over the next two years. </p>\r\n<p>In addition to raw
+      data collection, students are beginning to utilize analysis tools developed
+      by WikiRate to assess data using Calculated Metrics. These metrics are able
+      to combine the granular data to make more meaningful conclusions. Calculations
+      are also dynamic and update in real-time as more research is added to the platform,
+      scaling the usability of the raw data. Through calculated metrics we can, for
+      instance, find out the overall disclosure level of a company or calculate a
+      company's gender pay gap. </p>\r\n<p>This research has potential to connect
+      citizen-generated insights to policy-makers in a useful format and according
+      to relevant country priorities. Going forward, the ambition is to attract resources
+      to scale in size, reach and learning outcomes, empowering individuals to contribute
+      to a large-scale, actionable research.</p>\r\n<p>Would you like to take part
+      in, or set-up your own, SDG research project? Get in touch with us at info@wikirate.org
+      or fill out our [[Contact Us| Contact Form]].</p>"
+    :overview: With the adoption of the UN Sustainable Development Goals (SDGs) in
+      2015 and inclusion of the private sector for the first time as a key contributor
+      to the goals, it is important to track corporate contributions towards the 2030
+      target.  Most corporate sustainability data is currently behind paywalls or
+      difficult to access. This program focuses on looking in depth into company sustainability
+      and annual reports to extract data in a structured, comparable format, so that
+      communities and institutions can better understand corporate impacts and feed
+      into improvements.
+    :project: |-
+      Business Contributions to the SDGs
+      Climate Action
+    :partner: |-
+      Principles for Responsible Management Education (PRME)
+      UN Global Compact
+    Testimonials: "<p style=\"text-align: justify; padding-left: 40px;\"><em>“Business
+      must be part of the solution to the world’s sustainability challenges. To do
+      that, today’s business students must learn these skills so they may tackle the
+      challenges as future managers and executives. It is my hope that the ‘Business
+      Contribution to the SDGs – A Student Assessment’ project grows to become a crucial
+      way for the international community to see the contribution of business to achieving
+      the SDGs, while providing students with key insights into how to engage a sustainable
+      business.”</em></p>\r\n<p style=\"text-align: right;\"><strong>– Lise Kingo,
+      CEO and Executive Director, United Nations Global Compact</strong></p>\r\n<p
+      style=\"text-align: justify; padding-left: 40px;\"> </p>\r\n<p style=\"text-align:
+      justify; padding-left: 40px;\"><em>“I am sincerely surprised with how much I
+      engaged with corporate social responsibility. I believed that business and the
+      environmental impacts would always be a clashing force, but it was quite interesting
+      to see that social accounting also takes into consideration social issues like
+      wellbeing and gender equality. It is refreshing to see how sustainability is
+      impacting business behaviour, and perhaps this project may prove beneficial
+      in that future businesswomen and businessmen will learn to see sustainability
+      as an essential criterion for operating a business.\"</em></p>\r\n<p style=\"text-align:
+      right; padding-left: 40px;\"><strong>– Anonymous student, University of Wollongong</strong></p>\r\n<p
+      style=\"text-align: justify;\"> </p>"
+    :image: "(my_bucket)/7012/22183.jpeg"
