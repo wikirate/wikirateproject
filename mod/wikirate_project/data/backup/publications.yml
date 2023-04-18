@@ -1,0 +1,410 @@
+- :name: Publication
+  :type: :cardtype
+  :codename: publication
+
+- :name: 'Final Pilot Report: Business Contribution to the SDGs — A Student Assessment'
+  :type: :publication
+  :fields:
+    :description: "<div>\r\n<p style=\"text-align: justify;\">The pilot project <strong><em>Business
+      Contribution to the SDGs — A Student Assessment</em></strong> is a partnership
+      of the Principles for Responsible Management Education (PRME) initiative, the
+      WikiRate Project e.V. (WikiRate), the UN Global Compact, and the Bertelsmann
+      Stiftung. The aims of the pilot stage of the project were to:</p>\r\n<p style=\"padding-left:
+      30px; text-align: justify;\">1. Embed the 2030 Agenda and its Sustainable Development
+      Goals (SDGs) in the minds of the next generation of business leaders through
+      active research and analysis, promoting engagement and familiarity with companies’
+      reporting outputs<br>2. Seek structured ways of tracking company performance
+      towards the SDGs and the UN Global Compact’s Ten Principles, testing a broad
+      selection of metrics of performance from standards like the Global Reporting
+      Initiative and UN Global Compact’s Poverty Footprint.</p>\r\n<p style=\"text-align:
+      justify;\">The pilot included 9 higher education institutions, with 13 professors
+      in 7 countries across 5 continents, engaging 950 students and generating over
+      20,000 data points on corporate sustainability performance. Student participants
+      with different levels of education, from first year undergraduates through master’s
+      students, generated data through researching corporate sustainability and annual
+      reports of Global Compact participants submitted as Communication on Progress
+      reports (COPs), and added it to the WikiRate platform.</p>\r\n</div>"
+    :year: '2017'
+    :image: "(my_bucket)/7000/22179.png"
+    :file: "(my_bucket)/6991/22240.pdf"
+- :name: 'Disclosure and Reporting Against the Sustainable Development Goals: Connecting
+    New Stakeholders to Sustainability Data'
+  :type: :publication
+  :fields:
+    :description: "<p style=\"text-align: justify;\">Authors:</p>\r\n<ul>\r\n<li style=\"text-align:
+      justify;\">Theresa Heithaus,WikiRate e.V.</li>\r\n<li style=\"text-align: justify;\">Richard
+      Mills,University of Cambridge</li>\r\n<li style=\"text-align: justify;\">Stephanie
+      Perkiss,University of Wollongong</li>\r\n<li style=\"text-align: justify;\">Principles
+      for Responsible Management Education</li>\r\n</ul>\r\n<p style=\"text-align:
+      justify;\">About:</p>\r\n<p style=\"text-align: justify;\">The Disclosure and
+      Reporting Against the Sustainable Development Goals report is part of this joint
+      project between WikiRate, PRME and the University of Wollongong, which looks
+      at a case study of thirty-seven companies researched by forty University of
+      Wollongong students who, as part of their coursework, collected SDG data on
+      a subset of company-members of the Corporate Action Group (CAG). The purpose
+      of the analysis was to (1) discover what kinds of barriers prevent researchers
+      from collecting accurate data on company sustainability performance, and (2)
+      investigate disclosure rates of CAG companies on key topics connected to the
+      SDGs. The report includes key findings and recommendations.</p>"
+    :year: '2018'
+    :image: "(my_bucket)/6999/22178.png"
+    :file: "(my_bucket)/6990/22239.pdf"
+- :name: 'WikiRate Student Engagement Report: International Case Studies'
+  :type: :publication
+  :fields:
+    :description: '<p style="text-align: justify;">The WikiRate Student Engagement
+      Report is the product of a year-long international collaboration across eight
+      countries.  The research was initiated to explore the multiple ways the WikiRate
+      Student Engagement Project was being implemented in higher education institutions
+      in diverse classrooms around the world. <br><br>The report features seven international
+      case studies from professors/coordinators who have implemented WikiRate in their
+      subjects/units. Through the case studies presented, the report aims to highlight
+      the various applications of the WikiRate Student Engagement Project to specific
+      pedagogical contexts.<br><br>Common across all of the case studies is how the
+      embedment of WikiRate has enabled the facilitation of experiential learning
+      as students participate in real-world, practical experiences, researching, inputting
+      and analyzing organizational data.</p>'
+    :year: '2018'
+    :image: "(my_bucket)/6994/22177.png"
+    :file: "(my_bucket)/6992/22241.pdf"
+    :uri: https://ro.uow.edu.au/cgi/viewcontent.cgi?article=2521&context=buspapers
+- :name: 'Beyond Compliance: The Modern Slavery Act Research Project'
+  :type: :publication
+  :fields:
+    :description: '<p style="text-align: justify;"><span style="font-size: 12pt;">Documenting
+      the impact of new legislative acts is an indispensable tool for improving the
+      effectiveness of this legislation and advancing business practice. This is why
+      the Walk Free Foundation and WikiRate partnered in 2016 to assess the modern
+      slavery statements produced as a result of the 2015 UK Modern Slavery Act. With
+      the publication of the project’s initial findings, we hope to move beyond compliance,
+      providing an analysis of the content of the statements being produced, as well
+      as drawing attention to both promising, and less promising, business practice.
+      In doing so, we can both unlock the content of these statements and provide
+      others with the metrics we have developed to assess business activities to combat
+      modern slavery. <br></span></p>'
+    :year: '2018'
+    :image: "(my_bucket)/6993/22176.jpg"
+    :file: "(my_bucket)/6989/22238.pdf"
+    :uri: https://cdn.minderoo.com.au/content/uploads/2019/05/27154005/Wikirates_WFF_MSA-Analysis_180917_Digital.pdf
+- :name: WikiRate.org – Leveraging collective awareness to understand companies’ environmental,
+    social and governance performance
+  :type: :publication
+  :fields:
+    :description: '<p style="text-align: justify;">WikiRate is a Collective Awareness
+      Platform for Sustainability and Social Innovation (CAPS) project with the aim
+      of “crowdsourcing better companies” through analysis of their Environmental
+      Social and Governance (ESG) performance, (...) WikiRate aims to build an open
+      repository for this data along with tools for analysis, to increase public demand
+      for the data, allow a broader range of stakeholders to participate in its interpretation,
+      and in turn drive companies to behave in a more ethical manner. This paper describes
+      the quantitative Metrics system that has been designed to meet those objectives
+      and some early examples of its use.</p>'
+    :year: '2016'
+    :image: "(my_bucket)/7001/22180.jpeg"
+    :file: "(my_bucket)/6988/22237.pdf"
+- :name: 'Global Slavery Index 2018: WikiRate contribution to 12 Country Studies'
+  :type: :publication
+  :fields:
+    :description: "<div>\r\n<p style=\"text-align: justify;\">Alongside country level
+      data on modern slavery, the <strong>2018 Global Slavery Index</strong> includes
+      studies on the<strong> top 12 global economies</strong> (Australia, Brazil,
+      Canada, China, France, Germany, India, Italy, Japan, Russia, United Kingdom,
+      and the United States).</p>\r\n<p style=\"text-align: justify;\">Besides providing
+      information on the types of modern slavery and vulnerability factors affecting
+      each of these countries, each country study includes information on the statements
+      being produced under the UK Modern Slavery Act, and analized through WikiRate.
+      The studies conclude with a series of policy recommendations by the Walk Free
+      Foundation.</p>\r\n</div>"
+    :year: '2018'
+    :image: "(my_bucket)/7105/22204.png"
+    :uri: https://www.globalslaveryindex.org/2018/findings/country-studies/overview/
+- :name: 'Crowdsourcing Corporate Transparency through Social Accounting: Conceptualising
+    the ‘Spotlight Account’'
+  :type: :publication
+  :fields:
+    :description: "<p>This paper considers an alternative way of gathering and evaluating
+      information on corporate social responsibility (CSR) and the actions taken towards
+      sustainable development. Social accounting theory is currently limited in conceptualising
+      external accounts that sit outside the description of silent or shadow accounts.
+      With the emergence of technological platforms that enable CSR information to
+      be collectively located, new models of stakeholder engagement are growing using
+      the wisdom of the crowd for information collation and analyses. This paper outlines
+      a crowdsourced platform, WikiRate, which aims to both empower corporate transparency
+      surrounding the Sustainable Development Goals and assist in multidimensional
+      stakeholder participation and decision making. Existing theoretical characterisations
+      of external accounts are used as a way of understanding the WikiRate engagement
+      model and more broadly its relationship with social accounting. Through analysis
+      and theoretical development, this research has implications for imagining and
+      exploring new social accountings and social accountants that can lead to emancipatory
+      change. ‘Spotlight accounting’ is introduced as a process that illuminates global
+      organisational transparency and sustainability through crowdsourcing by independent
+      stakeholders.</p>"
+    :year: '2019'
+    :image: "(my_bucket)/7138/22206.jpg"
+    :file: "(my_bucket)/7343/22243.pdf"
+    :uri: https://www.tandfonline.com/eprint/cqWxN5gffwrbgvQXzzAe/full?target=10.1080/0969160X.2019.1591292
+- :name: An Exploration of Student Learning for Sustainability through the WikiRate
+    Student Engagement Project
+  :type: :publication
+  :fields:
+    :description: "<p>Highlights:</p>\r\n<ul>\r\n<li>WikiRate is a pedagogical innovation
+      that develops knowledge, skills and attitudes (KSA) for sustainability.</li>\r\n<li>The
+      WikiRate pedagogical innovation is helpful in developing a sustainability mindset.</li>\r\n<li>Responsible
+      Management Educators should use more the student's voice to understand what
+      students learn from different pedagogies.</li>\r\n</ul>"
+    :year: '2019'
+    :image: "(my_bucket)/7255/22215.jpg"
+    :uri: https://www.researchgate.net/publication/336960581_An_exploration_of_student_learning_for_sustainability_through_the_WikiRate_student_engagement_project
+- :name: 'Beyond Compliance in the Hotel Sector: A Review of UK Modern Slavery Act
+    Statements'
+  :type: :publication
+  :fields:
+    :description: "<p>The travel and tourism industry continues to see uninterrupted
+      growth, with more people than ever before travelling for work or leisure to
+      a broader range of destinations. Yet this growth brings with it a greater risk
+      of modern slavery.</p>\r\n<p>There is a high-risk of exploitation within the
+      hotel sector due to its vulnerable workforce, complex supply chains with little
+      transparency, and limited oversight from brands and multinational hotel companies
+      as a result of extensive franchising. In the franchising model, hotel brands
+      lend their name and customer care standards to third parties, but usually stipulate
+      far less about the standards they expect for the employment of workers, even
+      in countries where abuse is endemic.</p>\r\n<p>To assess how the hotel sector
+      is responding to these risks, this report reviews the statements produced by
+      71 hotel companies under the UK Modern Slavery Act, which requires companies
+      with a turnover of £36 million to release annual statements on their anti-slavery
+      efforts. We looked at whether the statements meet the Act’s minimum requirements,
+      but also if they go “beyond compliance” with effective responses to modern slavery
+      risks — including sexual exploitation, forced labour, and the poor treatment
+      of migrant workers.</p>\r\n<p>The assessment of statements featured in this
+      report is available on <a href=\"https://wikirate.org/Australian_National_University_UK_Modern_Slavery_Act_Research_2019\">WikiRate</a>,
+      and was a collaboration with <a href=\"https://www.minderoo.com.au/walk-free/\">Walk
+      Free</a>, <a href=\"https://www.business-humanrights.org/\">Business &amp; Human
+      Rights Resource Centre</a>, and the <a href=\"https://law.anu.edu.au/\">Australian
+      National University</a>.</p>\r\n<h5 style=\"font-family: Roboto, 'Helvetica
+      Neue', Helvetica, Arial, sans-serif; color: #495057;\">In the Media</h5>\r\n<ul>\r\n<li>\r\n<p><a
+      href=\"https://www.theguardian.com/global-development/2019/nov/22/british-hotels-accused-of-lack-of-effort-on-forced-labour-and-sexual-exploitation\">British
+      hotels accused of 'lack of effort' on forced labour and sexual exploitation.</a>-
+      <em>The Guardian </em></p>\r\n</li>\r\n<li>\r\n<p>[[https://www.ft.com/content/5d7f8314-0b17-11ea-b2d6-9bf4d1957a67
+      | Moral Money: A warning shot for investors on fossil fuels]].- <em>Financial
+      Times</em></p>\r\n</li>\r\n<li>\r\n<p><a href=\"http://news.trust.org/item/20191120145934-qyh04/\">Major
+      UK hotels found failing to combat threat of modern slavery.</a>- <em>Thompson
+      Reuters</em></p>\r\n</li>\r\n<li>\r\n<p><a href=\"https://www.personneltoday.com/hr/hotel-sector-failing-to-protect-vulnerable-workforce-from-modern-slavery/\">Hotel
+      sector failing to protect ‘vulnerable workforce’ from modern slavery.</a><em>
+      - Personnel Today</em></p>\r\n</li>\r\n<li>\r\n<p><a href=\"https://www.sightmagazine.com.au/news/14011-major-uk-hotels-found-failing-to-combat-threat-of-modern-slavery\">Major
+      UK hotels found failing to combat threat of modern slavery</a>.- <em>Sight Magazine
+      </em></p>\r\n</li>\r\n</ul>\r\n<h5>Company updates</h5>\r\n<p><em>Since producing
+      the report, we have received the following updates and clarifications.</em></p>\r\n<p>Accor
+      UK Business &amp; Leisure Hotels Limited confirmed it has a modern slavery statement
+      available <a href=\"https://d1550xk4f2usak.cloudfront.net/wp-content/uploads/2017/12/01082953/Modern-Slavery-statement-signatures.pdf\">here</a>.</p>\r\n<p>Four
+      Seasons Hotels confirmed it has a modern slavery statement available <a href=\"https://www.fourseasons.com/modern-slavery-act/\">here</a>.</p>"
+    :year: '2019'
+    :image: "(my_bucket)/7318/22216.jpg"
+    :file: "(my_bucket)/7317/22242.pdf"
+    :uri: https://cdn.minderoo.com.au/content/uploads/2019/11/20161202/2632_MSA-statements.V8_FNL.pdf
+- :name: 'Beyond Compliance in the Finance Sector: A review of statements produced
+    by asset managers under the UK Modern Slavery Act'
+  :type: :publication
+  :fields:
+    :description: "<div>\r\n<div>\r\n<div>Modern slavery represents a tragic market
+      failure, where some companies maintain competitive advantage and large profits
+      through unethical and unsustainable business practices that rely on the exploitation
+      of approximately 16 million workers worldwide.</div>\r\n<div> </div>\r\n</div>\r\n</div>\r\n<div>\r\n<div>\r\n<div>The
+      finance sector has not been subject to the same level of scrutiny as sectors
+      that are high-risk for labour exploitation. But financial actors, and asset
+      managers in particular, have the leverage, and increasingly the responsibility,
+      to push for better human and labour rights practices by companies within their
+      portfolios.</div>\r\n<div> </div>\r\n</div>\r\n</div>\r\n<div>\r\n<div>\r\n<div>In
+      partnership with <a href=\"https://www.walkfree.org/\">Walk Free</a> and the
+      <a href=\"https://www.business-humanrights.org/en/\">Business &amp; Human Rights
+      Resource Centre</a> we have assessed the statements produced by 79 asset managers
+      required to report under the UK Modern Slavery Act. This is to understand the
+      level of awareness of modern slavery risks, to identify good practice, and highlight
+      gaps in reporting by asset managers.</div>\r\n<div> </div>\r\n<div>The assessment
+      of statements featured in this report is available on <a href=\"https://wikirate.org/Top_UK_MSA_Asset_Managers\">WikiRate</a>,
+      and can be explored and downloaded through the <a href=\"https://widgets.wikirate.org/walkfree/\">visualization
+      dashboard</a>.</div>\r\n</div>\r\n</div>"
+    :year: '2021'
+    :image: "(my_bucket)/7364/22220.png"
+    :file: "(my_bucket)/7363/22244.pdf"
+    :uri: https://cdn.walkfree.org/content/uploads/2021/03/18184928/WalkFree_BeyondComplianceInTheFinanceSector_210318.pdf
+- :name: 'Digital Insights into Modern Slavery Reporting: Challenges and opportunities
+    of machine readability'
+  :type: :publication
+  :fields:
+    :description: "<div>\r\n<div>\r\n<div>Artificial Intelligence offers a real opportunity
+      to scale our efforts to eradicate modern slavery. One opportunity is the use
+      of AI to ‘read’ the statements produced under mandatory reporting requirements,
+      such as the UK and Australian Modern Slavery Acts, in order to improve transparency.</div>\r\n<div> </div>\r\n</div>\r\n</div>\r\n<div>\r\n<div>\r\n<div>Reflecting
+      the initial phase of the Artificial Intelligence Against Modern Slavery (AIMS)
+      project, <a href=\"https://www.walkfree.org/\">Walk Free</a>, in collaboration
+      with <a href=\"https://thefuturesociety.org/\">The Future Society</a>, <a href=\"https://wikirate.org/\">WikiRate</a>,
+      and the <a href=\"https://www.business-humanrights.org/en/\">Business &amp;
+      Human Rights Resource Centre</a> have published a paper on digital insights
+      into modern slavery reporting, which discusses the challenges and opportunities
+      of machine readability in this area.</div>\r\n<div> </div>\r\n<div>See the Walk
+      Free site for a <a href=\"https://www.walkfree.org/reports/digital-insights-into-modern-slavery-reporting/\">summary</a>
+      of the key finding and recommendations.</div>\r\n</div>\r\n</div>"
+    :year: '2021'
+    :image: "(my_bucket)/7371/22221.png"
+    :file: "(my_bucket)/7370/22245.pdf"
+    :uri: https://cdn.walkfree.org/content/uploads/2021/05/05173207/20210428-digital-insights-into-modern-slavery.pdf
+- :name: 'AI against Modern Slavery: Digital Insights into Modern Slavery Reporting
+    - Challenges and Opportunities'
+  :type: :publication
+  :fields:
+    :description: "<p>From seafood from Thailand and electronics from Malaysia and
+      China, to textiles from India and wood from Brazil, modern slavery exists in
+      all corners of the planet. It is a multibillion-dollar transnational criminal
+      business that affects us all through trade and consumer choices. In 2016, an
+      estimated 25 million people were forced to work through threats, violence, coercion,
+      deception, or debt bondage. Of these, 16 million were forced to work in the
+      private sector. Given the widespread nature of the problem, governments, corporations,
+      and the general public are increasingly expecting companies to accurately disclose
+      the actions they are taking to tackle modern slavery. Yet, five years on, there
+      are challenges with understanding companies’ compliance under the 2015 UK Modern
+      Slavery Act. It is unclear which companies are failing to report under the MSA,
+      while the quality of these statements often remains poor. Project AIMS (Artificial
+      Intelligence against Modern Slavery) harnesses the power of artificial intelligence
+      (AI) for tackling modern slavery by analyzing modern slavery statements to assess
+      compliance with the UK and Australian Modern Slavery Acts, in order to prompt
+      business action and policy responses. This paper examines the challenges and
+      opportunities for better machine readability of modern slavery statements identified
+      in the initial stages of this project. Machine readability is important to extract
+      data from modern slavery statements to enable analysis using AI techniques.
+      Although extensive technological solutions can be used to extract data from
+      PDFs and HTMLs, establishing transparency and accessibility requirements would
+      reduce the resources required to assess modern slavery reporting and ultimately
+      understand what companies are doing to address modern slavery in their direct
+      operations and supply chains - unlocking this critical ‘AI for Social Good’
+      use case.</p>"
+    :year: '2021'
+    :image: "(my_bucket)/7399/22226.png"
+    :file: "(my_bucket)/7398/22246.pdf"
+    :uri: http://ceur-ws.org/Vol-2884/paper_110.pdf
+- :name: 'Envisioning an Integrated and Open Labor Data Ecosystem: Challenges and
+    Opportunities'
+  :type: :publication
+  :fields:
+    :description: "<p>This report is the product of a research project commissioned
+      by <a href=\"https://humanityunited.org/\">Humanity United</a> and conducted
+      by <a href=\"http://wikirate.org/\">WikiRate</a> to scope out the opportunities
+      and challenges involved in building an open and integrated data ecosystem for
+      labor rights in supply chains.</p>\r\n<p>Turning to organizations working with
+      labor and supply chain data, as well as their funders, the report identifies
+      the technical and data challenges facing organizations in this space and compiles
+      recommendations for more and better data sharing in the future. The research
+      builds on the work of many organizations and data practitioners working to open
+      up data worldwide.</p>"
+    :year: '2021'
+    :image: "(my_bucket)/7530/22231.png"
+    :file: "(my_bucket)/7529/22247.pdf"
+- :name: 'Responsible patterns of production and consumption: The race for the achievement
+    of SDGs in emerging markets'
+  :type: :publication
+  :fields:
+    :description: "<p><strong>Authors</strong>: Ana Maria Gomez-Trujillo, Juan Velez-Ocampo,
+      Sergio A. Castrillon-Orrego, Alejandro Alvarez-Vanegas, Eva Cristina Manotas</p>\r\n<p><strong>Abstract</strong>:</p>\r\n<p
+      style=\"padding-left: 40px;\">Since the end of the 20th century, the role of
+      private multinational enterprises (MNEs) has been recognized as critical in
+      implementing increased sustainable production and consumption patterns. Particularly
+      after the creation of the Sustainable Development Goals (SDGs) and the Agenda
+      2030, this role has increased. In this sense, this paper aims to analyze the
+      measures and actions taken by companies in their contribution to the achievement
+      of the SDG 12. Through the identification of more than 52 metrics in sustainability
+      reports of 854 firms, findings suggest that direct greenhouse gas emissions
+      and indirect greenhouse gas emissions are the most often reported corporate
+      metrics to measure their impact on specific SDGs. This reveals the importance
+      of sustainability actions in emerging market firms as a mechanism to gain legitimacy
+      when operating in foreign markets and as an opportunity to create more sustainable
+      production models.</p>\r\n<p><strong>Orinally published in </strong>[[https://publicaciones.eafit.edu.co/index.php/administer/issue/view/603|AD-Minister]]
+      No. 38 (2021). AD-Minister is an interdisciplinary, international, biannual
+      and peer-reviewed academic journal and we publish scientific papers resulted
+      of empirical evidence and that contribute to understanding the management of
+      companies in emerging economies and markets.</p>\r\n<p><a href=\"https://publicaciones.eafit.edu.co\">https://publicaciones.eafit.edu.co</a></p>\r\n<p> </p>\r\n<p> </p>\r\n<h3> </h3>"
+    :year: '2021'
+    :image: "(my_bucket)/7654/22236.jpg"
+    :file: "(my_bucket)/7657/22249.pdf"
+    :uri: https://publicaciones.eafit.edu.co/index.php/administer/article/view/7123
+- :name: 'Beyond Compliance in the Garment Industry: Assessing UK and Australian Modern
+    Slavery Act statements produced by companies and investors in the garment sector'
+  :type: :publication
+  :fields:
+    :description: "<div>\r\n<div>\r\n<div>\r\n<p>From raw materials to manufacturing,
+      labour exploitation and modern slavery are rife in global garment supply chains.
+      Workers in the industry are vulnerable to forced labour, wage theft, hazardous
+      conditions, illegal overtime, and more. With garment supply chains often operating
+      in locations where laws protecting human rights do not exist, are weak, or are
+      not enforced by local authorities, companies’ own responsibilities to eradicate
+      modern slavery from their supply chains become ever more important.</p>\r\n</div>\r\n</div>\r\n</div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>Legislation
+      such as Modern Slavery Acts (MSA), place obligations on companies in all sectors
+      to report on how they are addressing the risks of modern slavery in their direct
+      operations and supply chains.</p>\r\n</div>\r\n</div>\r\n</div>\r\n<div>\r\n<div>\r\n<div>\r\n<p>To
+      gain an understanding of how the garment industry is upholding these obligations,
+      [[https://www.walkfree.org/|Walk Free]] and [[https://wikirate.org/|WikiRate]]
+      have assessed the statements of the largest garment companies reporting under
+      the UK and Australian MSAs. This report provides a snapshot of their level of
+      disclosure of modern slavery risks, identifies good practice, and highlights
+      gaps in reporting quality.</p>\r\n<h2>In the media</h2>\r\n<ul>\r\n<li>[[https://sustainablebrands.com/read/supply-chain/new-platform-to-help-apparel-brands-illuminate-darkest-corners-of-supply-chains|New
+      Platform to Help Apparel Brands Illuminate Darkest Corners of Supply Chains]]</li>\r\n<li>[[https://www.russh.com/walk-free-modern-slavery-report-australia-uk-garment-industry/|A
+      recent report from Walk Free shows that the Australian garment industry is failing
+      to take modern slavery seriously]].</li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>"
+    :year: '2021'
+    :image: "(my_bucket)/7737/22854.png"
+    :file: "(my_bucket)/7741/22860.pdf"
+    :uri: https://cdn.walkfree.org/content/uploads/2022/02/22150956/Walk-Free-Beyond-Compliance-Garment-Industry.pdf
+- :name: Monitoring corporate disclosure. Assessing company reporting on mineral supply
+    chain due diligence
+  :type: :publication
+  :fields:
+    :description: "<p><span><span>The report presents the findings of a </span></span><span><span>benchmarking
+      study of implementation of the </span></span><span><span>OECD Due Diligence
+      Guidance for Responsible </span></span><span><span>Supply Chains of Minerals
+      from Conflict-Affected </span></span><span><span>and High-Risk Areas (“Minerals
+      Guidance”) by a </span></span><span><span>global sample of companies producing,
+      trading </span></span><span><span>and sourcing minerals or metals based on their
+      </span></span><span><span>public disclosures. The study provides evidence </span></span><span><span>of
+      the Minerals Guidance’s role as the keystone in </span></span><span><span>an
+      emerging global architecture for responsible </span></span><span><span>business
+      conduct in mineral supply chains, with a </span></span><span><span>significant
+      expansion in its uptake between 2014 </span></span><span><span>and 2018.</span></span></p>\r\n<p><span></span><span><span>The
+      study also reveals major shortcomings </span></span><span><span>in disclosure
+      related to implementation, </span></span><span><span>especially on how companies
+      use due diligence </span></span><span><span>practically to identify and mitigate
+      risks. In part, </span></span><span><span>this suggests growing pains as companies
+      </span></span><span><span>move beyond compliance-based ap</span></span><span><span>proaches
+      </span></span><span><span>typically focussed on risks to the company, to </span></span><span><span>a
+      due diligence framework that emphasizes </span></span><span><span>progressive
+      improvement to address adverse</span></span><span><span>mpacts external to the
+      company, including through </span></span><span><span>responsible engagement
+      in complex operating </span></span><span><span>environments. <br></span></span></p>\r\n<hr>\r\n<p>This
+      document was prepared by the <strong>OECD Secretariat </strong>and<strong> WikiRate</strong>
+      using qualitative and quantitative research methods, to analyse <strong>publicly
+      accessible information</strong> including annual reports, policies, public audit
+      reports, website content and supplier engagement documents to assess disclosure
+      for <strong>2014</strong> and <strong>2018</strong> of a sample of <strong>503
+      companies</strong>.</p>\r\n<p> </p>\r\n<p> </p>"
+    :year: '2022'
+    :image: "(my_bucket)/7757/24486.png"
+    :file: "(my_bucket)/7754/24465.pdf"
+    :uri: https://mneguidelines.oecd.org/monitoring-corporate-disclosure-assessing-company-reporting-on-mineral-supply-chain-due-diligence.pdf
+- :name: Responsible Management Education. The PRME Global Movement
+  :type: :publication
+  :fields:
+    :description: "<p>Author: Matthew Twigg</p>\r\n<p>The book focuses on advancing
+      sustainable development into education, research and partnerships at higher
+      education institutions and, specifically, at business schools, with the purpose
+      of educating responsible leaders for today and tomorrow.</p>\r\n<p>The Australia
+      and New Zealand region is a very active PRME Signatory base comprising a group
+      of schools that are not only active within the global PRME network, but also
+      actively engaged in pushing the agenda.</p>\r\n<p>Read about WikiRate on the
+      following Chapters:</p>\r\n<ul>\r\n<li><strong>Australia &amp; New Zealand PRME
+      Chapter.</strong> Featuring WikiRate as an example of an international partnership
+      success (Pages 79-90)</li>\r\n<li><strong>PRME Community Toolbox</strong> (
+      Pages 341-351).</li>\r\n</ul>\r\n<hr>\r\n<p>The Open Access version of this
+      book, available at <a href=\"http://www.taylorfrancis\">www.taylorfrancis.com</a>,
+      has been made available under a Creative Commons Attribution-Non Commercial-No
+      Derivatives 4.0 license</p>"
+    :year: '2022'
+    :image: "(my_bucket)/7773/24811.png"
+    :file: "(my_bucket)/7771/24808.pdf"
+    :uri: https://library.oapen.org/bitstream/handle/20.500.12657/52015/9781000533125.pdf?sequence=1#page=114

@@ -1,0 +1,366 @@
+- :name: Project
+  :type: :cardtype
+  :codename: project
+
+- :name: 'Corporate Network Mapping: ChainReact'
+  :type: :project
+  :fields:
+    :description: "<div>Supplier networks touch virtually every corner of the globe.
+      While everyone is familiar with some of these companies, the network itself
+      is largely invisible. Purchasing a device in Madrid can indirectly perpetuate
+      debt slavery in Multan. Unless the supplier network connecting the two is made
+      visible, the purchaser has no way to react to the supply chain’s problems. So
+      long as public data on corporate supplier networks remain poor and scarce, stakeholders
+      are powerless to remedy the networks’ faults.</div>\r\n<div> </div>\r\n<div><a
+      href=\"https://chainreact.org/\">ChainReact</a> is an effort to make supplier
+      networks transparent, understandable, and responsive, so that companies and
+      their stakeholders can see, react to, and ultimately transform corporate network
+      impacts. The main objectives of the project are: </div>\r\n<div> </div>\r\n<div>\r\n<ul>\r\n<li>Identify
+      irresponsible corporate activity</li>\r\n<li>Connect issues at corporate networks’
+      edges to network drivers</li>\r\n<li>Incentivize companies to address the issues</li>\r\n</ul>\r\n</div>\r\n<div>As
+      a key partner in ChainReact, WikiRate serves as a research partner, and the
+      WikiRate.org platform as a central database for mapping corporate relationships
+      and making connections between important impacts of corporate practices along
+      the chain. </div>\r\n<h3>Corporate Ownership Mapping</h3>\r\n<div>The first
+      major mapping effort was the integration between the WikiRate and OpenCorporates
+      platforms, using the OpenCorporates API. Through this integration, basic registration
+      data from companies is now captured on the WikiRate platform. Mapping these
+      legal entities (OpenCorporates companies) to reporting entities (WikiRate companies)
+      in turn made it possible to tie reporting entities to their legal subsidiaries
+      and parent companies, thus beginning to map corporate ownership networks.</div>\r\n<h3>Supply
+      Chain Mapping</h3>\r\n<div>Following the Transparency Pledge Coalition’s campaigning
+      efforts in 2016, WikiRate and CERTH began extracting relationship data from
+      the supplier disclosures published by apparel companies. </div>\r\n<div> </div>\r\n<div><span
+      style=\"font-size: 15.2px;\">In order to collect relationship data, CERTH developed
+      an open source </span><a href=\"https://chainreact.org/Tools\" style=\"background-color:
+      #ffffff; font-size: 15.2px;\">PDF table extractor tool</a><span style=\"font-size:
+      15.2px;\"> </span><span style=\"font-size: 15.2px;\">that made it possible to
+      scrape the contents of pdf tables</span><span style=\"font-size: 15.2px;\">.
+      WikiRate further developed its </span><a href=\"https://wikirate.org/Importing%20Answers\"
+      style=\"background-color: #ffffff; font-size: 15.2px;\">import tool</a><span
+      style=\"font-size: 15.2px;\"> and <a href=\"https://wikirate.org/RESTful%20API\">API</a>
+      to allow automated and semi-automated integrations with data from OpenCorporates,
+      and imports and updates of datasets from additional sources. </span></div>\r\n<div> </div>\r\n<div>Once
+      the tool had been refined, CERTH then went on to scrape the lists of smelters
+      and refiners published by companies in their SEC filings, in compliance with
+      section 1502 of the Dodd-Frank Act. <span style=\"font-size: 15.2px;\">Additional
+      sources are being reviewed for usefulness, such as export-import records as
+      a proxy for supplier relations. </span></div>\r\n<div> </div>\r\n<div><span
+      style=\"font-size: 15.2px;\">To date more than 13,000 relationships between
+      suppliers and companies sourcing from them, have been mapped and made accessible
+      through WikiRate.org and the </span><a href=\"https://ccc.wikirate.org/\" style=\"background-color:
+      #ffffff; font-size: 15.2px;\">CCC factory-brand search tool</a><span style=\"font-size:
+      15.2px;\">.</span></div>\r\n<h3>Investor Mapping</h3>\r\n<div>This project has
+      also included investor relations, mapping investees to their investors <a href=\"https://medium.com/@WikiRate/investor-transparency-in-the-fashion-industry-an-open-data-sprint-97fafc0e1f2d\">primarily
+      as a pilot effort</a> thus far. Data seems to be more dispersed than other relationship
+      data, and sometimes proprietary. We are currently considering different extraction
+      techniques.</div>\r\n<div>\r\n<h3 style=\"font-family: Roboto, 'Helvetica Neue',
+      Helvetica, Arial, sans-serif; color: #495057;\">Data from the Ground Up</h3>\r\n<div>A
+      new informer platform (The Whistle) will help advocacy groups manage campaigns
+      to solicit flexible bottom-up reports about corporate behaviour.</div>\r\n<div> </div>\r\n<div>ChainReact
+      partner, <a href=\"http://thewhistle.org/\">The Whistle</a>, is an established
+      human rights whistle-blowing tool, adaptable to varied contexts and needs of
+      its users. Its first use cases have been a campaign soliciting reports about
+      instances of <a href=\"https://rapeisacrime.org/\">sexual assault in Nigeria</a>
+      in partnership with Global Rights Nigeria; <span style=\"font-size: 15.2px;\">volunteer-driven
+      verification of reports together with </span><span style=\"font-size: 15.2px;\">Amnesty
+      International's </span><span style=\"font-size: 15.2px;\">Digital Verification
+      Corps; and the <a href=\"http://racismatcambridge.org/racism/\">End Everyday
+      Racism</a> campaign at Cambridge University. </span></div>\r\n<div> </div>\r\n<div><span
+      style=\"font-size: 15.2px;\">While the above campaigns do not relate to coporate
+      behavior, The Whistle's potential for use as a tool for workers to report violations
+      safely, is </span><span style=\"font-size: 15.2px;\">k</span><span style=\"font-size:
+      15.2px;\">ey to ChainReact and WikiRate. The first corporate-relevant campaign
+      is </span><span style=\"font-size: 1rem;\">poised to launch in 2019, supporting
+      workers in the garment sector in the UK and Bangladesh. </span><span style=\"font-size:
+      15.2px;\">Anonymous report</span><span style=\"font-size: 15.2px;\"> data from
+      supply chain workers will, at aggregate, be integrated into the WikiRate database,
+      and associated with existing corporate network data.</span></div>\r\n</div>"
+    :participants: |-
+      Centre for Research & Technology Hellas (CERTH)
+      Clean Clothes Campaign
+      OpenCorporates
+      The Whistle
+    :image: "(my_bucket)/7069/22193.jpg"
+- :name: 'The Top 100 Apparel Companies: A Case Study'
+  :type: :project
+  :fields:
+    :description: "<p>The <a href=\"http://www.showcase.wikirate.org/\" target=\"_blank\">Top
+      100 Apparel research</a> assesses and ranks the availability of corporate sustainability
+      data for the largest 100 apparel companies across 150 indicators. These indicators
+      cover standard reporting measurements of environmental, social and governance
+      performance, and focus on company and supply chain performance.</p>\r\n<p> </p>\r\n<h3>Reaching
+      critical mass</h3>\r\n<p>The aim of the project is to gather what is considered
+      the ‘most needed’ data, by organizations and individuals working in ethical
+      sourcing and production, alongside a critical mass of relationship and performance
+      data for these top 100 companies. </p>\r\n<h3>Highlighting the gaps</h3>\r\n<p>WikiRate
+      collects data on <span style=\"font-size: 15.2px;\">“known” and </span><span
+      style=\"font-size: 1rem;\">“unknown” information to show what companies are
+      disclosing, and where there are disclosure or policy gaps. The analysis of this
+      broad data set highlights these gaps in a ranking published in November 2021.</span></p>\r\n<p><span
+      style=\"font-size: 1rem;\"><a href=\"http://www.showcase.wikirate.org/\" target=\"_blank\">The
+      analysis</a> is a living, breathing assessment of where information exists and
+      where the gaps are. The graphs and visualizations are connected to the WikiRate
+      database, so that when new data is added, assessments change and improve. </span></p>\r\n<h3>Get
+      in touch</h3>\r\n<p>Do you have ideas about open datasets that you think should
+      be included in the project? Or, want to create an analysis of your own using
+      WikiRate? We'd love to hear your thoughts, email <a href=\"mailto:info@wikirate.org\">info@wikirate.org. </a></p>\r\n<p> </p>"
+    :image: "(my_bucket)/7094/22202.png"
+- :name: UK Modern Slavery Act Research
+  :type: :project
+  :fields:
+    :description: "<p>In 2016, the Minderoo’s <strong>Walk Free Initiative</strong>
+      and WikiRate partnered to assess companies’ response to the UK’s 2015 Modern
+      Slavery Act. To this end, both organizations developed a set of metrics on the<a
+      href=\"https://wikirate.org/UK_Modern_Slavery_Act_Research\" target=\"_blank\">
+      UK Modern Slavery Act Research Project</a> whereby students and non-expert researchers
+      can contribute to the assessment.</p>\r\n<p>In 2019, the <strong>Business and
+      Human Rights Resource Centre</strong> has joined in this partnership. Through
+      this broader collaboration, additional research metrics are added to the project
+      in support of sector specific publications that are released on an ongoing basis
+      to address sectoral disclosure patterns.</p>\r\n<h3>Outcomes</h3>\r\n<p>Universities
+      from around the world participated in the initial metric testing and are conducting
+      the research on an ongoing basis.</p>\r\n<p>Over the past four years, the project
+      has engaged <strong>1000+ students</strong>, collectively assessing over <strong>1,200
+      company statements</strong>, and adding a total of <strong>25,000+ data points</strong>
+      to our open data platform about companies’ performance.</p>\r\n<p>In 2018, the
+      data and analysis were used by Minderoo’s Walk Free Initiative to advise governments
+      around the world to adopt and improve anti-modern slavery legislations. The
+      <strong>Australian Modern Slavery Bill</strong>, passed in November, 2018, is
+      a great example of reforms that are shaped by systematic legislative monitoring
+      and the identification of best practices.</p>\r\n<h3 style=\"font-family: Roboto,
+      'Helvetica Neue', Helvetica, Arial, sans-serif; color: #495057;\">Get Involved</h3>\r\n<p
+      style=\"font-size: 15.2px;\">The UK Modern Slavery Act research project is an
+      ongoing effort that will assess modern slavery statements year-on-year. If you
+      are a university teacher who wants to take part in the MSA research do <a href=\"https://wikirate.org/Contact_WikiRate\"
+      target=\"_blank\">get in touch</a>.</p>\r\n<h3 style=\"font-family: Roboto,
+      'Helvetica Neue', Helvetica, Arial, sans-serif; color: #495057;\">In the Media</h3>\r\n<ul>\r\n<li><a
+      href=\"https://www.theguardian.com/global-development/2019/nov/22/british-hotels-accused-of-lack-of-effort-on-forced-labour-and-sexual-exploitation\"
+      target=\"_blank\">British hotels accused of 'lack of effort' on forced labour
+      and sexual exploitation</a>.- <em>The Guardian </em></li>\r\n<li>[[http://news.trust.org/item/20191120145934-qyh04/
+      | Major UK hotels found failing to combat threat of modern slavery]].- <em>Thomson
+      Reuters</em></li>\r\n<li>[[https://www.ft.com/content/5d7f8314-0b17-11ea-b2d6-9bf4d1957a67
+      | Moral Money: A warning shot for investors on fossil fuels]].- <em>Financial
+      Times</em></li>\r\n<li>[[https://www.personneltoday.com/hr/hotel-sector-failing-to-protect-vulnerable-workforce-from-modern-slavery/|Hotel
+      sector failing to protect ‘vulnerable workforce’ from modern slavery]].<em>
+      - Personnel Today</em></li>\r\n<li>[[https://www.sightmagazine.com.au/news/14011-major-uk-hotels-found-failing-to-combat-threat-of-modern-slavery|Major
+      UK hotels found failing to combat threat of modern slavery]].- <em>Sight Magazine
+      </em></li>\r\n</ul>"
+    :publication: |-
+      Beyond Compliance in the Garment Industry: Assessing UK and Australian Modern Slavery Act statements produced by companies and investors in the garment sector
+      Digital Insights into Modern Slavery Reporting: Challenges and opportunities of machine readability
+      Beyond Compliance in the Finance Sector: A review of statements produced by asset managers under the UK Modern Slavery Act
+      Beyond Compliance in the Hotel Sector: A Review of UK Modern Slavery Act Statements
+      Beyond Compliance: The Modern Slavery Act Research Project
+      Global Slavery Index 2018: WikiRate contribution to 12 Country Studies
+    :participants: |-
+      Columbia University SIPA
+      University of Nottingham
+      The Australian National University
+      University of Connecticut (UConn)
+      The University of British Columbia -Allard School of Law
+      Johns Hopkins University
+      ESCP Europe
+      The University of Western Australia
+    :image: "(my_bucket)/7066/22190.png"
+- :name: Transparency Tool for Supply Chain Workers
+  :type: :project
+  :fields:
+    :description: "<p>Following the Transparency Pledge Coalition’s campaigning efforts
+      in 2016, Clean Clothes Campaign and WikiRate began extracting relationship data
+      from the supplier disclosures that apparel companies have started to publish
+      in 2017 (for more details about these activities see the Corporate Network Mapping
+      project).</p>\r\n<p>Bringing these often still statically published datasets
+      onto WikiRate’s open data platform was however only the first step in making
+      this data more useful to a broader audience. Taking it a step further, Clean
+      Clothes Campaign and WikiRate then collaboratively developed a transparency
+      tool (<a href=\"https://ccc.wikirate.org/\">https://ccc.wikirate.org/</a>) for
+      supply chain workers in 2018. Using this tool, supply chain workers and their
+      union representatives are now able to find out which brands they are producing
+      products for.</p>\r\n<p>Expansion ideas are currently being explored, including
+      the representation of supply chain policies and wage data in the transparency
+      tool, to inform workers about the rights they have in their place of work, ultimately
+      enabling them to collectively negotiate for improved working conditions.</p>\r\n<p> </p>"
+    :image: "(my_bucket)/7093/22201.png"
+- :name: Conflict Minerals Research
+  :type: :project
+  :fields:
+    :description: "<p>In partnership with Amnesty International, WikiRate developed
+      the [[https://wikirate.org/Investigating_Mineral_Sourcing_Practices|Investigating
+      Mineral Sourcing Practices]] pilot research project. The aim was to facilitate
+      a tool to systematically assess the statements that companies produce under
+      Section 1502 of the Dodd-Frank Act - a legal requirement for companies to report
+      on their due diligence to ensure that their sourcing of certain minerals does
+      not fund armed groups in the Democratic Republic of the Congo.</p>\r\n<h3>Pilot
+      Outcomes</h3>\r\n<p>Through a series of live research events in Germany and
+      the United Kingdom, volunteers from Cambridge University and Amnesty’s network
+      assessed information on 116 companies.</p>\r\n<h3 style=\"font-family: Roboto,
+      'Helvetica Neue', Helvetica, Arial, sans-serif; color: #495057;\">Get Involved</h3>\r\n<p
+      style=\"font-size: 15.2px;\">The pilot demonstrated that the contentious language
+      used by corporations to report on their mineral sourcing practices was a barrier
+      for volunteer researchers. We are therefore, reviewing the research metrics
+      and methodologies, and exploring the possibility of engaging a more specialized
+      group of researchers. If you want to take part in the Conflict Minerals Research
+      do <a href=\"https://wikirate.org/Contact_WikiRate\" target=\"_blank\">get in
+      touch</a>.</p>\r\n<h3>Related Resources</h3>\r\n<p>Through the scraping of websites
+      and public data from tables in PDF reports, WikiRate and its partners have mapped
+      thousands of relationships between <strong>Tungsten</strong>, <strong>Tin</strong>,
+      <strong>Tantalum</strong> and <strong>Gold</strong> <strong>smelters</strong>
+      and the companies that source from them. The data was gathered from the information
+      on <strong>4,872 </strong>companies's Conflict Mineral Reports avilable on WikiRate
+      covering the years 2013-2017. </p>\r\n<p>In the summer of 2018, WikiRate supported
+      a researcher with her project, and welcomed volunteers interested in exploring
+      the disclosure practices of companies in the luxury jewelry industry. The [[https://wikirate.org/Sustainable_Practices_in_the_Luxury_Jewelry_Industry|Sustainable
+      Practices in the Luxury Jewelry Industry]] organized a set of questions regarding
+      <strong>major companies practices </strong>around<strong> gold and diamonds
+      </strong>sourcing and manufacturing.</p>"
+    :participants: Amnesty International
+    :image: "(my_bucket)/7068/22192.jpg"
+- :name: Business Contributions to the SDGs
+  :type: :project
+  :fields:
+    :description: "<p>With the adoption of the 2030 Agenda for Sustainable Development,
+      there is increasing urgency to understand how the private sector is and should
+      be working towards the Goals.</p>\r\n<p>The Business Contribution to the SDGs
+      project was created to empower students to address this challenge through research
+      of public documents including company sustainability reports and Communication
+      on Progress Reports (COPs) submitted annually by UN Global Compact company 
+      participants. </p>\r\n<p>In partnership with the <a href=\"http://www.unprme.org/\">Principles
+      for Responsible Management Education (PRME)</a> WikiRate works with universities
+      to develop student engagement projects researching companies’ Environmental,
+      Social and Governance performance according to metrics outlined by widely used
+      standards like the Global Reporting Initiative.</p>\r\n<h3 style=\"font-family:
+      Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #495057;\">Experiential
+      learning</h3>\r\n<p>The project aims to introduce students to a collaborative
+      research environment where they can contribute to the collection and analysis
+      of data on companies’ performance as it relates to the Sustainable Development
+      Goals. On WikiRate, students (working individually or in groups) can adopt (and
+      discuss/develop) existing research projects or design their own.</p>\r\n<p>Students
+      use public documents to gather data on corporate sustainability performance
+      according to a topic or SDG, for example SDG 3: Good Health &amp; Well Being,
+      aggregate the data on the WikiRate platform, and then use the data to address
+      a specific research question. Some students use the data-gathering process to
+      critique the different approaches of reporting and disclosure, and to consider
+      what kinds of information is missing or difficult to compare.</p>\r\n<p>Others
+      use the data to analyze disclosure rates or performance of a company over time.</p>\r\n<p>All
+      the students learn more about how data is obscured, nuanced and difficult to
+      compare, and think about the challenges of gathering data to understand how
+      companies impact the SDG objectives.</p>\r\n<h3>Outcomes</h3>\r\n<p>A full report
+      on the 2017 pilot phase included analysis of the data collected with respect
+      to corporate disclosure rates across sustainability topics and specific SDGs;
+      and research on the curriculum integration from a pedagogical perspective, alongside
+      assessment of learning outcomes and student and professor experiences. The pilot
+      outcomes were presented to member states during the 2017 UN SDG Forum at the
+      High-Level Political Forum in New York, to showcase this effort to track company
+      progress to the SDGs.</p>\r\n<p>In July 2011, the Indian Ministry of Corporate
+      Affairs came out with the ‘National Voluntary Guidelines on Social, Environmental
+      and Economic Responsibilities of Business’ (NVGs), in recognition of the role
+      of businesses in improving the quality of life and the significance and long-lasting
+      impacts they have on people and the planet.</p>\r\n<p>In support of this, in
+      2019 Oxfam India and WikiRate piloted a project to understand and rank the environmental
+      and climate disclosures of Indian companies, comparing performance disclosure
+      to policy data recorded according to the NVG reporting. A group of student researchers
+      from <strong>TERI School of Advanced Studies</strong> in Delhi collected data
+      for the assessment.</p>\r\n<p>Oxfam India, the TERI professor and student representatives,
+      alongside WikiRate presented initial results and findings to a roundtable of
+      experts from civil society organizations in India working on improving corporate
+      environmental impacts. Participants provided helpful feedback about how to advance
+      and carry the project forward. The next iteration of this project is in development,
+      and aims to provide insights for the Indian government and civil society that
+      will help to catalyze efforts by companies to improve environmental performance.</p>\r\n<p>See
+      the full list of publications at the bottom of this page.</p>\r\n<h3 style=\"font-family:
+      Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #495057;\">Take
+      part</h3>\r\n<p style=\"font-size: 15.2px;\">You can explore the Business Contributions
+      to the Global Goals [[https://wikirate.org/Business_Contributions_to_the_SDGs_PRME_Research|project
+      page]] on the WikiRate platform to find out more about the hands-on research
+      process. If you are a university educator who would like to bring one of our
+      projects to your classroom, get in touch at info@wikirate.org or through our
+      [[https://wikirateproject.org/Contact_Us| Contact Form]].</p>"
+    :publication: |-
+      Responsible Management Education. The PRME Global Movement
+      Responsible patterns of production and consumption: The race for the achievement of SDGs in emerging markets
+      An Exploration of Student Learning for Sustainability through the WikiRate Student Engagement Project
+      WikiRate.org – Leveraging collective awareness to understand companies’ environmental, social and governance performance
+      Crowdsourcing Corporate Transparency through Social Accounting: Conceptualising the ‘Spotlight Account’
+      WikiRate Student Engagement Report: International Case Studies
+      Disclosure and Reporting Against the Sustainable Development Goals: Connecting New Stakeholders to Sustainability Data
+      Final Pilot Report: Business Contribution to the SDGs — A Student Assessment
+    :participants: |-
+      Ewha Womans University
+      Glasgow Caledonian University
+      Nottingham Trent University
+      Universidad EAFIT
+      University of Gloucestershire
+      University of Navarra
+      University of Nottingham
+      University of Sydney
+      University of Wollongong
+      University of Bristol
+      Goa Institute of Management
+      Great Lakes Institute of Management
+      McGill University
+      IMC University of Applied Sciences Krems Austria
+      Royal Holloway, University of London
+      Universidad Icesi
+      University of Sussex
+      Auckland University of Technology
+      Lebanese American University
+    :image: "(my_bucket)/7067/22191.jpg"
+- :name: Climate Action
+  :type: :project
+  :fields:
+    :description: "<p> </p>\r\n<p>With growing urgency to address the climate crisis
+      and reduce greenhouse gas emissions, this project is bringing diverse communities
+      together  to collect and map the environmental impacts and disclosures of companies,
+      in order to showcase where and how companies can take action. Though SDG13 Climate
+      Action is at the center of the project,  climate change has effects that cut
+      across each of the Sustainable Development Goals, which means that all of the
+      SDGs research on WikiRate contributes to the outcomes. </p>\r\n<h3 style=\"font-family:
+      Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #495057;\">Compiling
+      the Public Picture: The Top 100 Greenhouse Gas Emitters </h3>\r\n<p>In tandem
+      with the beginning of COP25, the UN climate conference, the project Compiling
+      the Public Picture: The Top 100 Greenhouse Gas Emitters was launched, to focus
+      research on large companies who have the greatest leverage and responsibility.
+      Through this project, volunteers and students are collecting research and data
+      from a wide range of methodologies and putting them on WikiRate.org for open
+      analysis, where citizens, alongside policy makers and investors, can learn concretely
+      about companies’ impacts.</p>\r\n<p>The project encourages people to use their
+      voice to reach out to companies that are doing or publishing clearly enough. </p>\r\n<p>In
+      addition to capturing company performance data, relationships between companies
+      and investors, and companies and suppliers will be mapped, to allow a wider
+      range of organizations to take responsibility for their value chain and make
+      needed improvements. </p>\r\n<p>Find out more about the project in our video
+      below and <a href=\"https://plana.earth/project/compiling-the-public-picture-top-100-greenhouse-gas-emitters\">check
+      out our page on the Plan A website</a>. </p>\r\n<div style=\"padding: 15px;
+      text-align: center;\">{{Climate Action Video|content; float:center}}</div>\r\n<h3>Context-based
+      metrics </h3>\r\n<p>With the Paris Agreement of 2015 to reduce greenhouse gas
+      emissions and accelerate the transition to a lower-carbon economy, new methodologies
+      are being developed to assess company impacts. These metrics contextualize reported
+      figures in relation to ecological limits - for example, by calculating how many
+      degrees Earth's temperature will increase if other companies emit carbon at
+      the same rate as a particular individual company or industry. </p>\r\n<p>Through
+      Calculated metrics on WikiRate, context-based metrics will help showcase companies’
+      climate footprints. </p>\r\n<h3>Capturing risk</h3>\r\n<p>For investors, climate
+      change poses significant challenges and opportunities. The Task Force on Climate-related
+      Financial Disclosures (TCFD) has been created to develop guidelines for what
+      constitutes effective financial disclosures across industries, and to help companies
+      understand what investors want from disclosure in order to measure and respond
+      to climate change risks, and align disclosures.</p>\r\n<p>As the process to
+      identify metrics and align disclosures develops, WikiRate is able bring relevant
+      reporting standards onto the platform to research trends and gaps in corporate
+      TCFD reporting, and support dynamic analyses of the data.  </p>\r\n<h3 style=\"font-family:
+      Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #495057;\">Visualizations</h3>\r\n<p
+      style=\"font-size: 15.2px;\">WikiRate is developing dynamic visual tools that
+      can capture the outputs of analysis, pulling directly from the platform API.
+      This means that the visual tools (graphs, company comparisons) can be embedded
+      on other websites and used by journalists, NGOs, investors, etc. and will automatically
+      update with new data added to WikiRate.org.</p>\r\n<h3>On the lookout</h3>\r\n<p>If
+      you know or work for an organization interested in evidence-based advocacy,
+      or in helping to define key metrics and research projects around corporate climate
+      impact, get in touch at info@wikirate.org or through our [[Contact Us| Contact
+      Form]].</p>"
+    :participants: |-
+      Plan A
+      University of Wollongong
+    :image: "(my_bucket)/7091/22200.jpg"
+

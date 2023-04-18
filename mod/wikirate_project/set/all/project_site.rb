@@ -38,6 +38,12 @@ format :html do
   def og_title
     "#{card.name} - Wikirate International e.V."
   end
+
+  def date_to_str
+    if !card.date.nil? && card.date != ''
+      ::Date.parse(card.date).strftime('%d %b %Y')
+    end
+  end
 end
 
 format :html do
