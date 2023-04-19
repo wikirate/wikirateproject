@@ -40,9 +40,7 @@ format :html do
   end
 
   def date_to_str
-    if !card.date.nil? && card.date != ''
-      ::Date.parse(card.date).strftime('%d %b %Y')
-    end
+    card.date.present? ? ::Date.parse(card.date).strftime('%d %b %Y') : nil
   end
 end
 
