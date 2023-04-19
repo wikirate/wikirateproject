@@ -187,6 +187,9 @@
 - :name: Policy Advice
   :codename: policy_advice
 
+- :name: Working Group
+  :codename: working_group
+
 - :type: blurb
   :codename: intro_blurb
   :fields:
