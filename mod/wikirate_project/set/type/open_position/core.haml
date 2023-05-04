@@ -1,0 +1,19 @@
+%small
+  = "Deadline: #{date_to_str}"
+%h5
+  %a{:href => card.fetch(:file).attachment}
+    = field_nest :title, view: :content
+.row
+  .col-12
+    - card.field(:list).card.item_cards.each do |item|
+      %span.badge.bg-transparent-gray.text-dark
+        = item.name
+.row
+  .col-12
+    %p
+      = field_nest :description, view: :content
+- if !card.file.nil? and card.file != ''
+  .row.text-center.pb-2
+    .col-12
+      %a.p-2.btn-sm.bg-transparent-gray.text-dark.fw-bold.rounded{:role => 'button', :href => card.fetch(:file).attachment}
+        = 'Read more'

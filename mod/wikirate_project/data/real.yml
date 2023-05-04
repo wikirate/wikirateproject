@@ -137,6 +137,15 @@
 - :name: Funding
   :codename: funding
 
+- :name: Work with us
+  :codename: work_with_us
+  :content:
+    "<h3>Opportunities</h3>
+     <p>We are a growing international team with an office in Berlin (Germany) and are always keen to get to know talented people with an interest in open data, transparency, corporate sustainability and open source technologies.</p> 
+     <p>Down below you will find current job openings for our team. If you do not find something that matches your profile but would still like to work or volunteer with us, please feel free to send us your CV at <a href='mailto:jobs@wikirate.org'>jobs@wikirate.org</a>. Knowing each other is the first step in working together.</p>
+     <h3>Vacancies</h3>
+     <p>Interested in joining the Wikirate team? We recruit for specific positions within the organization’s management, product, data and operations teams. Whenever such opportunities arise, we advertise them here.</p>"
+
 - :name: Body
   :codename: body
   :type: :html
@@ -335,6 +344,15 @@
   :codename: blog
   :type: :cardtype
 
+- :name: Open Position
+  :codename: open_position
+  :conflict: override
+  :type: :cardtype
+  :fields:
+    :type:
+      :fields:
+        :autoname: Open_Position 0001
+
 - :name: Event
   :codename: event
   :type: :cardtype
@@ -391,6 +409,11 @@
   :fields:
     :title: How our work is financed
     :body: ""
+
+- :type: :blurb
+  :codename: work_with_us_heading
+  :fields:
+    :title: Work with us
 
 - :name: "Funding Introduction"
   :type: :RichText
@@ -1125,3 +1148,9 @@
     - :description
   :content: "WikiRate's data system and tools were developed for free and independent use, with plenty of Guides to help 
   you get stuck in. However, if time is short or skills are lacking, we are here to help."
+
+- :name:
+    - :work_with_us
+    - :description
+  :content: "We are a growing international team with an office in Berlin (Germany) and are always keen to get to know 
+  talented people with an interest in open data, transparency, corporate sustainability and open source technologies."
