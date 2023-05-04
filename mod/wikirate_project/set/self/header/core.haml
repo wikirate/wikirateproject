@@ -15,11 +15,8 @@
       %ul.navbar-nav
         - nav_menu.each do |item|
           %li.nav-item.pe-md-3
-            %a.nav-link{:href => item[1]}
+            %a.nav-link{:href => item[1], :target => ('_blank' unless item[0]!='Blog')}
               = item[0]
-        %li.nav-item.pe-md-3
-          %a.nav-link{:href => 'https://medium.com/@wikirate', :target => '_blank'}
-            Blog
       %div.ms-auto
         %ul.navbar-nav
           %li.nav-item
