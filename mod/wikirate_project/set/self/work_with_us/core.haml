@@ -1,0 +1,15 @@
+%section#work-with-us-header
+  .bg-transparent-gray.p-5
+    .container.p-5
+      = render_breadcrumbs
+      = section_header :work_with_us_heading, header_size: :h1
+
+%section.p-5
+  .container
+    .row
+      = card.content
+    .row
+      - :open_position.card.item_cards.each do |item|
+        - if Date.parse(item.date) > Time.now
+          .col-md-6.p-3.ps-4.pe-4
+            = nest item, view: :core
