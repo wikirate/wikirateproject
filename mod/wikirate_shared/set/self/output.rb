@@ -13,8 +13,8 @@ def cql_content
 end
 
 format do
-  def filter_class
-    OutputFilterQuery
+  def filter_cql_class
+    OutputFilterCql
   end
 
   def filter_map
@@ -71,7 +71,7 @@ format :html do
 end
 
 # class for managing custom filters for outputs
-class OutputFilterQuery < Card::FilterQuery
+class OutputFilterCql < Card::FilterCql
   def output_type_cql value
     return unless value.present?
 
