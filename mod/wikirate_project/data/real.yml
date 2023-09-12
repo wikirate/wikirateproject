@@ -1099,6 +1099,9 @@
   :image: image_on_socials.png
   :conflict: override
 
+- :name: website 
+  :codename: website
+  
 - homepage
 - supporters
 - events
