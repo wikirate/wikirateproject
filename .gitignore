@@ -23,3 +23,5 @@ config/*.yml
 
 public
 .idea
+
+**/.DS_Store
