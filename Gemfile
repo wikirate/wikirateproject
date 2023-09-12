@@ -39,3 +39,6 @@ group :production do
   gem "fog-aws"
   gem "dalli"
 end
+
+# temp local path to card-mods until card-mod-blog is merged.
+gem "card-mod-blog", path: "/Users/christina/code/card-mods"
