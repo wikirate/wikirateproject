@@ -340,6 +340,10 @@
   :type: :URI
   :codename: link
 
+- :name: Website
+  :type: :URI
+  :codename: :website
+
 - :name: Blog
   :codename: blog
   :type: :cardtype
@@ -1097,7 +1101,6 @@
   :type: :image
   :codename: :image_on_socials
   :image: image_on_socials.png
-  :conflict: override
 
 - homepage
 - supporters
