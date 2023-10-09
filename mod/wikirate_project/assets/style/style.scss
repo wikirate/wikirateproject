@@ -9,6 +9,10 @@ body {
   color: $gray-900;
 }
 
+.lead {
+  font-weight: 400 !important;
+}
+
 .rounded-picture img {
   @extend .rounded-circle
 }
