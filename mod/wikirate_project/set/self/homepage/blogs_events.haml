@@ -1,3 +1,4 @@
+- upcoming_events = latest_events
 .ps-md-5.pe-md-5
   .row.mb-3
     %h2
@@ -8,6 +9,13 @@
     .col-md-4.col-sm-6.event-summary.ps-4.pe-4.pt-4.pb-4
       %h4.highlighted
         Upcoming Events
-      - latest_events.each do |event|
+      - if !upcoming_events.empty?
+        - upcoming_events.each do |event|
+          .row
+            = nest event, view: :summary
+      - else
         .row
-          = nest event, view: :summary
+          .col-md-12
+            %p.fst-italic
+              = "Currently, we don't have any upcoming events scheduled,
+              but stay tuned for exciting updates in the near future!"
