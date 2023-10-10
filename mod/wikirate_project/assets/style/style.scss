@@ -261,6 +261,10 @@ div.animation span:nth-child(6) {
   border-radius: 0.25rem;
 }
 
+#donate{
+  border: none !important;
+}
+
 .event-date-time-location {
   background: $gradient-purple;
   color: $white;
@@ -478,6 +482,10 @@ card .card, .endorsement-summary {
   background-color: #EDEBF9;
 }
 
-.our_advisors,.our_team .d0-card-body > p{
+.our_advisors,#advocacy,.our_team .d0-card-body > p{
   @extend .lead
 }
+
+#outputs .container > p {
+  @extend .lead
+ }
