@@ -6,7 +6,7 @@
   .row.mt-1
     - latest_blogs.each do |blog|
       = nest blog, view: :core
-    .col-md-4.col-sm-6.event-summary.ps-4.pe-4.pt-4.pb-4
+    .col-lg-3.col-md-6.col-sm-12.blog-summary.ps-4.pe-4.pt-4.pb-4
       %h4.highlighted
         Upcoming Events
       - if !upcoming_events.empty?
