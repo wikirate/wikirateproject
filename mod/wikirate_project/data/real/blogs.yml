@@ -31,11 +31,11 @@
 #    :link: "https://Wikirate.medium.com/paul-roeland-my-data-values-8549fb14076"
 #    :blog_type:
 #      - interview
-
-- :name: "OpenClimate connects to Wikirate to fight climate change"
-  :type: blog
-  :time: 1682063528
-
-- :name: "How effective are corporate modern slavery reporting laws?"
-  :type: blog
-  :time: 1687420328
+#
+#- :name: "OpenClimate connects to Wikirate to fight climate change"
+#  :type: blog
+#  :time: 1682063528
+#
+#- :name: "How effective are corporate modern slavery reporting laws?"
+#  :type: blog
+#  :time: 1687420328
