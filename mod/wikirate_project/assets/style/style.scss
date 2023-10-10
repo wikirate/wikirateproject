@@ -23,6 +23,7 @@ body {
 }
 
 .lead {
+  font-size: 1.25rem !important;
   font-weight: 400 !important;
 }
 
@@ -225,12 +226,33 @@ div.animation span:nth-child(6) {
 
 .service-icon {
   //background: linear-gradient(18.98deg, #6B5CD8 7.04%, #7F73D5 90.87%);
-  background: $gradient-orange;
+  background: $gradient_orange;
   color: white;
   border-radius: 50%;
   @extend .p-4;
   width: 88px;
   height: 88px;
+}
+
+.icon-left-text-right .blurb-icon {
+  color: white;
+  background: $gradient_purple;
+  height: 7.5em;
+  width: 7.5em;
+}
+
+.blurb-icon {
+  padding: 1em;
+  border-radius: 50rem;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blurb-icon i{
+  font-size: 3.5em !important;
 }
 
 .boxed {
