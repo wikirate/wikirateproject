@@ -477,3 +477,7 @@ card .card, .endorsement-summary {
   color: #7164D0;
   background-color: #EDEBF9;
 }
+
+.our_advisors,.our_team .d0-card-body > p{
+  @extend .lead
+}
