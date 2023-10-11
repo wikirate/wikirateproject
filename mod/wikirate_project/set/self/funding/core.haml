@@ -4,10 +4,12 @@
       = render_breadcrumbs
       = section_header :funding_heading, header_size: :h1
 
-%section.p-5
+%section.p-5.bg-creme.mb-5
   .container
     .lead
       = nest :funding_introduction, view: :content
+    %small
+      = nest :funding_history, view: :content
 
 %section.p-5.pt-0
   .container
@@ -16,11 +18,6 @@
 %section.p-5
   .container
     = nest :previous_supporters, view: :grid
-
-%section.p-5.bg-creme
-  .container
-    .lead
-      = nest :funding_history, view: :content
 
 %section.p-5
   = render_donate

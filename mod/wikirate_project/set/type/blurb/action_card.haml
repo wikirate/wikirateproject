@@ -5,14 +5,16 @@
         = field_nest :title, view: :core
       .py-3
         = field_nest :body, view: :core
-    .text-end
+    .text-end.d-flex.justify-content-end
       - if card.link.start_with?('http')
         %a{href:card.link, target: '_blank'}
-          %i.fas.fa-arrow-right
+          %i.material-symbols-rounded
+            = 'east'
       - if !card.link.start_with?('http') and card.link != ''
-        %span.open-modal-button{'onclick':'trigger_modal(this)', role:'button'}
+        %span.d-flex.align-items-center.open-modal-button{'onclick':'trigger_modal(this)', role:'button'}
           = 'Case study'
-          %i.ms-2.fas.fa-arrow-right
+          %i.ms-2.material-symbols-rounded
+            = 'east'
           = modal_link "",
                      path: {mark: card.link,  view: :core },
                      class: '.fas.fa-arrow-right'

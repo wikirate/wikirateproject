@@ -6,13 +6,11 @@
                                           button: { url: "/Contact_us", text: "Contact us" }
 %section.p-5
   .container
-    .lead.pb-3
+    .lead.pb-2
       = nest :policies_introduction, view: :content
-    = nest %i[policy type by_name], view: :core, items: { view: :box }
-
-%section.p-5
-  .container
-    .lead.pb-3
+    %small
       For policies and guidelines regarding the Wikirate platform and community, check out this
       %a{href:"https://wikirate.org/Wikirate_Policies", target: '_blank'}
         page.
+    .row.mt-3
+      = nest %i[policy type by_name], view: :core, items: { view: :box }

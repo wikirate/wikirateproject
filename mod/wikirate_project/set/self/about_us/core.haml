@@ -5,13 +5,13 @@
       = section_header :about_heading, header_size: :h1,
                                        button: { url: "/Contact_us", text: "Contact us" }
 
-%section.p-5
-  .container
+%section.intro-blurbs.container.py-5.d-flex.justify-content-center
+  .py-4.w-lg-66
     = nest :intro_blurb, view: :image_left_text_right
     = nest :our_purpose, view: :image_left_text_right
-%section.p-5.bg-creme
+%section.our_team.p-5.bg-creme
   .container
     = nest :our_team
-%section.p-5
+%section.our_advisors.p-5
   .container
     = nest :our_advisors

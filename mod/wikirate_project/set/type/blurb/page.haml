@@ -5,6 +5,6 @@
   = field_nest :body, view: :core
   = field_nest :image, view: :core
   - if !card_link_data.nil? and card_link_data != ''
-    %a.btn.btn-outline-primary{'href': card_link_data}
+    %a.btn.btn-outline-primary.ps-4.pe-4{'href': card_link_data}
       %i.fas.fa-arrow-right.pe-2
       = More Details

@@ -6,8 +6,10 @@
 
 %section.p-5
   .container
-    .row
-      = card.content
+    .row.lead.pb-3
+      = nest :opportunities, view: :titled
+    .row.lead.pb-3
+      = nest :vacancies, view: :titled
     .row
       - :open_position.card.item_cards.each do |item|
         - if Date.parse(item.date) > Time.now
