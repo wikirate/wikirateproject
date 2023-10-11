@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem "mysql2"
 gem 'net-smtp', require: false
-gem 'net-imap', require: false
+gem 'net-imap', "0.3.7", require: false
 gem 'net-pop', require: false
 gem "tzinfo-data", require: false
 
