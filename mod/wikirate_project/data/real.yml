@@ -137,14 +137,16 @@
 - :name: Funding
   :codename: funding
 
-- :name: Work with us
-  :codename: work_with_us
+- :name: Opportunities
+  :codename: :opportunities
   :content:
-    "<h3>Opportunities</h3>
-     <p>We are a growing international team with an office in Berlin (Germany) and are always keen to get to know talented people with an interest in open data, transparency, corporate sustainability and open source technologies.</p> 
-     <p>Down below you will find current job openings for our team. If you do not find something that matches your profile but would still like to work or volunteer with us, please feel free to send us your CV at <a href='mailto:jobs@wikirate.org'>jobs@wikirate.org</a>. Knowing each other is the first step in working together.</p>
-     <h3>Vacancies</h3>
-     <p>Interested in joining the Wikirate team? We recruit for specific positions within the organization’s management, product, data and operations teams. Whenever such opportunities arise, we advertise them here.</p>"
+    "<p>We are a growing international team with an office in Berlin (Germany) and are always keen to get to know talented people with an interest in open data, transparency, corporate sustainability and open source technologies.</p> 
+     <p>Down below you will find current job openings for our team. If you do not find something that matches your profile but would still like to work or volunteer with us, please feel free to send us your CV at <a href='mailto:jobs@wikirate.org'>jobs@wikirate.org</a>. Knowing each other is the first step in working together.</p>"
+
+- :name: Vacancies
+  :codename: :vacancies
+  :content:
+    "<p>Interested in joining the Wikirate team? We recruit for specific positions within the organization’s management, product, data and operations teams. Whenever such opportunities arise, we advertise them here.</p>"
 
 - :name: Body
   :codename: body
@@ -254,7 +256,6 @@
   :codename: gradient_logo
   :image: wr-logo-gradient.svg
   :storage_type: :coded
-  :conflict: override
 
 - :name: "*title"
   :conflict: override
@@ -267,7 +268,6 @@
   :codename: wikirate_icon
   :image: logo/wikirate-icon.png
   :storage_type: :coded
-  :conflict: override
 
 - :name: footer link list
   :codename: footer_link_list
@@ -340,6 +340,10 @@
   :type: :URI
   :codename: link
 
+- :name: Website
+  :type: :URI
+  :codename: :website
+
 - :name: Blog
   :codename: blog
   :type: :cardtype
@@ -410,10 +414,9 @@
     :title: How our work is financed
     :body: ""
 
-- :type: :blurb
-  :codename: work_with_us_heading
-  :fields:
-    :title: Work with us
+- :name: Work with us
+  :codename: work_with_us
+  :conflict: override
 
 - :name: "Funding Introduction"
   :type: :RichText
@@ -1097,7 +1100,6 @@
   :type: :image
   :codename: :image_on_socials
   :image: image_on_socials.png
-  :conflict: override
 
 - homepage
 - supporters
@@ -1106,7 +1108,7 @@
 - quotes
 - skin
 - images
-- blogs
+#- blogs
 
 - :name:
     - :policy

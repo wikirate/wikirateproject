@@ -1,5 +1,5 @@
 - date =  card.created_at
-.col-md-4.col-sm-6.blog-summary.rounded-3
+.col-lg-3.col-md-6.col-sm-12.blog-summary.rounded-3.d-flex.flex-column
   - if not card.image.nil? or card.image != ''
     %a.fluid-image{'href': card.link, 'target':'_blank', 'role':'button'}
       = field_nest :image, view: :core, size: :large
@@ -21,7 +21,7 @@
         = card.name
   .row.ps-3.pe-3
     = field_nest :description, view: :content
-  .row.ps-3.pe-3.pb-3.pt-3
+  .row.ps-3.pe-3.pb-3.pt-3.mt-auto
     .col-12.text-center
-      %a.btn.btn-outline-primary{'href': card.link, 'target':'_blank', 'role':'button'}
+      %a.btn.btn-outline-primary.ps-4.pe-4{'href': card.link, 'target':'_blank', 'role':'button'}
         More Details

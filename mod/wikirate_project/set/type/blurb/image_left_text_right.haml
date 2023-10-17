@@ -1,18 +1,17 @@
-.row.d-flex.align-items-center
+.row.d-flex.align-items-center.icon-left-text-right.py-2
   - if !card.icon.nil? and card.icon != ''
-    .col-md-3.p-4
-      .row.justify-content-center
-        .blurb-icon.d-flex.align-items-center.justify-content-center
-          %i.material-icons
-            = card.icon
+    .col-md-4.p-4.d-flex.justify-content-md-end.justify-content-center.pe-4
+      .blurb-icon.d-flex.align-items-center.justify-content-center
+        %i.material-symbols-rounded
+          = card.icon
   - else
     - if !card.image.nil? and card.image != ''
       .col-md-4.p-4.rounded-picture.text-center
         = field_nest :image, view: :core, size: :medium
 
   .col-md-8.p-4.d-flex.align-items-center
-    .row
+    .row.text-md-start.text-center
       %h2
         = field_nest :title, view: :core
-      .py-1
+      .lead.py-1
         = field_nest :body, view: :core

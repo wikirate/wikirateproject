@@ -7,11 +7,12 @@ format :html do
   end
 
   def latest_blogs
-    Card.search(type: 'Blog', limit: 2, sort_by: 'create', dir: 'desc')
+    Card.search(type: 'Blog', limit: 3, sort_by: 'create', dir: 'desc')
   end
 
   def latest_events
-    Card.search(type: 'Event', limit: 2, sort_by: 'create', dir: 'desc')
+    events = Card.search(type: 'Event', limit: 2, sort_by: 'create', dir: 'desc')
+    events.delete_if { |event| Date.parse(event.date) < Time.now}
   end
 
   def endorsements
