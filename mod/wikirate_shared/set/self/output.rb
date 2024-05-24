@@ -41,7 +41,7 @@ format :html do
   end
 
   def filter_output_type_options
-    OUTPUT_TYPE_OPTIONS
+    OUTPUT_TYPE_OPTIONS - [:use_case]
   end
 
   def selected_output_types
