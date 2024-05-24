@@ -1,7 +1,7 @@
 include_set Abstract::Search
 include_set Abstract::SearchViews
 
-OUTPUT_TYPE_OPTIONS = %i[publication dashboard].freeze
+OUTPUT_TYPE_OPTIONS = %i[publication dashboard use_case].freeze
 
 def item_type_id
   OutputID
