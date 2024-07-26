@@ -4,7 +4,7 @@ format :html do
   end
 
   def material_symbol_tag symbol, opts={}
-    add_class opts, "material-symbols-rounded"
+    add_class opts, "material-symbols-rounded notranslate"
     wrap_with :i, symbol, opts
   end
 end
