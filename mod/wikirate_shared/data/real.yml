@@ -1,5 +1,4 @@
 - :name: Quote
-  :conflict: override
   :codename: quote
   :type: :cardtype
 
@@ -17,5 +16,4 @@
   :type: :cardtype
 
 - :name: Full Text
-  :conflict: override
   :codename: fulltext
