@@ -1,7 +1,7 @@
 include_set Abstract::Search
 include_set Abstract::SearchViews
 
-OUTPUT_TYPE_OPTIONS = %i[publication dashboard use_case].freeze
+OUTPUT_TYPE_OPTIONS = %i[publication dashboard case_study].freeze
 
 def item_type_id
   OutputID
@@ -41,7 +41,7 @@ format :html do
   end
 
   def filter_output_type_options
-    OUTPUT_TYPE_OPTIONS - [:use_case]
+    OUTPUT_TYPE_OPTIONS - [:case_study]
   end
 
   def selected_output_types
