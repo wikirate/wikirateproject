@@ -9,7 +9,7 @@ format :html do
     %i[quote detailed_quote quotee job_title image]
   end
 
-  view :core, template: :haml
-  view :endorsement, template: :haml
-  view :detailed_endorsement, template: :haml
+  view :core, template: :haml, cache: :yes
+  view :endorsement, template: :haml, cache: :yes
+  view :detailed_endorsement, template: :haml, cache: :yes
 end
