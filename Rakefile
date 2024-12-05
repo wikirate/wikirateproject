@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-WikirateProject::Application.load_tasks
+Cardio.application.class.load_tasks
