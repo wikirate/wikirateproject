@@ -20,6 +20,7 @@ end
 path "./vendor/card-mods" do
   gem "card-mod-social"
   gem "card-mod-filter"
+  gem "card-mod-new_relic"
   gem "card-mod-thumbnail"
   gem "card-mod-google_analytics"
 end
@@ -31,8 +32,6 @@ group :development do
     gem "card-mod-platypus"
     gem "card-mod-monkey"
   end
-
-  gem "decko-cap", path: "./vendor/decko-cap"
 end
 
 group :production do

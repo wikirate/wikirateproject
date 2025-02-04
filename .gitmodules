@@ -4,9 +4,6 @@
 [submodule "card-mods"]
 	path = vendor/card-mods
 	url = https://github.com/decko-commons/card-mods.git
-[submodule "vendor/decko-cap"]
-	path = vendor/decko-cap
-	url = https://github.com/decko-commons/decko-cap
 [submodule "mod/wikirate_project/vendor/slick"]
 	path = mod/wikirate_project/vendor/slick
 	url = https://github.com/kenwheeler/slick.git
