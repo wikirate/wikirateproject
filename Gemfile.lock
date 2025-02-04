@@ -1,20 +1,20 @@
 PATH
   remote: vendor/card-mods
   specs:
-    card-mod-filter (0.2)
+    card-mod-filter (0.3)
       card
       card-mod-bootstrap
       card-mod-search
-    card-mod-google_analytics (0.16)
+    card-mod-google_analytics (0.2)
       card
       staccato (~> 0.5)
-    card-mod-new_relic (0.2)
+    card-mod-new_relic (0.3)
       card
       decko
       newrelic_rpm
-    card-mod-social (0.2)
+    card-mod-social (0.3)
       card
-    card-mod-thumbnail (0.1)
+    card-mod-thumbnail (0.2)
       card
       card-mod-bar_and_box
 
