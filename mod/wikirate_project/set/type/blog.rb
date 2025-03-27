@@ -14,5 +14,6 @@ format :html do
     blog_types.nil? ? [] : card.fetch(:blog_type).item_names
   end
 
+  view :summary, template: :haml
   view :core, template: :haml
 end
