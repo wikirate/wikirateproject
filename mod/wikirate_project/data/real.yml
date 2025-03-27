@@ -409,6 +409,11 @@
     :title: Coming together
 
 - :type: :blurb
+  :codename: blog_heading
+  :fields:
+    :title: The Wikirate Blog
+
+- :type: :blurb
   :codename: funding_heading
   :fields:
     :title: How our work is financed
@@ -619,7 +624,12 @@
 - :name: Event Search
   :codename: :event_search
   :type: :search_type
-  :content: "{\"type\":\"Event\", \"sort\": \"create\", \"dir\": \"desc\"}"
+  :content: "{\"type\":\"Event\", \"sort\": \"create\", \"dir\": \"desc\", \"limit\": 6 }"
+
+- :name: Blog Search
+  :codename: :blog_search
+  :type: :search_type
+  :content: "{\"type\":\"Blog\", \"sort\": \"create\", \"dir\": \"desc\", \"limit\": 6 }"
 
 - :name: Policy Search
   :codename: :policy_search
