@@ -1,0 +1,9 @@
+%section#blog-header
+  .bg-transparent-gray.p-5
+    .container.p-5
+      = render_breadcrumbs
+      = section_header :blog_heading, header_size: :h1
+
+%section#wikirate-blogs.p-5
+  .container
+    = nest :blog_search, hide: :header, items: {view: :core}

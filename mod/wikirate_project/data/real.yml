@@ -357,6 +357,23 @@
       :fields:
         :autoname: Open_Position 0001
 
+- :name: Goal
+  :codename: :goal
+  :type: Phrase
+
+- :name: Current Projects
+  :codename: :current_projects
+  :type: RichText
+
+- :name: Previous Projects
+  :codename: :previous_projects
+  :conflict: override
+  :type: RichText
+
+- :name: Program
+  :codename: :program
+  :type: :cardtype
+
 - :name: Event
   :codename: event
   :type: :cardtype
@@ -407,6 +424,11 @@
   :codename: events_heading
   :fields:
     :title: Coming together
+
+- :type: :blurb
+  :codename: blog_heading
+  :fields:
+    :title: The Wikirate Blog
 
 - :type: :blurb
   :codename: funding_heading
@@ -619,7 +641,12 @@
 - :name: Event Search
   :codename: :event_search
   :type: :search_type
-  :content: "{\"type\":\"Event\", \"sort\": \"create\", \"dir\": \"desc\"}"
+  :content: "{\"type\":\"Event\", \"sort\": \"create\", \"dir\": \"desc\", \"limit\": 6 }"
+
+- :name: Blog Search
+  :codename: :blog_search
+  :type: :search_type
+  :content: "{\"type\":\"Blog\", \"sort\": \"create\", \"dir\": \"desc\", \"limit\": 6 }"
 
 - :name: Policy Search
   :codename: :policy_search
