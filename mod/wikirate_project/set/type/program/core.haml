@@ -1,0 +1,26 @@
+- cid = card.name.key
+%h4
+    = card.name
+%p.pt-1
+    %b 
+        Goal: 
+    = card.goal
+%div.accordion.accordion-flush{id: cid}
+    %div.accordion-item
+        %h4.accordion-header{id: "#{cid}-current-heading"}
+            %button.accordion-button.collapsed{type: "button", "data-bs-toggle":"collapse", "data-bs-target": "##{cid}-current-collapse",
+                                                "aria-expanded":"false", "aria-controls":"#{cid}-current-collapse"}
+                %i.bi.bi-flower2.pe-2
+                Current Projects
+        %div.accordion-collapse.collapse{id: "#{cid}-current-collapse", "aria-labelledby":"##{cid}-current-heading", "data-bs-parent":"##{cid}"}
+            %div.accordion-body
+                = card.current_projects
+    %div.accordion-item
+        %h4.accordion-header{id: "#{cid}-previous-heading"}
+            %button.accordion-button.collapsed{type: "button", "data-bs-toggle":"collapse", "data-bs-target": "##{cid}-previous-collapse",
+                                                "aria-expanded":"false", "aria-controls":"#{cid}-previous-collapse"}
+                %i.bi.bi-folder.pe-2
+                Previous Projects
+        %div.accordion-collapse.collapse{id: "#{cid}-previous-collapse", "aria-labelledby":"##{cid}-previous-heading", "data-bs-parent":"##{cid}"}
+            %div.accordion-body
+                = card.previous_projects

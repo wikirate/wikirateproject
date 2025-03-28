@@ -357,6 +357,23 @@
       :fields:
         :autoname: Open_Position 0001
 
+- :name: Goal
+  :codename: :goal
+  :type: Phrase
+
+- :name: Current Projects
+  :codename: :current_projects
+  :type: RichText
+
+- :name: Previous Projects
+  :codename: :previous_projects
+  :conflict: override
+  :type: RichText
+
+- :name: Program
+  :codename: :program
+  :type: :cardtype
+
 - :name: Event
   :codename: event
   :type: :cardtype
