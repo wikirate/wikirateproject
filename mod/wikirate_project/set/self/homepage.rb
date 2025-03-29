@@ -7,7 +7,7 @@ format :html do
   end
 
   def latest_blogs
-    Card.search(type: 'Blog', limit: 3, sort_by: 'create', dir: 'desc')
+    Card.search(type: 'Blog', limit: 2, sort_by: 'create', dir: 'desc')
   end
 
   def latest_events
