@@ -1,5 +1,5 @@
 - date = !card.date.presence ? card.created_at : Date.parse(card.date)
-.col-lg-3.col-md-6.col-sm-12.blog-summary.rounded-3.d-flex.flex-column
+.col-lg-4.col-md-6.col-sm-12.blog-summary.rounded-3.d-flex.flex-column
   - if not card.image.nil? or card.image != ''
     %a.fluid-image{'href': card.link, 'target':'_blank', 'role':'button'}
       = field_nest :image, view: :core, size: :large
