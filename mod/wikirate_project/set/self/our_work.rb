@@ -5,7 +5,7 @@ include_set Abstract::SocialImage
 
 format :html do
 
-  %i[core our_programs initiatives].each do |view|
+  %i[core data_for_change our_programs initiatives].each do |view|
     view view, template: :haml
   end
 

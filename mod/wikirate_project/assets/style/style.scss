@@ -5,7 +5,7 @@ body {
   text-rendering: optimizeLegibility;
   font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
   line-height: 1.55;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: $gray-900;
 }
 
@@ -23,8 +23,13 @@ body {
 }
 
 .lead {
-  font-size: 1.25rem !important;
-  font-weight: 400 !important;
+  font-size: 1.45rem !important;
+  font-weight: 300 !important;
+}
+
+.highlight {
+  font-size: 1.45rem !important;
+  font-weight: 300 !important;
 }
 
 .rounded-picture img {

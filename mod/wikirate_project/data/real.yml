@@ -395,6 +395,40 @@
     :event_type:
       :type: :List
 
+- :type: :blurb
+  :codename: :data_for_change_item_1
+  :fields:
+    :title: "Open, reliable, and structured ESG data is accessible to a broad community of change-makers"
+    :icon: "bi bi-database-check"
+
+- :type: :blurb
+  :codename: :data_for_change_item_2
+  :fields:
+    :title: "Changemakers use open ESG data to change companies' behaviors and advocate for regulations and incentives toward more equality, sustainable practices, and respect for human and environmental rights"
+    :icon: "bi bi-megaphone"
+
+- :type: :blurb
+  :codename: :data_for_change_item_3
+  :fields:
+    :title: "Governments adopt legislation promoting the use of open data and improving reporting standards for greater transparency and accountability"
+    :icon: "bi bi-bank"
+
+- :type: :blurb
+  :codename: :data_for_change_item_4
+  :fields:
+    :title: "People and communities are empowered to participate in the movement for greater corporate transparency and accountability"
+    :icon: "bi bi-person-lines-fill"
+
+- :name: Data for change
+  :type: :list
+  :conflict: override
+  :codename: :data_for_change
+  :content:
+    - :data_for_change_item_1
+    - :data_for_change_item_2
+    - :data_for_change_item_3
+    - :data_for_change_item_4
+
 - :name: Endorsements
   :type: :list
   :codename: :endorsements
@@ -438,7 +472,7 @@
 
 - :name: Work with us
   :codename: work_with_us
-  :conflict: override
+  
 
 - :name: "Funding Introduction"
   :type: :RichText
