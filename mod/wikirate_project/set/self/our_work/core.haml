@@ -15,6 +15,10 @@
   .container
     = nest :services, view: :slider
 
+%section.intro-blurbs.container.py-5.d-flex.justify-content-center
+  .py-4.w-lg-66
+    = render_data_for_change
+
 %section.p-5
   = render_our_programs
 
