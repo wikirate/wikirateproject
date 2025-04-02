@@ -1,6 +1,6 @@
 - :name: "*home"
   :type: :list
-  :conflict: override
+  # :conflict: override
   :codename: :home
   :content: Homepage
 
@@ -13,4 +13,4 @@
   :codename: logo
   :image: wikirate_logo.png
   :storage_type: :coded
-  :conflict: override
+  # :conflict: override
