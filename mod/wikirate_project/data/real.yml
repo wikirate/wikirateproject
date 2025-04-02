@@ -112,7 +112,7 @@
 - :name:
     - :all
     - :layout
-  :conflict: override
+  # :conflict: override
   :content: :default_layout
 
 - :name: footer
@@ -153,7 +153,7 @@
   :type: :html
 
 - :name: icon
-  :conflict: override
+  # :conflict: override
   :codename: icon
   :type: Phrase
 
@@ -258,7 +258,7 @@
   :storage_type: :coded
 
 - :name: "*title"
-  :conflict: override
+  # :conflict: override
   :type: :Phrase
   :codename: :title
   :content: "Wikirate International e.V."
@@ -350,7 +350,7 @@
 
 - :name: Open Position
   :codename: open_position
-  :conflict: override
+  # :conflict: override
   :type: :cardtype
   :fields:
     :type:
@@ -367,7 +367,7 @@
 
 - :name: Previous Projects
   :codename: :previous_projects
-  :conflict: override
+  # :conflict: override
   :type: RichText
 
 - :name: Program
@@ -421,7 +421,7 @@
 
 - :name: Data for change
   :type: :list
-  :conflict: override
+  # :conflict: override
   :codename: :data_for_change
   :content:
     - :data_for_change_item_1
@@ -496,7 +496,7 @@
   :content: "Our policy and guidelines provide support and safeguard our organization, staff, partners, third parties and the environment. Their purpose is to build a mutual understanding of how Wikirate International and its affiliates operate."
 
 - :name: "participants"
-  :conflict: override
+  # :conflict: override
   :type: :list
   :codename: :participants
 
@@ -505,7 +505,7 @@
   :codename: case_study
 
 - :name: Hosting the Fashion Transparency Index
-  :conflict: override
+  # :conflict: override
   :type: :case_study
   :fields:
     :link: https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2022
@@ -549,7 +549,7 @@
     :title: Develop visual dashboards
 
 - :name: Year
-  :conflict: override
+  # :conflict: override
   :codename: :year
   :type: :cardtype
 

@@ -19,8 +19,12 @@
   .py-4.w-lg-66
     = render_data_for_change
 
-%section.p-5
+%section.p-5.bg-creme
   = render_our_programs
+
+%section#our_data_partners.p-5
+  .container
+    = nest :data_partners, view: :slider
 
 %section#advocacy.p-5.bg-creme
   .container
