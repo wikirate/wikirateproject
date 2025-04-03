@@ -494,3 +494,11 @@ card .card, .endorsement-summary {
 #outputs .container > p {
   @extend .lead
  }
+
+.stretched-link {
+  color: #34343b;
+}
+
+a.wr-arrow:hover {
+  text-decoration: none !important;
+}
