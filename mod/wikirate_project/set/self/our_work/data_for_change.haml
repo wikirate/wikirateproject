@@ -1,0 +1,14 @@
+.container
+  %h2
+    Data for change
+  %div.row.pt-3
+    %p.highlight
+      We are dedicated to our programs and projects that aim to create a world where:
+  - :data_for_change.card.item_cards.each do |item|
+    %div.row.d-flex.align-items-center
+      %div.col-1.text-center
+        - icon_code = item.card.icon
+        %i{class: "#{icon_code} h1 pe-1"}
+      %div.col-11.col-md-10
+        %p.highlight
+          = item.card.title

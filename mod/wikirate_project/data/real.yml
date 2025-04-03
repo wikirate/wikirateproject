@@ -112,7 +112,7 @@
 - :name:
     - :all
     - :layout
-  :conflict: override
+  # :conflict: override
   :content: :default_layout
 
 - :name: footer
@@ -153,7 +153,7 @@
   :type: :html
 
 - :name: icon
-  :conflict: override
+  # :conflict: override
   :codename: icon
   :type: Phrase
 
@@ -258,7 +258,7 @@
   :storage_type: :coded
 
 - :name: "*title"
-  :conflict: override
+  # :conflict: override
   :type: :Phrase
   :codename: :title
   :content: "Wikirate International e.V."
@@ -350,12 +350,29 @@
 
 - :name: Open Position
   :codename: open_position
-  :conflict: override
+  # :conflict: override
   :type: :cardtype
   :fields:
     :type:
       :fields:
         :autoname: Open_Position 0001
+
+- :name: Goal
+  :codename: :goal
+  :type: Phrase
+
+- :name: Current Projects
+  :codename: :current_projects
+  :type: RichText
+
+- :name: Previous Projects
+  :codename: :previous_projects
+  # :conflict: override
+  :type: RichText
+
+- :name: Program
+  :codename: :program
+  :type: :cardtype
 
 - :name: Event
   :codename: event
@@ -377,6 +394,40 @@
       :type: :URI
     :event_type:
       :type: :List
+
+- :type: :blurb
+  :codename: :data_for_change_item_1
+  :fields:
+    :title: "Open, reliable, and structured ESG data is accessible to a broad community of change-makers"
+    :icon: "bi bi-database-check"
+
+- :type: :blurb
+  :codename: :data_for_change_item_2
+  :fields:
+    :title: "Changemakers use open ESG data to change companies' behaviors and advocate for regulations and incentives toward more equality, sustainable practices, and respect for human and environmental rights"
+    :icon: "bi bi-megaphone"
+
+- :type: :blurb
+  :codename: :data_for_change_item_3
+  :fields:
+    :title: "Governments adopt legislation promoting the use of open data and improving reporting standards for greater transparency and accountability"
+    :icon: "bi bi-bank"
+
+- :type: :blurb
+  :codename: :data_for_change_item_4
+  :fields:
+    :title: "People and communities are empowered to participate in the movement for greater corporate transparency and accountability"
+    :icon: "bi bi-person-lines-fill"
+
+- :name: Data for change
+  :type: :list
+  # :conflict: override
+  :codename: :data_for_change
+  :content:
+    - :data_for_change_item_1
+    - :data_for_change_item_2
+    - :data_for_change_item_3
+    - :data_for_change_item_4
 
 - :name: Endorsements
   :type: :list
@@ -409,6 +460,11 @@
     :title: Coming together
 
 - :type: :blurb
+  :codename: blog_heading
+  :fields:
+    :title: The Wikirate Blog
+
+- :type: :blurb
   :codename: funding_heading
   :fields:
     :title: How our work is financed
@@ -416,7 +472,7 @@
 
 - :name: Work with us
   :codename: work_with_us
-  :conflict: override
+  
 
 - :name: "Funding Introduction"
   :type: :RichText
@@ -440,7 +496,7 @@
   :content: "Our policy and guidelines provide support and safeguard our organization, staff, partners, third parties and the environment. Their purpose is to build a mutual understanding of how Wikirate International and its affiliates operate."
 
 - :name: "participants"
-  :conflict: override
+  # :conflict: override
   :type: :list
   :codename: :participants
 
@@ -449,7 +505,7 @@
   :codename: case_study
 
 - :name: Hosting the Fashion Transparency Index
-  :conflict: override
+  # :conflict: override
   :type: :case_study
   :fields:
     :link: https://wikirate.org/Fashion_Revolution+Fashion_Transparency_Index_2022
@@ -493,7 +549,7 @@
     :title: Develop visual dashboards
 
 - :name: Year
-  :conflict: override
+  # :conflict: override
   :codename: :year
   :type: :cardtype
 
@@ -619,7 +675,12 @@
 - :name: Event Search
   :codename: :event_search
   :type: :search_type
-  :content: "{\"type\":\"Event\", \"sort\": \"create\", \"dir\": \"desc\"}"
+  :content: "{\"type\":\"Event\", \"sort\": \"create\", \"dir\": \"desc\", \"limit\": 6 }"
+
+- :name: Blog Search
+  :codename: :blog_search
+  :type: :search_type
+  :content: "{\"type\":\"Blog\", \"sort\": \"create\", \"dir\": \"desc\", \"limit\": 6 }"
 
 - :name: Policy Search
   :codename: :policy_search

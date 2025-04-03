@@ -134,3 +134,12 @@
         - [[Open Data Institute]]
         - [[Organisation for Economic Cooperation & Development]]
         - [[Zalando SE]]
+
+- :name: Our data partners
+  :codename: :data_partners
+  :type: :description_list
+  :fields:
+    :list:
+      :content:
+        - [[Minderoo Foundation]]
+        - [[Clean Clothes Campaign]]

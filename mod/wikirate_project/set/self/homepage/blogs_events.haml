@@ -1,12 +1,12 @@
 - upcoming_events = latest_events
-.ps-md-5.pe-md-5
+.container.ps-md-5.pe-md-5
   .row.mb-3
-    %h2
+    %h3
       Latest blogs and events
   .row.mt-1
     - latest_blogs.each do |blog|
-      = nest blog, view: :core
-    .col-lg-3.col-md-6.col-sm-12.blog-summary.ps-4.pe-4.pt-4.pb-4
+      = nest blog, view: :summary
+    .col-lg-4.col-md-6.col-sm-12.blog-summary.ps-4.pe-4.pt-4.pb-4
       %h4.highlighted
         Upcoming Events
       - if !upcoming_events.empty?

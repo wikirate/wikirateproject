@@ -1,0 +1,8 @@
+.container
+    %h2
+        Our Programs
+
+    .row
+        - :program.card.item_cards.each do |item|
+            .col-md-4.p-3.ps-4.pe-4
+                = nest item, view: :core

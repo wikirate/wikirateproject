@@ -36,11 +36,11 @@
   transform: scale(1);
 }
 
-#wikirate-events .card-list {
+#wikirate-events .card-list, #wikirate-blogs .card-list {
   @extend .row;
 }
 
-#wikirate-events .search-result-item {
+#wikirate-events .search-result-item , #wikirate-blogs .search-result-item {
   @extend .col-md-4;
 }
 
@@ -218,14 +218,15 @@
   color: #f7733d;
 }
 
-.publication-body img {
+.publication-img img {
   @extend .float-start, .p-3;
+  width: 100%;
 }
-
 
 .partner-img img, .partner-img svg {
   width: 60px;
   height: auto;
+  padding: 0.2rem;
 }
 
 #outputs .item-box {

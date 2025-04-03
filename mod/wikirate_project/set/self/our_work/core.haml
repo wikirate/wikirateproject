@@ -5,20 +5,37 @@
       = section_header :our_work_heading, header_size: :h1,
                                           button: { url: "https://wikirate.us7.list-manage.com/subscribe?u=be57db47b40c6b1c7e9ef0b36&id=1354650004",
                                                   text: "Subscribe" }
+
+%section.intro-blurbs.container.py-5.d-flex.justify-content-center
+  .py-4.w-lg-66
+    = nest :intro_blurb, view: :image_left_text_right
+    = nest :our_purpose, view: :image_left_text_right
+
 %section#services-slider.p-5.bg-creme
   .container
     = nest :services, view: :slider
 
-%section#advocacy.p-5
+%section.intro-blurbs.container.py-5.d-flex.justify-content-center
+  .py-4.w-lg-66
+    = render_data_for_change
+
+%section.p-5.bg-creme
+  = render_our_programs
+
+%section#our_data_partners.p-5
+  .container
+    = nest :data_partners, view: :slider
+
+%section#advocacy.p-5.bg-creme
   .container
     %a{name: 'advocacy'}
     = nest :advocacy
 
-%section.p-5.bg-creme
-  = render_open_data
+-# %section.p-5.bg-creme
+-#   = render_open_data
 
-%section.p-5
-  = render_why_open_data
+-# %section.p-5
+-#   = render_why_open_data
 
 %section#outputs.p-5
   = render_initiatives
