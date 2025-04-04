@@ -5,17 +5,19 @@
       Latest blogs and events
   .row.mt-1
     - latest_blogs.each do |blog|
-      = nest blog, view: :summary
-    .col-lg-4.col-md-6.col-sm-12.blog-summary.ps-4.pe-4.pt-4.pb-4
-      %h4.highlighted
-        Upcoming Events
-      - if !upcoming_events.empty?
-        - upcoming_events.each do |event|
+      .col-lg-4.col-md-6.col-sm-12
+        = nest blog, view: :core
+    .col-lg-4.col-md-6.col-sm-12
+      .col-md-12.blog-summary.d-flex.flex-column.rounded-3.p-3
+        %h4.highlighted
+          Upcoming Events
+        - if !upcoming_events.empty?
+          - upcoming_events.each do |event|
+            .row
+              = nest event, view: :summary
+        - else
           .row
-            = nest event, view: :summary
-      - else
-        .row
-          .col-md-12
-            %p.fst-italic
-              = "Currently, we don't have any upcoming events scheduled,
-              but stay tuned for exciting updates in the near future!"
+            .col-md-12
+              %p.fst-italic
+                = "Currently, we don't have any upcoming events scheduled,
+                but stay tuned for exciting updates in the near future!"
