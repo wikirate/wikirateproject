@@ -2,7 +2,7 @@
   .row.d-flex.align-items-center
     - if !card.image.nil? and !card.image != ''
       .col-auto
-        %span.partner-img.pe-2.d-flex.align-items-center
+        %span.partner-img.d-flex.align-items-center
           = field_nest :image, view: :core, size: :small
     .col.p-sm-2.p-md-0
       %cite.mb-0
