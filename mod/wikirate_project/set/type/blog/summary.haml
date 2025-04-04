@@ -1,19 +1,18 @@
 - date = !card.date.presence ? card.created_at : Date.parse(card.date)
 .col-lg-4.col-md-6.col-sm-12.blog-summary.rounded-3.d-flex.flex-column
-  - if not card.image.nil? or card.image != ''
-    %a.fluid-image{'href': card.link, 'target':'_blank', 'role':'button'}
-      = field_nest :image, view: :core, size: :large
+  .box-top
+    - if not card.image.nil? or card.image != ''
+      %a.fluid-image{'href': card.link, 'target':'_blank', 'role':'button'}
+        = field_nest :image, view: :core, size: :large
   %time.date-tag.position-absolute.text-center.d-flex.bg-white.text-uppercase
     %span.d-block.text-white.day.flex-shrink-0.font-weight-bold
       = date.strftime('%d')
     %span.d-block.py-2.px-3
       = date.strftime('%b %Y')
-  .row.ps-3.pe-3.mb-2.mt-1
+  .row.ps-3.pe-3.mb-2.mt-2
     .col-12
-      %span.badge.bg-primary
-        = 'blog'
       - blog_types.each do |type|
-        %span.badge.bg-primary
+        %span.badge
           = type
   .row.ps-3.pe-3
     %a{'href': card.link, 'target':'_blank', 'role':'button'}
