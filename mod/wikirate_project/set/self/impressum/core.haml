@@ -5,9 +5,8 @@
       = section_header :impressum_heading, header_size: :h1,
                                            button: { url: "/Contact_us",
                                                      text: "Contact us" }
-%section.p-5.bg-creme
-  .container
-    = nest :organizational_structure
 %section.p-5
   .container
-    = nest :factsheet
+    .h2
+      Impressum
+    = nest :organizational_structure, view: :content
