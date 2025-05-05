@@ -1,18 +1,17 @@
 NAV_MENU = {
-  'Our team' => 'About_us',
-  'Our work' => 'Our_work',
-  'Events' => 'Events',
-  'Blogs' => 'Blogs',
-  'Funding' => 'Funding',
-  'Work with us' => 'Work_with_us'
+  'Our team' => '/About_us',
+  'Our work' => '/Our_work',
+  'Events' => '/Events',
+  'Blogs' => '/Blogs',
+  'Funding' => '/Funding',
+  'Work with us' => '/Work_with_us'
 }.freeze
 
 SOCIALS = {
   "GitHub" => "https://github.com/wikirate/wikirate",
   "Medium" => "https://wikirate.medium.com/",
   "LinkedIn" => "https://www.linkedin.com/company/wikirate",
-  "Twitter" => "https://twitter.com/WikiRate",
-  "Facebook" => "https://www.facebook.com/wikirate/",
+  "Bluesky" => "https://bsky.app/profile/wikirate.bsky.social",
   "Instagram" => "https://www.instagram.com/wikirate/"
 }.freeze
 
