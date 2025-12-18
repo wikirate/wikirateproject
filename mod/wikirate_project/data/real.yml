@@ -104,6 +104,9 @@
 - :name: "style: classic cards"
   :type: :css
 
+- :name: "Partner"
+  :codename: partner
+
 - :name:
     - wikirate skin
     - :variables
@@ -278,6 +281,8 @@
     [[Policies | Policies]]
     [[Impressum]]
 
+- :name: wikirate license
+  :codename: wikirate_license
 
 - :name: Founder's Quote
   :type: quote

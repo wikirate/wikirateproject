@@ -37,4 +37,5 @@ end
 group :production do
   gem "fog-aws"
   gem "dalli"
+  gem "connection_pool", "~> 2.4" # 3.x releases broke memcache handling
 end
