@@ -465,8 +465,10 @@ GEM
       net-protocol
     newrelic_rpm (9.24.0)
     nio4r (2.7.5)
-    nokogiri (1.18.10)
+    nokogiri (1.19.1)
       mini_portile2 (~> 2.8.2)
+      racc (~> 1.4)
+    nokogiri (1.19.1-x64-mingw-ucrt)
       racc (~> 1.4)
     parallel (1.27.0)
     parser (3.3.10.0)
@@ -583,8 +585,6 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     sassc (2.4.0)
       ffi (~> 1.9)
-    sassc (2.4.0-x64-mingw32)
-      ffi (~> 1.9)
     securerandom (0.4.1)
     sexp_processor (4.17.4)
     sinatra (3.2.0)
@@ -629,7 +629,7 @@ GEM
 
 PLATFORMS
   ruby
-  x64-mingw32
+  x64-mingw-ucrt
 
 DEPENDENCIES
   card!
