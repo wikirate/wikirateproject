@@ -300,7 +300,7 @@ GEM
       minitest (>= 5.1)
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
-    addressable (2.8.8)
+    addressable (2.9.0)
       public_suffix (>= 2.0.2, < 8.0)
     ast (2.4.3)
     base64 (0.3.0)
@@ -490,7 +490,7 @@ GEM
     psych (5.3.1)
       date
       stringio
-    public_suffix (7.0.0)
+    public_suffix (7.0.5)
     puma (7.1.0)
       nio4r (~> 2.0)
     racc (1.8.1)
@@ -583,8 +583,6 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     sassc (2.4.0)
       ffi (~> 1.9)
-    sassc (2.4.0-x64-mingw32)
-      ffi (~> 1.9)
     securerandom (0.4.1)
     sexp_processor (4.17.4)
     sinatra (3.2.0)
@@ -629,7 +627,7 @@ GEM
 
 PLATFORMS
   ruby
-  x64-mingw32
+  x64-mingw-ucrt
 
 DEPENDENCIES
   card!
